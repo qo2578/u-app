@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 100px;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  margin-right: 24px; /* Расстояние между ссылками, настройте по вашему усмотрению */
+}
+.header-logo{
+    width: auto;
+    height: auto;
+    margin-left: 180px;
+}
+.nav{
+    margin: 0 171px 0 271.54px;
+}
+.header-btn{
+    display: inline-flex;
+padding: 12px 26px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+border: 1px solid var(--White, #FFF);
+    margin-right: 180px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.header-btn:hover{
+  color: black;
+  background: var(--Primary, #ffffff);
+  }

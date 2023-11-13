@@ -1,0 +1,7 @@
+.contacts{
+    background: url('/contacts/contacts-bg.png') center/cover no-repeat;
+    height: 900px;
+}
+.contacts p{
+    padding-top: 100px;
+}
