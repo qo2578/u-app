@@ -15,15 +15,24 @@ const Header = () => {
           className="header-logo"
         ></Image>
       </Link>
-
       <div className="nav">
-        <Link href="/" as="">Главная</Link>
-        <Link href="/service" as="service">Услуги</Link>
-        <Link href="/portfolio" as="portfolio">Портфолио</Link>
-        <Link href="/about-us" as="about-us">О нас</Link>
+        <Link href="/" as="">
+          Главная
+        </Link>
+        <Link href="/service" as="service">
+          Услуги
+        </Link>
+        <Link href="/portfolio" as="portfolio">
+          Портфолио
+        </Link>
+        <Link href="/about-us" as="about-us">
+          О нас
+        </Link>
         <Link href="/contacts">Контакты</Link>
       </div>
-      <Link href="/contacts"    className="header-btn">Связаться с нами</Link>
+      <Link href="/contacts" className="header-btn">
+        Связаться с нами
+      </Link>
     </header>
   );
 };

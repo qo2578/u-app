@@ -16,6 +16,7 @@
 .bottom-box {
   display: flex;
   padding-top: 120px;
+  align-items: center;
 }
 .footer-title {
   margin-bottom: 20px;

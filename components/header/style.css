@@ -15,26 +15,35 @@
 .header a {
   margin-right: 24px; /* Расстояние между ссылками, настройте по вашему усмотрению */
 }
-.header-logo{
-    width: auto;
-    height: auto;
-    margin-left: 180px;
+.header-logo {
+  width: auto;
+  height: auto;
+  margin-left: 180px;
 }
-.nav{
-    margin: 0 171px 0 271.54px;
+.nav {
+  margin: 0 171px 0 271.54px;
 }
-.header-btn{
-    display: inline-flex;
-padding: 12px 26px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 8px;
-border: 1px solid var(--White, #FFF);
-    margin-right: 180px;
-    transition: background 0.3s ease, color 0.3s ease;
+.header-btn {
+  display: inline-flex;
+  padding: 12px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--White, #fff);
+  margin-right: 180px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
-.header-btn:hover{
+.header-btn:hover {
   color: black;
   background: var(--Primary, #ffffff);
-  }
+}
+nav a {
+  margin-right: 10px; /* Измените отступ между ссылками при необходимости */
+  color: #000; /* Цвет по умолчанию */
+  text-decoration: none;
+}
+
+nav a.active {
+  color: #ff0000; /* Цвет для активной ссылки */
+}
