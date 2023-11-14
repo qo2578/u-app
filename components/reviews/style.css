@@ -1,0 +1,100 @@
+.reviews-card {
+  display: flex;
+  width: 1080px;
+  height: 554px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.reviews-card h3 {
+  width: 880px;
+  height: 554px;
+  color: var(--White, #fff);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+  margin-bottom: 60px;
+  background: var(--black-2, #252525);
+  padding: 100px 100px 0;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    width: 1080px;
+    height: 554px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--black-2, #252525);
+  }
+  
+  .carousel-slide {
+    display: none;
+    text-align: center;
+  }
+  .slide-text{
+    color: var(--White, #FFF);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+  }
+  .carousel-slide .text-box{
+    width: 880px;
+    max-height: 155px;
+    padding: 100px 100px 160px;
+  }
+  .carousel-slide h4{
+    color: var(--White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 23.4px */
+  }
+  .carousel-slide p{
+    color: var(--White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+  }
+  
+  .carousel-slide.active {
+    display: block;
+  }
+  
+  .carousel-button-prev {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Измените отступ слева при необходимости */
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-button-next {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Измените отступ справа при необходимости */
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-button:hover {
+    color: #333; /* Измените цвет при необходимости */
+  }
+  
