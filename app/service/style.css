@@ -17,6 +17,9 @@
   width: 40px;
   height: 40px;
 }
+.service-request {
+  padding: 140px 0 200px;
+}
 .service-box-card {
   position: relative;
   display: flex;
@@ -39,6 +42,11 @@
   filter: invert(100%);
 }
 .service-box-card p {
+  color: var(--White, #fff);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 26px */
   width: 567px;
 }
 .service-box-title {

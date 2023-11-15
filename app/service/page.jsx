@@ -111,7 +111,10 @@ const page = () => {
           </Link>
         </div>
       </div>
-      <Request/>
+      <div className="service-request">
+        {" "}
+        <Request />
+      </div>
     </div>
   );
 };

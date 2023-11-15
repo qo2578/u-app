@@ -1,0 +1,124 @@
+.design {
+  background: var(--black-1, #121212);
+  padding-left: 180px;
+}
+.design-title {
+  padding-top: 160px;
+  color: var(--White, #fff);
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 93.6px */
+}
+.design-box {
+  padding: 84px 0 200px;
+}
+.design-box-card {
+  position: relative;
+  display: flex;
+  gap: 118px;
+  padding: 40px 0 60px;
+}
+.design-box-card h3 {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 26px */
+  width: 25px;
+}
+.design-box-card h4 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+  width: 200px;
+}
+.design-box-card p {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 26px */
+  width: 645px;
+}
+.design-box-line {
+  width: 1110px;
+  height: 1px;
+  background: var(--gray-1, #808080);
+}
+
+/*---------------------------------------------------------------- Section tools */
+.tools {
+  padding-bottom: 200px;
+}
+.tools-title {
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 46.8px */
+  padding-bottom: 60px;
+}
+.tools-svg {
+  margin-right: 60px;
+}
+
+/*---------------------------------------------------------------- Section our-projects */
+.experience {
+  padding-bottom: 200px;
+}
+.experience-box {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.experience-text {
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 46.8px */
+  margin-right: 630px;
+}
+.experience-btn {
+  align-items: center;
+  color: var(--White, #fff);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 18px 32px;
+  align-self: flex-start;
+  line-height: 130%; /* 26px */
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.experience-btn:hover {
+  color: black;
+  background: var(--Primary, #ffffff);
+  border-radius: 10px;
+}
+.experience-btn img {
+  vertical-align: middle;
+  filter: invert(0%);
+  margin-left: 12px;
+  transition: filter 0.3s ease;
+}
+
+.experience-btn:hover img {
+  filter: invert(100%);
+}
+
+/*---------------------------------------------------------------- Section reviews */
+
+.design-reviews {
+  margin: 0 200px 180px 0;
+}
+
+/*---------------------------------------------------------------- Section reviews */
+.design-request {
+  padding-bottom: 200px;
+}
