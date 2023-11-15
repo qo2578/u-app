@@ -129,36 +129,47 @@ const page = () => {
           </h3>
           <div className="row">
             <div className="col-4">
-              <Image
-                src="/home/our-service1.svg"
-                width={60}
-                height={60}
-                alt="our-service"
-              />
+              <div className="img-box">
+                <Image
+                  src="/home/our-service1.svg"
+                  width={30}
+                  height={30}
+                  alt="our-service"
+                  className="our-service-img"
+                />
+              </div>
+
               <p className="our-service-title">Дизайн</p>
               <p className="our-service-text">
                 Создаем современные и <br /> функциональные веб-дизайны
               </p>
             </div>
             <div className="col-4">
-              <Image
-                src="/home/our-service2.svg"
-                width={60}
-                height={60}
-                alt="our-service"
-              />
+              <div className="img-box">
+                <Image
+                  src="/home/our-service2.svg"
+                  width={27}
+                  height={27}
+                  alt="our-service"
+                  className="our-service-img"
+                />
+              </div>
               <p className="our-service-title">Разработка</p>
               <p className="our-service-text">
                 Превращаем идеи в уникальные и <br /> функциональные веб-сайты
               </p>
             </div>
             <div className="col-4">
-              <Image
-                src="/home/our-service3.svg"
-                width={60}
-                height={60}
-                alt="our-service"
-              />
+              <div className="img-box">
+                <Image
+                  src="/home/our-service3.svg"
+                  width={27}
+                  height={27}
+                  alt="our-service"
+                  className="our-service-img"
+                />
+              </div>
+
               <p className="our-service-title">Поддержка</p>
               <p className="our-service-text">
                 Дизайн-поддержка и развитие <br /> проектов после запуска
@@ -184,21 +195,22 @@ const page = () => {
               Больше проектов
               <Image
                 src="/home/arrow-up-light.svg"
-                width={32}
-                height={32}
+                width={27}
+                height={27}
                 alt="arrow-up-light"
               />
             </Link>
           </div>
-
           <Card />
         </div>
       </section>
       <section className="reviews">
         <div className="container">
           <div className="reviews-box">
-            <h3>Отзывы клиентов</h3>
-            <p>Узнайте, что говорят о нас наши клиенты</p>
+            <h3 className="reviews-title">Отзывы клиентов</h3>
+            <p className="reviews-text">
+              Узнайте, что говорят о нас наши клиенты
+            </p>
           </div>
           <Reviews />
         </div>

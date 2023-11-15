@@ -1,3 +1,9 @@
+.reviews-container {
+  padding: 20px;
+  position: relative;
+}
+
+/* Стили для отзыва */
 .reviews-card {
   display: flex;
   width: 1080px;
@@ -5,96 +11,116 @@
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 10px;
+  background: var(--black-2, #252525);
 }
 
 .reviews-card h3 {
-  width: 880px;
-  height: 554px;
   color: var(--White, #fff);
   text-align: center;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 31.2px */
-  margin-bottom: 60px;
-  background: var(--black-2, #252525);
   padding: 100px 100px 0;
+  width: 1050px;
 }
 
-.carousel-container {
-    position: relative;
-    display: flex;
-    width: 1080px;
-    height: 554px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-    background: var(--black-2, #252525);
-  }
-  
-  .carousel-slide {
-    display: none;
-    text-align: center;
-  }
-  .slide-text{
-    color: var(--White, #FFF);
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%; /* 31.2px */
-  }
-  .carousel-slide .text-box{
-    width: 880px;
-    max-height: 155px;
-    padding: 100px 100px 160px;
-  }
-  .carousel-slide h4{
-    color: var(--White, #FFF);
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 130%; /* 23.4px */
-  }
-  .carousel-slide p{
-    color: var(--White, #FFF);
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 18.2px */
-  }
-  
-  .carousel-slide.active {
-    display: block;
-  }
-  
-  .carousel-button-prev {
-    position: absolute;
-    top: 50%;
-    left: 10px; /* Измените отступ слева при необходимости */
-    transform: translateY(-50%);
-    font-size: 24px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .carousel-button-next {
-    position: absolute;
-    top: 50%;
-    right: 10px; /* Измените отступ справа при необходимости */
-    transform: translateY(-50%);
-    font-size: 24px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .carousel-button:hover {
-    color: #333; /* Измените цвет при необходимости */
-  }
-  
+.reviews-card-box {
+  text-align: center;
+  position: absolute;
+  bottom: 100px;
+  padding: 0 400px 0;
+}
+
+.reviews-card-box img {
+  border-radius: 50%;
+  margin-left: 80px;
+}
+
+.reviews-card-name {
+  color: var(--White, #fff);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 23.4px */
+  margin-top: 16px;
+  padding-left: 38px;
+}
+
+.reviews-card-text {
+  color: var(--White, #fff);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+  padding-left: 40px;
+}
+
+/* Стили для слайдера */
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: #333;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #ffffff; /* Измените цвет при необходимости */
+}
+
+.slick-dots li button:before {
+  font-size: 14px;
+  color: #666;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffffff; /* Измените цвет при необходимости */
+}
+
+/* Кастомные кнопки для перемотки слайдов */
+.custom-prev-btn {
+  left: 25%;
+  transform: translateX(-50%);
+}
+.custom-next-btn {
+  right: 25%;
+  transform: translateX(50%);
+}
+.custom-btn-svg {
+  margin-top: 5px;
+}
+.custom-prev-btn:hover .custom-btn-svg,
+.custom-next-btn:hover .custom-btn-svg {
+  color: #000000;
+  filter: invert(100%);
+  fill: rgb(255, 255, 255);
+}
+.custom-prev-btn,
+.custom-next-btn {
+  position: absolute;
+  bottom: 180px;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: var(--Primary, #e42652);
+  border: 1px solid #e42652;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.custom-prev-btn:hover,
+.custom-next-btn:hover {
+  color: #000000;
+  border: 1px solid #ffffff;
+  background-color: #ffffff; /* Измените цвет при необходимости */
+}
