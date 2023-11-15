@@ -3,7 +3,6 @@
   position: relative;
 }
 
-/* Стили для отзыва */
 .reviews-card {
   display: flex;
   width: 1080px;
@@ -73,7 +72,7 @@
 
 .slick-prev:hover,
 .slick-next:hover {
-  color: #ffffff; /* Измените цвет при необходимости */
+  color: #ffffff;
 }
 
 .slick-dots li button:before {
@@ -82,7 +81,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-  color: #ffffff; /* Измените цвет при необходимости */
+  color: #ffffff;
 }
 
 /* Кастомные кнопки для перемотки слайдов */
@@ -122,5 +121,5 @@
 .custom-next-btn:hover {
   color: #000000;
   border: 1px solid #ffffff;
-  background-color: #ffffff; /* Измените цвет при необходимости */
+  background-color: #ffffff;
 }

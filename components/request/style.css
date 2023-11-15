@@ -8,6 +8,7 @@ line-height: 130%; /* 62.4px */
 .request-container {
     display: flex;
     align-items: center;
+    padding: 200px 0 200px;
   }
   
   .request-title {
