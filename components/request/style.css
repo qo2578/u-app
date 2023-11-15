@@ -1,17 +1,15 @@
-.request-title{
-    color: #FFF;
-font-size: 48px;
-font-style: normal;
-font-weight: 500;
-line-height: 130%; /* 62.4px */
+.request-title {
+  color: #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 62.4px */
 }
 .request-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .request-title {
-    margin-right: 530px;
+  display: flex;
+  align-items: center;
+}
 
-  }
-  
+.request-title {
+  margin-right: 530px;
+}

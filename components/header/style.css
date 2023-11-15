@@ -6,7 +6,7 @@
   z-index: 2;
   height: 100px;
   flex-shrink: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(5, 15, 0, 0.1);
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;

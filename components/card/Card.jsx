@@ -39,26 +39,32 @@ const Card = () => {
   return (
     <div className="cards-container">
       {cardsData.map((card) => (
-        <div className="card" key={card.id}>
-          <Image
-            src={card.imageSrc}
-            width={525}
-            height={412}
-            alt={card.title}
-          />
-          <h4>{card.title}</h4>
-          <div className="card-box">
-            <p>{card.description}</p>
-            <Link href={card.link} as={card.link}>
+        <Link key={card.id} href={card.link} as={card.link}>
+          <div className="card">
+            <div className="card-img-box">
               <Image
-                src="/card/arrow-up-light.svg"
-                width={30}
-                height={30}
-                alt="arrow-up-light"
+                src={card.imageSrc}
+                width={525}
+                height={425}
+                alt={card.title}
+                className="card-img"
               />
-            </Link>
+            </div>
+            <h4>{card.title}</h4>
+            <div className="card-box">
+              <p>{card.description}</p>
+              <div className="card-svg-box">
+                <Image
+                  src="/card/arrow-up-light.svg"
+                  width={30}
+                  height={30}
+                  alt="arrow-up-light"
+                  className="card-svg"
+                />
+              </div>
+            </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

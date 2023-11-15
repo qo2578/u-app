@@ -184,6 +184,7 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 31.2px */
+  margin-top: 30px;
   margin-bottom: 12px;
 }
 .our-service-text {
@@ -193,15 +194,26 @@ a {
   font-weight: 400;
   line-height: 130%; /* 23.4px */
 }
-.our-service img {
-  margin-bottom: 30px;
-}
 .our-service .row {
   display: inline-flex;
   gap: 30px;
   margin-left: 180px;
 }
+.img-box {
+  width: 60px;
+  height: 60px;
+  background: var(--Primary, #e42652);
+  border-radius: 50%;
+  padding-top: 15.5px;
+  padding-left: 15px;
+}
+.col-4:hover .img-box {
+  background: #ffffff;
+}
 
+.col-4:hover .our-service-img {
+  filter: invert(100%);
+}
 .our-service .col-4 {
   display: flex;
   width: 340px;
@@ -295,29 +307,27 @@ a {
   filter: invert(100%);
 }
 
-
 /*---------------------------------------------------------------- Section reviews */
-.reviews{
-  margin: 210px 0 0 180px;
+.reviews {
+  margin: 210px 180px 180px;
 }
-.reviews-box{
+.reviews-box {
   display: flex;
   align-items: center;
-text-align: center;
-margin-bottom: 60px;
-
+  text-align: center;
+  padding-bottom: 60px;
 }
-.reviews h3{
-  color: var(--White, #FFF);
+.reviews-title {
+  color: var(--White, #fff);
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
   margin-right: 42px;
 }
-.reviews p{
+.reviews-text {
   margin-top: 6px;
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -325,8 +335,7 @@ margin-bottom: 60px;
 }
 
 /*---------------------------------------------------------------- Section request */
-.request{
-margin: 200px 0 0 180px;
-padding-bottom: 200px;
-
+.request {
+  margin: 200px 0 0 180px;
+  padding-bottom: 200px;
 }

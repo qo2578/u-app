@@ -1,0 +1,80 @@
+.service {
+  background: var(--black-1, #121212);
+  padding-left: 180px;
+}
+.service-title {
+  padding: 160px 0 60px;
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 46.8px */
+}
+
+.service-svg-box {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.service-request {
+  padding: 140px 0 200px;
+}
+.service-box-card {
+  position: relative;
+  display: flex;
+  gap: 118px;
+  padding: 40px 0 60px;
+}
+.service-box-card:hover .service-svg-box {
+  background: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  fill: black;
+}
+.service-box-card .service-svg {
+  margin: 4px 0 0 4px;
+  transition: transform 0.3s ease;
+}
+
+.service-box-card:hover .service-svg {
+  transform: rotate(-45deg);
+  fill: black;
+  filter: invert(100%);
+}
+.service-box-card p {
+  color: var(--White, #fff);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 26px */
+  width: 567px;
+}
+.service-box-title {
+  color: var(--Primary, #e42652);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+  position: relative;
+  display: inline-block;
+  width: 218px;
+}
+.service-box-title::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--Primary, #e42652);
+  transition: width 0.3s ease;
+}
+
+.service-box-card:hover .service-box-title::before {
+  width: 70px;
+}
+.service-box-line {
+  width: 1080px;
+  height: 1px;
+  background: var(--gray-1, #808080);
+}
