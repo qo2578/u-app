@@ -132,46 +132,6 @@
   font-weight: 600;
   line-height: 130%; /* 46.8px */
 }
-.slide {
-  width: 200px;
-  height: 277px;
-}
-.slider {
-  padding-top: 100px;
-}
-.slide img {
-  width: 100%;
-  height: auto;
-  padding-bottom: 18px;
-}
-.slide-title {
-  color: var(--White, #fff);
-  text-align: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 26px */
-}
-.slide-subtitle {
-  color: var(--White, #fff);
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%; /* 31.2px */
-}
-.slick-slide {
-  margin-right: 100px;
-}
-.slick-slider {
-  touch-action: pan-y;
-}
-
-.slick-prev,
-.slick-next {
-  display: none !important;
-}
-
 /*---------------------------------------------------------------- Section offer */
 
 .offer-title {
@@ -257,4 +217,56 @@
   font-weight: 400;
   line-height: normal;
   width: 300px;
+}
+
+/*---------------------------------------------------------------- Section they-say-they-ask */
+.they-say-they-ask {
+  padding-bottom: 200px;
+}
+.say-ask-box {
+  display: flex;
+}
+.they-say-they-ask-title {
+  display: flex;
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 46.8px */
+  padding-bottom: 60px;
+}
+.they-say-they-ask-title h3 {
+  padding-right: 278px;
+}
+.they-ask-link {
+  display: flex;
+  align-items: center;
+  padding-top: 48px;
+}
+.they-ask-box {
+  padding-left: 50px;
+}
+.they-ask p {
+  color: var(--White, #fff);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  padding-left: 24px;
+}
+
+.simple-box-slider {
+  display: flex;
+}
+.they-ask-title {
+  color: var(--White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 60px;
+}
+.they-ask-link p {
+  padding-left: 24px;
 }

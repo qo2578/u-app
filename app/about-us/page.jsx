@@ -1,57 +1,13 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import "./style.css";
 import Image from "next/image";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
+import TeamSlider from "../../components/teamSlider/teamSlider";
+import TheySaySlider from "../../components/theySaySlider/TheySaySlider";
+import SimpleSlider from "../../components/simpleSlider/SimpleSlider";
 
 const page = () => {
-  const slidesData = [
-    {
-      id: 1,
-      imgSrc: "/about-us/img1.svg",
-      title: "ФИО",
-      subtitle: "Специальность",
-    },
-    {
-      id: 2,
-      imgSrc: "/about-us/img2.svg",
-      title: "ФИО",
-      subtitle: "Специальность",
-    },
-    {
-      id: 3,
-      imgSrc: "/about-us/img3.svg",
-      title: "ФИО",
-      subtitle: "Специальность",
-    },
-    {
-      id: 4,
-      imgSrc: "/about-us/img4.svg",
-      title: "ФИО",
-      subtitle: "Специальность",
-    },
-    {
-      id: 5,
-      imgSrc: "/about-us/img3.svg",
-      title: "ФИО",
-      subtitle: "Специальность",
-    },
-  ];
-
-  const sliderSettings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    swipeToSlide: true,
-    variableWidth: true,
-    centerMode: false,
-    focusOnSelect: false,
-  };
-
   return (
     <div className="about-us">
       <section className="about">
@@ -140,22 +96,7 @@ const page = () => {
           Для достижения ваших целей <br />
           мы собрали команду профессионалов
         </h3>
-        <div className="slider">
-          <Slider {...sliderSettings}>
-            {slidesData.map((slide) => (
-              <div className="slide" key={slide.id}>
-                <Image
-                  src={slide.imgSrc}
-                  alt={slide.title}
-                  width={200}
-                  height={277}
-                />{" "}
-                <h4 className="slide-title">{slide.title}</h4>
-                <p className="slide-subtitle">{slide.subtitle}</p>
-              </div>
-            ))}
-          </Slider>
-        </div>
+        <TeamSlider key="team-slider" />
       </section>
       <section className="offer">
         <h3 className="offer-title">Что мы предлагаем? </h3>
@@ -280,6 +221,30 @@ const page = () => {
               уверенностью сказать, что успешно освоили новый рынок и
               интегрировались в работу.{" "}
             </p>
+          </div>
+        </div>
+      </section>
+      <section className="they-say-they-ask">
+        <div className="they-say-they-ask-title">
+          <h3>О нас говорят</h3>
+          <h4>У нас спрашивают</h4>
+        </div>
+        <div className="simple-box-slider">
+          <div className="say-ask-box">
+            <TheySaySlider key="they-say-slider" />
+          </div>
+          <div className="they-ask-box">
+            <SimpleSlider />
+            <h2 className="they-ask-title">
+              Будем рады ответить на любые ваши вопросы <br /> по телефону: +996
+              554 201 506
+            </h2>
+            <div className="they-ask-link">
+              <Link className="home-btn" href="/contacts">
+                Заполнить заявку
+              </Link>
+              <p> Это займет не более 3 минут</p>
+            </div>
           </div>
         </div>
       </section>
