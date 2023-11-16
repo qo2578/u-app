@@ -1,0 +1,91 @@
+.slider-container-simple {
+  width: 512px;
+
+  overflow: hidden;
+  position: relative;
+}
+.slider-container-simple .slick-slide {
+  height: 125px;
+}
+.slide-simple {
+  width: 512px;
+  height: 125px;
+}
+
+.dot-container-simple {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.dot-simple {
+  width: 10px;
+
+  height: 10px;
+  border-radius: 10px;
+  background: var(--black-2, #252525);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.slick-dots li.slick-active button::before {
+  color: var(--Primary, #e42652);
+}
+/* .slick-dots li button::before {
+  margin-top: 20px;
+} */
+.dot-simple.active {
+  width: 32px;
+  background: var(--Primary, #e42652);
+}
+.slider-container-simple-text h2 {
+  color: var(--White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 24px;
+}
+.slider-container-simple-text p {
+  color: var(--gray-1, #808080);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 72px;
+}
+
+/* Стили для кнопок */
+.custom-prev-btn-simple,
+.custom-next-btn-simple {
+  position: absolute;
+  top: 15px;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.custom-prev-btn-simple {
+  right: 22%;
+  transform: translateX(-50%);
+}
+
+.custom-next-btn-simple {
+  right: 17%;
+  transform: translateX(50%);
+}
+
+.custom-prev-btn-simple:hover .custom-btn-svg,
+.custom-next-btn-simple:hover .custom-btn-svg {
+  color: #000000;
+  filter: invert(100%);
+  fill: rgb(255, 255, 255);
+}
