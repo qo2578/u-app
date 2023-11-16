@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import "./style.css";
 import Image from "next/image";
 import Link from "next/link";
-import TeamSlider from "../../components/teamSlider/teamSlider";
+import TeamSlider from "../../components/teamSlider/TeamSlider";
 import TheySaySlider from "../../components/theySaySlider/TheySaySlider";
 import SimpleSlider from "../../components/simpleSlider/SimpleSlider";
 
