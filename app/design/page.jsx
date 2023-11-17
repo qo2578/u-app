@@ -6,7 +6,7 @@ import Card from "./../../components/card/Card";
 import Reviews from "../../components/reviews/Reviews";
 import { Request } from "../../components/request/Request";
 
-const page = () => {
+const DesignPage = () => {
   return (
     <div className="design">
       <h2 className="design-title">Дизайн</h2>
@@ -129,4 +129,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default DesignPage;

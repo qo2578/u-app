@@ -11,7 +11,7 @@ const USER_ID = "GYP9SQMP4sqoBc1mo";
 
 emailjs.init(USER_ID);
 
-const page = React.memo(() => {
+const ContactsPage = React.memo(() => {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [buttonText, setButtonText] = useState("Отправить");
   const [formData, setFormData] = useState({
@@ -251,4 +251,4 @@ const page = React.memo(() => {
     </div>
   );
 });
-export default page;
+export default  ContactsPage;

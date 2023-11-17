@@ -5,7 +5,7 @@ import Image from "next/image";
 import "./style.css";
 import { Request } from "./../../components/request/Request";
 
-const page = () => {
+const ServicePage = () => {
   const [currentPage, setCurrentPage] = useState(null);
 
   const handleLinkClick = (page) => {
@@ -119,4 +119,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ServicePage;

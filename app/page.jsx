@@ -6,7 +6,7 @@ import Card from "./../components/card/Card";
 import Reviews from "../components/reviews/Reviews";
 import { Request } from "../components/request/Request";
 
-const page = () => {
+const HomePage = () => {
   return (
     <div className="home-page">
       <section className="home">
@@ -222,4 +222,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default HomePage;

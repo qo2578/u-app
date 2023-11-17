@@ -7,7 +7,7 @@ import TeamSlider from "../../components/teamSlider/TeamSlider";
 import TheySaySlider from "../../components/theySaySlider/TheySaySlider";
 import SimpleSlider from "../../components/simpleSlider/SimpleSlider";
 
-const page = () => {
+const AboutUsPage = () => {
   return (
     <div className="about-us">
       <section className="about">
@@ -252,4 +252,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutUsPage;
