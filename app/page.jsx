@@ -12,12 +12,12 @@ const HomePage = () => {
       <section className="home">
         <div className="container">
           <h1 className="home-title">
-            Создайте <span>будущее</span> <br /> вашего бизнеса вместе <br />{" "}
-            <span>с нами</span>
+            Создайте <span>будущее</span> вашего бизнеса вместе
+            <span> с нами</span>
           </h1>
           <h2 className="home-text">
-            Сочетая передовые технологии с креативным подходом мы <br />{" "}
-            превращаем Ваши идеи в уникальные и успешные веб-приложения.
+            Сочетая передовые технологии с креативным подходом мы превращаем
+            Ваши идеи в уникальные и успешные веб-приложения.
           </h2>
           <div className="home-box">
             <Link href="/portfolio" className="home-btn" as="portfolio">
@@ -78,21 +78,49 @@ const HomePage = () => {
       <section className="team">
         <div className="container">
           <div className="team-box-left">
-            <h2>
-              Оригинальность и <br /> качество для нас всегда <br /> на первом
-              месте
-            </h2>
+            <h2>Оригинальность и качество для нас всегда на первом месте</h2>
+            <div className="team-box-right-text">
+              <h3>
+                U! - компания с богатым 7 летним опытом, вдохновившая и
+                поддержавшая более 50 проектов. Мы предлагаем Вам разнообразные
+                услуги, способствующие развитию вашего бизнеса.
+              </h3>
+              <Link href="/about-us" className="team-btn" as="about-us">
+                Подробнее о нас
+              </Link>
+            </div>
             <Image src="/home/team.svg" width={452} height={326} alt="team" />
+            <div className="team-box-row-min">
+              <div className="row">
+                <div class="col-6">
+                  <p className="row-number">7 лет</p>
+                  <p className="row-text">Опыта на рынке</p>
+                </div>
+                <div class="col-6">
+                  <p className="row-number">50+</p>
+                  <p className="row-text">Успешных проектов</p>
+                </div>
+              </div>
+              <div className="row">
+                <div class="col-6">
+                  <p className="row-number">50+</p>
+                  <p className="row-text">Счастливых клиентов</p>
+                </div>
+                <div class="col-6">
+                  <p className="row-number">10</p>
+                  <p className="row-text">Специалистов</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="team-box-right">
             <h3>
-              U! - компания с богатым 7 летним опытом, вдохновившая <br /> и
-              поддержавшая более 50 проектов. Мы предлагаем Вам <br />{" "}
-              разнообразные услуги, способствующие развитию <br /> вашего
-              бизнеса.
+              U! - компания с богатым 7 летним опытом, вдохновившая и
+              поддержавшая более 50 проектов. Мы предлагаем Вам разнообразные
+              услуги, способствующие развитию вашего бизнеса.
             </h3>
             <Link href="/about-us" className="team-btn" as="about-us">
-              Посмотреть работы
+              Подробнее о нас
             </Link>
             <div className="team-box-row">
               <div className="row">
@@ -124,8 +152,7 @@ const HomePage = () => {
           <h2>Наши услуги</h2>
           <h3>
             Мы предлагаем Вам широкий спектр профессиональных услуг, которые
-            помогут <br /> воплотить ваши идеи в реальность и достичь новых
-            высот.
+            помогут воплотить ваши идеи в реальность и достичь новых высот.
           </h3>
           <div className="row">
             <div className="col-4">
@@ -138,11 +165,19 @@ const HomePage = () => {
                   className="our-service-img"
                 />
               </div>
-
               <p className="our-service-title">Дизайн</p>
               <p className="our-service-text">
                 Создаем современные и <br /> функциональные веб-дизайны
               </p>
+              <div className="card-svg-box">
+                <Image
+                  src="/card/arrow-up-light.svg"
+                  width={30}
+                  height={30}
+                  alt="arrow-up-light"
+                  className="card-svg"
+                />
+              </div>
             </div>
             <div className="col-4">
               <div className="img-box">
@@ -158,6 +193,15 @@ const HomePage = () => {
               <p className="our-service-text">
                 Превращаем идеи в уникальные и <br /> функциональные веб-сайты
               </p>
+              <div className="card-svg-box">
+                <Image
+                  src="/card/arrow-up-light.svg"
+                  width={30}
+                  height={30}
+                  alt="arrow-up-light"
+                  className="card-svg"
+                />
+              </div>
             </div>
             <div className="col-4">
               <div className="img-box">
@@ -169,11 +213,19 @@ const HomePage = () => {
                   className="our-service-img"
                 />
               </div>
-
               <p className="our-service-title">Поддержка</p>
               <p className="our-service-text">
                 Дизайн-поддержка и развитие <br /> проектов после запуска
               </p>
+              <div className="card-svg-box">
+                <Image
+                  src="/card/arrow-up-light.svg"
+                  width={30}
+                  height={30}
+                  alt="arrow-up-light"
+                  className="card-svg"
+                />
+              </div>
             </div>
           </div>
           <Link href="/service" className="our-service-btn" as="service">
@@ -187,8 +239,8 @@ const HomePage = () => {
             <div className="our-projects-text">
               <h2>Наши проекты </h2>
               <h3>
-                Ознакомьтесь с некоторыми из наших работ, в которых <br /> мы
-                добились отличных результатов.
+                Ознакомьтесь с некоторыми из наших работ, в которых мы добились
+                отличных результатов.
               </h3>
             </div>
             <Link href="/portfolio" className="our-projects-btn" as="portfolio">
@@ -202,6 +254,19 @@ const HomePage = () => {
             </Link>
           </div>
           <Card />
+          <Link
+            href="/portfolio"
+            className="our-projects-btn-min"
+            as="portfolio"
+          >
+            <p> Больше проектов</p>
+            <Image
+              src="/home/arrow-up-light.svg"
+              width={27}
+              height={27}
+              alt="arrow-up-light"
+            />
+          </Link>
         </div>
       </section>
       <section className="reviews">

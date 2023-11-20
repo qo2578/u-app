@@ -9,13 +9,18 @@
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
+  width: 650px;
 }
-
+.service-box-card .box-text {
+  display: flex;
+  flex-direction: row;
+  gap: 118px;
+}
 .service-svg-box {
   border: 1px solid white;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 .service-request {
   padding: 140px 0 200px;
@@ -32,7 +37,7 @@
   fill: black;
 }
 .service-box-card .service-svg {
-  margin: 4px 0 0 4px;
+  margin: 15px 0 0 15px;
   transition: transform 0.3s ease;
 }
 
@@ -77,4 +82,77 @@
   width: 1080px;
   height: 1px;
   background: var(--gray-1, #808080);
+}
+
+@media only screen and (max-width: 767px) {
+  .service {
+    padding-left: 16px;
+  }
+  .service-title {
+    padding: 86px 0 16px;
+    font-size: 24px;
+    width: 343px;
+  }
+  .service-box-card .box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .service-svg-box {
+    width: 35px;
+    height: 35px;
+  }
+  .service-svg {
+    width: 20px;
+    height: 20px;
+  }
+  .service-request {
+    padding: 100px 0 100px;
+  }
+  .service-box-card {
+    position: relative;
+    display: flex;
+    gap: 1px;
+    padding: 20px 0 30px;
+  }
+
+  .service-box-card .service-svg {
+    margin: 6.5px 0 0 7px;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+  }
+
+  .service-box-card:hover .service-svg {
+    transform: rotate(0deg);
+    fill: black;
+    filter: invert(100%);
+  }
+  .service-box-card p {
+    font-size: 16px;
+    width: 343px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+  }
+  .service-box-title {
+    font-size: 20px;
+    padding-bottom: 0px;
+    width: 71px;
+  }
+  .service-box-title::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--Primary, #e42652);
+    transition: width 0.3s ease;
+  }
+
+  .service-box-card:hover .service-box-title::before {
+    width: 70px;
+  }
+  .service-box-line {
+    width: 387px;
+  }
 }

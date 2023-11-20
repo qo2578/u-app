@@ -123,3 +123,90 @@
   border: 1px solid #ffffff;
   background-color: #ffffff;
 }
+
+@media only screen and (max-width: 767px) {
+  .reviews-container {
+    padding: 30px;
+  }
+
+  .reviews-card {
+    display: flex;
+    width: 343px;
+    height: 411px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .reviews-card h3 {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 25px 0 0 15px;
+    width: 283px;
+    height: 210px;
+  }
+
+  .reviews-card-box {
+    bottom: 30px;
+    padding: 0 30px 0;
+  }
+
+  .reviews-card-box img {
+    margin-left: 90px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .reviews-card-name {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .reviews-card-text {
+    font-size: 12px;
+    padding-left: 40px;
+  }
+
+  /* Стили для слайдера */
+
+  .slick-prev,
+  .slick-next {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #ffffff;
+  }
+
+  .slick-dots li button:before {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #ffffff;
+  }
+
+  /* Кастомные кнопки для перемотки слайдов */
+  .custom-prev-btn {
+    left: 25%;
+    transform: translateX(-50%);
+  }
+  .custom-next-btn {
+    right: 25%;
+    transform: translateX(50%);
+  }
+  .custom-btn-svg {
+    margin-top: 5px;
+  }
+
+  .custom-prev-btn,
+  .custom-next-btn {
+    bottom: 100px;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+  }
+}

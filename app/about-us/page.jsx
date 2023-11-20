@@ -13,8 +13,7 @@ const AboutUsPage = () => {
       <section className="about">
         <div className="about-box">
           <h3 className="about-box-title">
-            <span>Создание веб-приложений</span> - наша <br /> страсть, ваш
-            успех
+            <span>Создание веб-приложений</span> - наша страсть, ваш успех
           </h3>
           <div className="about-box-text">
             <p>
@@ -36,6 +35,18 @@ const AboutUsPage = () => {
           alt="group"
           className="about-img"
         />
+        <div className="about-box-text-min">
+          <p>
+            Мы - команда дизайнеров и инженеров. Предоставляем инновационные и
+            выдающиеся цифровые решения, способствующие росту и успеху наших
+            клиентов.
+          </p>
+          <p>
+            Наша цель - не просто разрабатывать веб-приложения, а создавать
+            уникальные цифровые продукты, которые изменяют мир и делают его
+            более доступным и эффективным для всех.
+          </p>
+        </div>
       </section>
       <section className="us">
         <div className="us-box">
@@ -63,8 +74,10 @@ const AboutUsPage = () => {
         </h3>
         <div className="principles-box">
           <div className="principles-card">
-            <h3>01</h3>
-            <h4>Качество во всем</h4>
+            <div className="box-text">
+              <h3>01</h3>
+              <h4>Качество во всем</h4>
+            </div>
             <p>
               Высочайшее качество в каждом аспекте нашей работы: начиная с
               дизайна и программирования, заканчивая тестированием и поддержкой.{" "}
@@ -72,8 +85,10 @@ const AboutUsPage = () => {
           </div>
           <div className="principles-line"></div>
           <div className="principles-card">
-            <h3>02</h3>
-            <h4>Инновации и креативность</h4>
+            <div className="box-text">
+              <h3>02</h3>
+              <h4>Инновации и креативность</h4>
+            </div>
             <p>
               Мы исследуем новые идеи и решения, чтобы убедиться, что каждое
               веб-приложение, созданное нами, уникально и актуально.{" "}
@@ -81,8 +96,10 @@ const AboutUsPage = () => {
           </div>
           <div className="principles-line"></div>
           <div className="principles-card">
-            <h3>03</h3>
-            <h4>Долгосрочное партнерство</h4>
+            <div className="box-text">
+              <h3>03</h3>
+              <h4>Долгосрочное партнерство</h4>
+            </div>
             <p>
               Мы слушаем потребности клиентов, консультируем их, и всегда готовы
               поддержать весь жизненный цикл их веб-приложений. Мы не просто
@@ -92,135 +109,135 @@ const AboutUsPage = () => {
         </div>
       </section>
       <section className="about-team">
-        <h3>
-          Для достижения ваших целей <br />
-          мы собрали команду профессионалов
-        </h3>
+        <h3>Для достижения ваших целей мы собрали команду профессионалов</h3>
         <TeamSlider key="team-slider" />
       </section>
       <section className="offer">
         <h3 className="offer-title">Что мы предлагаем? </h3>
-        <div className="offer-box">
-          <div className="offer-block">
-            <Image
-              src="/about-us/svg-img1.svg"
-              width={100}
-              height={100}
-              alt="group"
-              className="about-img"
-            />
-            <p>Исследование и аналитика</p>
+        <div className="offer-boxes">
+          <div className="offer-box">
+            <div className="offer-block">
+              <Image
+                src="/about-us/svg-img1.svg"
+                width={100}
+                height={100}
+                alt="group"
+                className="offer-img"
+              />
+              <p>Исследование и аналитика</p>
+            </div>
+            <div className="offer-block">
+              <Image
+                src="/about-us/svg-img2.svg"
+                width={100}
+                height={100}
+                alt="group"
+                className="offer-img"
+              />
+              <p>Проектирование и тестирование сайтов</p>
+            </div>
+            <div className="offer-block">
+              <Image
+                src="/about-us/svg-img3.svg"
+                width={100}
+                height={100}
+                alt="group"
+                className="offer-img"
+              />
+              <p>Адаптивный дизайн под любые устройства</p>
+            </div>
           </div>
-          <div className="offer-block">
-            <Image
-              src="/about-us/svg-img2.svg"
-              width={100}
-              height={100}
-              alt="group"
-              className="about-img"
-            />
-            <p>Проектирование и тестирование сайтов</p>
-          </div>
-          <div className="offer-block">
-            <Image
-              src="/about-us/svg-img3.svg"
-              width={100}
-              height={100}
-              alt="group"
-              className="about-img"
-            />
-            <p>Адаптивный дизайн под любые устройства</p>
-          </div>
-        </div>
-        <div className="offer-box">
-          <div className="offer-block">
-            <Image
-              src="/about-us/svg-img4.svg"
-              width={100}
-              height={100}
-              alt="group"
-              className="about-img"
-            />
-            <p>Дальнейшая разработка и надзор</p>
-          </div>
-          <div className="offer-block">
-            <Image
-              src="/about-us/svg-img5.svg"
-              width={100}
-              height={100}
-              alt="group"
-              className="about-img"
-            />
-            <p>Поддержка и развитие проектов после запуска</p>
-          </div>
-          <div className="offer-block">
-            <Image
-              src="/about-us/svg-img6.svg"
-              width={100}
-              height={100}
-              alt="group"
-              className="about-img"
-            />
-            <p>Обеспечение SEO - оптимизации</p>
+          <div className="offer-box">
+            <div className="offer-block">
+              <Image
+                src="/about-us/svg-img4.svg"
+                width={100}
+                height={100}
+                alt="group"
+                className="offer-img"
+              />
+              <p>Дальнейшая разработка и надзор</p>
+            </div>
+            <div className="offer-block">
+              <Image
+                src="/about-us/svg-img5.svg"
+                width={100}
+                height={100}
+                alt="group"
+                className="offer-img"
+              />
+              <p>Поддержка и развитие проектов после запуска</p>
+            </div>
+            <div className="offer-block">
+              <Image
+                src="/about-us/svg-img6.svg"
+                width={100}
+                height={100}
+                alt="group"
+                className="offer-img"
+              />
+              <p>Обеспечение SEO - оптимизации</p>
+            </div>
           </div>
         </div>
       </section>
       <section className="story">
-        <h3>
-          Развитие в каждой главе: история <br /> нашей компании
-        </h3>
-        <div className="story-box">
-          <div className="story-block">
-            <div className="story-line"></div>
-            <h4>2016 - Веб-студия U!</h4>
-            <p>
-              2016 - год основания компании. Наш путь был испытан трудностями,
-              но результативен: мы сформировали бренд, предоставляющий
-              выдающиеся программные услуги
-            </p>
+        <h3>Развитие в каждой главе: история нашей компании</h3>
+        <div className="story-boxes">
+          <div className="story-box">
+            <div className="story-block">
+              <div className="story-line"></div>
+              <h4>2016 - Веб-студия U!</h4>
+              <p>
+                2016 - год основания компании. Наш путь был испытан трудностями,
+                но результативен: мы сформировали бренд, предоставляющий
+                выдающиеся программные услуги
+              </p>
+            </div>
+            <div className="story-block">
+              <div className="story-line"></div>
+              <h4>2017 - Путешествие началось</h4>
+              <p>
+                К нам присоединились первые клиенты, которые положили начало
+                нашему пути. Многие из них остаются с нами и по сей день.
+              </p>
+            </div>
+            <div className="story-block">
+              <div className="story-line"></div>
+              <h4>2018 - От микро до малого</h4>
+              <p>
+                Наша команда U-SkillZ выросла до 7 талантливых веб-дизайнеров и
+                разработчиков, превратив нас из микрокомпании в небольшую
+                фирму..
+              </p>
+            </div>
           </div>
-          <div className="story-block">
-            <div className="story-line"></div>
-            <h4>2017 - Путешествие началось</h4>
-            <p>
-              К нам присоединились первые клиенты, которые положили начало
-              нашему пути. Многие из них остаются с нами и по сей день.
-            </p>
-          </div>
-          <div className="story-block">
-            <div className="story-line"></div>
-            <h4>2018 - От микро до малого</h4>
-            <p>
-              Наша команда U-SkillZ выросла до 7 талантливых веб-дизайнеров и
-              разработчиков, превратив нас из микрокомпании в небольшую фирму..
-            </p>
-          </div>
-        </div>
-        <div className="story-box">
-          <div className="story-block">
-            <div className="story-line"></div>
-            <h4>2019 - Взрывной и продуктивный</h4>
-            <p>
-              Полны энергии и вдохновения! Новые веб-проекты и надежные
-              партнеры!{" "}
-            </p>
-          </div>
-          <div className="story-block">
-            <div className="story-line"></div>
-            <h4>2020 - Пандемия и локдаун</h4>
-            <p>
-              Были моменты, когда нам было действительно сложно, но именно 2020
-              год сделал нас еще сильнее и лучше!
-            </p>
-          </div>
-          <div className="story-block">
-            <div className="story-line"></div>
-            <h4>2021 - Релокейт</h4>
-            <p>
-              В середине этого года мs открыли новый офис и теперь мы можем с
-              уверенностью сказать, что успешно освоили новый рынок и
-              интегрировались в работу.{" "}
-            </p>
+          <div className="story-box">
+            <div className="story-block">
+              <div className="story-line"></div>
+              <h4>2019 - Взрывной и продуктивный</h4>
+              <p>
+                Полны энергии и вдохновения! Новые веб-проекты и надежные
+                партнеры!
+              </p>
+            </div>
+            <div className="story-block">
+              <div className="story-line"></div>
+              <h4>2020 - Пандемия и локдаун</h4>
+              <p>
+                Были моменты, когда нам было действительно сложно, но именно
+                2020 год сделал нас еще сильнее и лучше!
+              </p>
+            </div>
+            <div className="story-block">
+              <div className="story-line"></div>
+              <h4>2021 - Релокейт</h4>
+              <p>
+                В середине этого года мs открыли новый офис и теперь мы можем с
+                уверенностью сказать, что успешно освоили новый рынок и
+                интегрировались в работу.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -231,9 +248,11 @@ const AboutUsPage = () => {
         </div>
         <div className="simple-box-slider">
           <div className="say-ask-box">
+            <h4>О нас говорят</h4>
             <TheySaySlider key="they-say-slider" />
           </div>
           <div className="they-ask-box">
+            <h3>У нас спрашивают</h3>
             <SimpleSlider />
             <h2 className="they-ask-title">
               Будем рады ответить на любые ваши вопросы <br /> по телефону: +996

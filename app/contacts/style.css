@@ -31,6 +31,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 26px */
+  width: 480px;
 }
 .contacts-min-text {
   color: var(--gray-1, #808080);
@@ -39,6 +40,7 @@
   font-weight: 400;
   line-height: 130%; /* 16.9px */
   padding-top: 12px;
+  width: 480px;
 }
 .contacts-min-text span {
   color: var(--Primary, #e42652);
@@ -137,4 +139,88 @@ input:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 23.4px */
+}
+
+@media only screen and (max-width: 767px) {
+  .contacts {
+    background: url("/contacts/contacts-bg-min.png") center/cover no-repeat;
+    height: 900px;
+  }
+  .contacts-block {
+    padding: 86px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts-card {
+    padding: 30px 20px;
+    border: 1px solid #ababab79;
+    width: 343px;
+    height: 460px;
+  }
+  .contacts-title {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+  .contacts-text {
+    font-size: 16px;
+    width: 303px;
+  }
+  .contacts-min-text {
+    font-size: 13px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    width: 303px;
+  }
+  .contacts-form {
+    font-size: 16px;
+    width: 343px;
+    margin-bottom: 40px;
+  }
+  .contacts-input {
+    gap: 12px;
+    width: 303px;
+    height: 34px;
+    margin-top: 22px;
+    font-size: 16px;
+  }
+  .contacts-input::placeholder {
+    font-size: 16px;
+  }
+  .contacts-btn {
+    display: flex;
+    width: 303px;
+    height: 45px;
+    padding: 18px 32px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  .contacts-box h3 {
+    font-size: 24px;
+    padding-bottom: 24px;
+  }
+  .contacts-box {
+    padding: 100px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .contacts-top-group {
+    display: flex;
+    gap: 18px;
+  }
+  .contacts-link img {
+    margin-right: 0;
+    width: 18px;
+    height: 18px;
+  }
+  .contacts-link {
+    font-size: 14px;
+    gap: 8px;
+  }
+  .contacts-top-group img {
+    width: 18px;
+    height: 18px;
+  }
 }

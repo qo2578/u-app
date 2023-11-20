@@ -2,11 +2,15 @@
   border-top: 1px solid var(--black-2, #252525);
   background: var(--black-1, #121212);
 }
-.row {
+.footer-row {
   display: flex;
   justify-content: space-between;
 }
-.col-4 {
+.footer-col-4 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-box-none {
   display: flex;
   flex-direction: column;
 }
@@ -26,15 +30,17 @@
   font-weight: 400;
   line-height: 130%; /* 23.4px */
 }
-.col-4 img {
+.footer-col-4 img {
   margin-right: 10px;
 }
-.footer-link, .social-link, .contacts-link {
-    color: var(--White, #fff);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
+.footer-link,
+.social-link,
+.contacts-link {
+  color: var(--White, #fff);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
 }
 .footer-link {
   margin-bottom: 20px;
@@ -59,4 +65,69 @@
 }
 .bottom-box-text {
   margin: 0 77px 0 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    border-top: 1px solid var(--black-2, #252525);
+    background: var(--black-1, #121212);
+  }
+  .footer-row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .footer-col-4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-box-none {
+    display: none;
+  }
+  .footer-box {
+    padding: 24px 0px;
+  }
+  .bottom-box {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-title {
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+  .footer-col-4 img {
+    margin-right: 10px;
+  }
+  .footer-link,
+  .social-link,
+  .contacts-link {
+    font-size: 14px;
+  }
+  .footer-link {
+    margin-bottom: 20px;
+  }
+  .social-link {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .contacts-link {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .bottom-box p {
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+  }
+  .bottom-box img {
+    margin-bottom: 24px;
+  }
+  .bottom-box-text {
+    margin: 0 0 12px 0;
+    width: 343px;
+  }
 }

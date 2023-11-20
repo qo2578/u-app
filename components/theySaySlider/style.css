@@ -89,13 +89,11 @@
 .slick-list {
   max-height: 391px;
 }
-
 .slick-slide {
   width: 508px;
   height: 391px;
   margin: 0 13px;
 }
-
 .they-say-container .custom-prev-btn,
 .they-say-container .custom-next-btn {
   position: absolute;
@@ -111,30 +109,15 @@
   transition: color 0.3s, background-color 0.3s;
 }
 .they-say-container .custom-prev-btn {
-  right: 22%;
+  right: calc(11% + 50px);
   transform: translateX(-50%);
 }
 .they-say-container .custom-next-btn {
-  right: 17%;
+  right: calc(11% + 10px);
   transform: translateX(50%);
 }
 
 /* Стили для кнопок */
-/* .custom-prev-btn-they-say,
-.custom-next-btn-they-say {
-  position: absolute;
-  top: 15px;
-  font-size: 24px;
-  color: #ffffff;
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
-} */
-
 .custom-prev-btn-they-say {
   right: 22%;
   transform: translateX(-50%);
@@ -151,21 +134,129 @@
   filter: invert(100%);
   fill: rgb(255, 255, 255);
 }
-/* .they-say-container .custom-prev-btn .custom-btn-svg,
-.they-say-container .custom-next-btn .custom-btn-svg {
-  display: block;
-  width: 20px;
-  height: 20px;
+
+@media only screen and (max-width: 767px) {
+  .they-say-container {
+    padding-bottom: 10px;
+    max-height: 332px;
+    width: 343px;
+  }
+
+  .they-say-card {
+    display: flex;
+    height: 332px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    background: var(--black-2, #252525);
+  }
+
+  .they-say-card h3 {
+    padding: 22px 15px 0 14px;
+    font-size: 16px;
+    width: 300px;
+  }
+
+  .they-say-card-box {
+    display: flex;
+    margin-top: 24px;
+    position: relative;
+  }
+  .they-say-card-box .custom-prev-btn .custom-btn-svg,
+  .they-say-card-box .custom-next-btn .custom-btn-svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .they-say-card-box .they-say-card-box-img {
+    margin: 24px 0 2px 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .they-say-box-text {
+    padding: 26px 0 0 12px;
+  }
+
+  .they-say-name {
+    font-size: 16px;
+  }
+
+  .they-say-text {
+    font-size: 12px;
+  }
+
+  /* Стили для слайдера */
+  .slick-prev,
+  .slick-next {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #ffffff;
+  }
+
+  .slick-dots li button:before {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #ffffff;
+  }
+  .slick-track {
+    display: flex;
+    margin: 0 -10px;
+  }
+  .slick-list {
+    max-height: 391px;
+  }
+  .slick-slide {
+    width: 343px;
+    height: 332px;
+    margin: 0 13px;
+  }
+  .they-say-container .custom-prev-btn,
+  .they-say-container .custom-next-btn {
+    position: absolute;
+    top: 29px;
+    font-size: 24px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  .they-say-container .custom-prev-btn {
+    right: calc(11% + 25px);
+    transform: translateX(-50%);
+  }
+  .they-say-container .custom-next-btn {
+    right: calc(11% + 15px);
+    transform: translateX(50%);
+    transform: translateX(50%);
+  }
+
+  /* Стили для кнопок */
+  .custom-prev-btn-they-say {
+    right: calc(11% + 25px);
+    transform: translateX(-50%);
+  }
+
+  .custom-next-btn-they-say {
+    right: calc(11% + 15px);
+    transform: translateX(50%);
+  }
+
+  .custom-prev-btn-they-say:hover .custom-btn-svg,
+  .custom-next-btn-they-say:hover .custom-btn-svg {
+    color: #000000;
+    filter: invert(100%);
+    fill: rgb(255, 255, 255);
+  }
 }
-.custom-prev-btn:hover {
-  right: 15%;
-}
-.custom-next-btn:hover {
-  right: 10%;
-}
-.custom-prev-btn:hover,
-.custom-next-btn:hover {
-  color: #000000;
-  border: 1px solid #ffffff;
-  background-color: #ffffff;
-} */

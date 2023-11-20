@@ -7,69 +7,63 @@ import Reviews from "../../components/reviews/Reviews";
 import { Request } from "../../components/request/Request";
 
 const DesignPage = () => {
+  const DesignSteps = [
+    {
+      number: "01",
+      title: "Аналитика",
+      description:
+        "Выявляем цели и критерии успеха продукта. Собираем данные, проводим глубинные интервью, анализируем полученную информацию и формулируем выводы о продукте, пользователях и их поведении.",
+    },
+    {
+      number: "02",
+      title: "Проектирование",
+      description:
+        "Генерируем идеи, создаем прототипы и тестируем их в UX‑лаборатории для определения наиболее эффективных решений.",
+    },
+    {
+      number: "03",
+      title: "Дизайн",
+      description:
+        "Создаем уникальную дизайн‑концепцию. Дарим эмоции и наполняем эстетикой уже проверенные решения.",
+    },
+    {
+      number: "04",
+      title: "Создание дизайн - системы",
+      description:
+        "Выстраиваем дизайн‑систему, благодаря которой обеспечивается единообразие интерфейса и минимальные затраты времени на разработку. Это помогает сократить время от начала разработки идеи до ее конечной реализации, облегчает поддержку и развитие продукта в долгосрочной перспективе.",
+    },
+    {
+      number: "05",
+      title: "Тестирование",
+      description:
+        "Проверяем принятые решения на пользователях, выявляем и устраняем недочеты до момента разработки.",
+    },
+    {
+      number: "06",
+      title: "Поддержка проекта",
+      description:
+        "Чтобы поддерживать свое превосходство перед конкурентами, продукт должен постоянно развиваться. С этой целью мы его планомерно улучшаем: совершенствуем и расширяем уже существующие функции.",
+    },
+  ];
   return (
     <div className="design">
       <h2 className="design-title">Дизайн</h2>
       <section className="design-box">
         <div className="container">
-          <div className="design-box-card">
-            <h3>01</h3>
-            <h4 className="design-box-title">Аналитика</h4>
-            <p>
-              Выявляем цели и критерии успеха продукта. Собираем данные,
-              проводим глубинные интервью, анализируем полученную информацию и
-              формулируем выводы о продукте, пользователях и их поведении.
-            </p>
-          </div>
-          <div className="design-box-line"></div>
-          <div className="design-box-card">
-            <h3>02</h3>
-            <h4 className="design-box-title">Проектирование</h4>
-            <p>
-              Генерируем идеи, создаем прототипы и тестируем их в UX‑лаборатории
-              для определения наиболее эффективных решений.
-            </p>
-          </div>
-          <div className="design-box-line"></div>
-          <div className="design-box-card">
-            <h3>03</h3>
-            <h4 className="design-box-title">Дизайн</h4>
-            <p>
-              Создаем уникальную дизайн‑концепцию. Дарим эмоции и наполняем
-              эстетикой уже проверенные решения.
-            </p>
-          </div>
-          <div className="design-box-line"></div>
-          <div className="design-box-card">
-            <h3>04</h3>
-            <h4 className="design-box-title">Создание дизайн-системы</h4>
-            <p>
-              Выстраиваем дизайн‑систему, благодаря которой обеспечивается
-              единообразие интерфейса и минимальные затраты времени на
-              разработку. Это помогает сократить время от начала разработки идеи
-              до ее конечной реализации, облегчает поддержку и развитие продукта
-              в долгосрочной перспективе.
-            </p>
-          </div>
-          <div className="design-box-line"></div>
-          <div className="design-box-card">
-            <h3>05</h3>
-            <h4 className="design-box-title">Тестирование</h4>
-            <p>
-              Проверяем принятые решения на пользователях, выявляем и устраняем
-              недочеты до момента разработки.
-            </p>
-          </div>
-          <div className="design-box-line"></div>
-          <div className="design-box-card">
-            <h3>06</h3>
-            <h4 className="design-box-title">Поддержка проекта</h4>
-            <p>
-              Чтобы поддерживать свое превосходство перед конкурентами, продукт
-              должен постоянно развиваться. С этой целью мы его планомерно
-              улучшаем: совершенствуем и расширяем уже существующие функции.
-            </p>
-          </div>
+          {DesignSteps.map((step, index) => (
+            <React.Fragment key={index}>
+              <div className="design-box-card">
+                <div className="box-text">
+                  <h3>{step.number}</h3>
+                  <h4 className="design-box-title">{step.title}</h4>
+                </div>
+                <p>{step.description}</p>
+              </div>
+              {index < DesignSteps.length - 1 && (
+                <div className="design-box-line"></div>
+              )}
+            </React.Fragment>
+          ))}
         </div>
       </section>
       <section className="tools">
@@ -101,7 +95,7 @@ const DesignPage = () => {
       <section className="experience">
         <div className="container">
           <div className="experience-box">
-            <h2 className="experience-text">Наши проекты </h2>
+            <h2 className="experience-text">Наш опыт</h2>
             <Link href="/portfolio" className="experience-btn" as="portfolio">
               Больше проектов
               <Image
@@ -113,6 +107,19 @@ const DesignPage = () => {
             </Link>
           </div>
           <Card />
+          <Link
+            href="/portfolio"
+            className="our-projects-btn-min"
+            as="portfolio"
+          >
+            <p> Больше проектов</p>
+            <Image
+              src="/home/arrow-up-light.svg"
+              width={27}
+              height={27}
+              alt="arrow-up-light"
+            />
+          </Link>
         </div>
       </section>
       <section className="design-reviews">
