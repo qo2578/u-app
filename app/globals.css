@@ -9,6 +9,7 @@
 html {
   color: var(--White);
   font-family: "SF Pro Display", sans-serif !important;
+  user-select: none;
 }
 /* body{
   background: var(--black-1, #121212);
@@ -30,8 +31,8 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding-top: 200px;
-  margin: 0 0 40px 180px;
+  width: 843px;
+  padding: 200px 0 40px 180px;
 }
 .home-title span {
   color: var(--Primary, #e42652);
@@ -42,13 +43,14 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 26px */
-  margin: 0 0 40px 180px;
+  width: 660px;
+  padding: 0 0 40px 180px;
 }
 .home-box {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 180px;
+  padding-left: 180px;
 }
 .home-box-right {
   margin-left: 32px;
@@ -72,7 +74,7 @@ a {
 
 /*---------------------------------------------------------------- Section company */
 .company {
-  margin: 170px 0 0 0;
+  padding: 170px 0 0 0;
 }
 .company-title {
   color: var(--White, #fff);
@@ -86,12 +88,12 @@ a {
 .company-box {
   display: flex;
   gap: 16px;
-  margin-left: 180px;
+  padding-left: 180px;
 }
 
 /*---------------------------------------------------------------- Section team */
 .team {
-  margin: 200px 0 0 180px;
+  padding: 200px 0 0 180px;
 }
 .team .container {
   display: flex;
@@ -105,7 +107,8 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  width: 423px;
 }
 .team h3 {
   color: var(--White, #fff);
@@ -113,7 +116,14 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 26px */
-  margin-bottom: 32px;
+  padding-bottom: 32px;
+  width: 539px;
+}
+.team-box-right-text {
+  display: none;
+}
+.team-box-row-min {
+  display: none;
 }
 .team-btn {
   display: inline-flex;
@@ -141,6 +151,7 @@ a {
 .team-box-row .col-6 {
   width: 217px;
 }
+
 .row-number {
   color: var(--White, #fff);
   font-size: 42px;
@@ -158,7 +169,7 @@ a {
 
 /*---------------------------------------------------------------- Section our-service */
 .our-service {
-  margin-top: 150px;
+  padding-top: 150px;
 }
 .our-service h2 {
   color: var(--White, #fff);
@@ -167,7 +178,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 .our-service h3 {
   color: var(--White, #fff);
@@ -176,7 +187,9 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 26px */
-  margin-bottom: 60px;
+  width: 800px;
+  margin: 0 auto 0;
+  padding-bottom: 60px;
 }
 .our-service-title {
   color: var(--White, #fff);
@@ -184,8 +197,9 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 31.2px */
-  margin-top: 30px;
-  margin-bottom: 12px;
+  padding: 30px 0 12px;
+  /* margin-top: 30px;
+  margin-bottom: 12px; */
 }
 .our-service-text {
   color: var(--White, #fff);
@@ -197,7 +211,7 @@ a {
 .our-service .row {
   display: inline-flex;
   gap: 30px;
-  margin-left: 180px;
+  padding-left: 180px;
 }
 .img-box {
   width: 60px;
@@ -206,6 +220,9 @@ a {
   border-radius: 50%;
   padding-top: 15.5px;
   padding-left: 15px;
+}
+.col-4 .card-svg-box {
+  display: none;
 }
 .col-4:hover .img-box {
   background: #ffffff;
@@ -253,7 +270,7 @@ a {
 
 /*---------------------------------------------------------------- Section our-projects */
 .our-projects {
-  margin: 200px 0 0 180px;
+  padding: 200px 0 0 180px;
 }
 .our-projects-box {
   display: inline-flex;
@@ -276,6 +293,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 26px */
+  width: 515px;
 }
 .our-projects-btn {
   align-items: center;
@@ -290,6 +308,9 @@ a {
   display: inline-flex;
   justify-content: center;
   transition: background 0.3s ease, color 0.3s ease;
+}
+.our-projects-btn-min {
+  display: none;
 }
 .our-projects-btn:hover {
   color: black;
@@ -338,4 +359,301 @@ a {
 .request {
   margin: 200px 0 0 180px;
   padding-bottom: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+  .home-page {
+    background: url("/home/home-bg-min.png") center/cover no-repeat;
+  }
+  /*---------------------------------------------------------------- Section home */
+
+  .home-title {
+    font-size: 36px;
+    width: 348px;
+    padding: 86px 0 24px 16px;
+  }
+  .home-text {
+    font-size: 16px;
+    padding: 0 0 24px 16px;
+    width: 343px;
+  }
+  .home-box {
+    display: block;
+    padding-left: 16px;
+  }
+  .home-box-right {
+    margin-top: 16px;
+    margin-left: 0;
+  }
+  .home-btn {
+    padding: 12px 32px;
+  }
+  .home-box-right p {
+    font-size: 14px;
+  }
+  /*---------------------------------------------------------------- Section company */
+  .company {
+    padding: 85px 0 0 0;
+    scroll-behavior: smooth;
+  }
+  .company-title {
+    font-size: 24px;
+    margin: 0 auto 24px;
+  }
+  .company-box {
+    gap: 0px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-left: 0px;
+    margin-left: -10px;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .company-box img {
+    width: 108px;
+    height: 40px;
+  }
+  .company-box::-webkit-scrollbar {
+    display: none;
+  }
+
+  .company-box {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  /*---------------------------------------------------------------- Section team */
+  .team {
+    padding: 100px 0 0 16px;
+  }
+  .team .container {
+    display: flex;
+  }
+  /* .team-box-right h3,  .team-box-right a {
+    display: block;
+    margin-left: 0;
+  } */
+  .team h2 {
+    font-size: 24px;
+    padding-bottom: 12px;
+    width: 343px;
+  }
+  .team h3 {
+    font-size: 16px;
+    width: 343px;
+    padding-bottom: 24px;
+  }
+  .team-box-right-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team-box-left {
+    display: block;
+  }
+  .team-box-left img {
+    width: 380px;
+  }
+  .team-btn {
+    display: inline-flex;
+    font-size: 16px;
+    padding: 12px 32px;
+    height: 45px;
+  }
+  .team-btn:hover {
+    color: black;
+    background: var(--Primary, #ffffff);
+  }
+  .team-box-right h3,
+  .team-box-right a {
+    display: none;
+  }
+  .team-box-row {
+    display: none;
+    gap: 0;
+    margin-top: 100px;
+  }
+  .team-box-row-min {
+    padding-top: 30px;
+  }
+  .team-box-row-min .row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 32px;
+  }
+  .team-box-row-min .col-6 {
+    width: 162.5px;
+  }
+  .team-box-row-min .row-number {
+    text-align: center;
+    font-size: 30px;
+  }
+  .team-box-row-min .row-text {
+    text-align: center;
+    font-size: 16px;
+  }
+  .team-box-right {
+    display: none;
+  }
+
+  /*---------------------------------------------------------------- Section our-service */
+  .our-service {
+    padding-top: 68px;
+  }
+  .our-service h2 {
+    font-size: 24px;
+    padding-bottom: 12px;
+  }
+  .our-service h3 {
+    font-size: 16px;
+    width: 343px;
+    padding-bottom: 0;
+    margin: 0 auto 40px;
+  }
+  .our-service-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .our-service-text {
+    text-align: center;
+    font-size: 16px;
+  }
+  .our-service .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 0;
+  }
+  .img-box {
+    padding-top: 15.5px;
+    padding-left: 11px;
+    margin-left: 120px;
+  }
+  .col-4 .card-svg-box {
+    display: flex;
+    margin: 30px auto 0;
+  }
+  .card-svg-box .card-svg {
+    margin: 3px;
+  }
+  .col-4:hover .img-box {
+    background: #ffffff;
+  }
+
+  .col-4:hover .our-service-img {
+    filter: invert(100%);
+  }
+
+  .our-service-btn {
+    display: flex;
+    font-size: 16px;
+    width: 207px;
+    padding: 12px 62px;
+    margin: 20px auto 0 auto;
+  }
+
+  /*---------------------------------------------------------------- Section our-projects */
+  .our-projects {
+    padding: 100px 0 0 0;
+  }
+  .our-projects-box {
+    display: inline-flex;
+    margin-bottom: 40px;
+  }
+  .our-projects-text {
+    margin-right: 0px;
+    margin-left: 33px;
+  }
+  .our-projects h2 {
+    color: var(--White, #fff);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 46.8px */
+    margin-bottom: 16px;
+  }
+  .our-projects h3 {
+    color: var(--White, #fff);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    width: 345px;
+  }
+  .our-projects-btn {
+    display: none;
+  }
+  .our-projects-btn-min {
+    align-items: center;
+    color: var(--White, #fff);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 25px;
+    line-height: 130%; /* 26px */
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid var(--White, #fff);
+    margin: 40px 20% 0;
+    width: 220px;
+  }
+  .our-projects-btn-min p {
+    width: 132px;
+  }
+  .our-projects-btn-min:hover {
+    color: black;
+    background: var(--Primary, #ffffff);
+  }
+  .our-projects-btn-min img {
+    vertical-align: middle;
+    filter: invert(0%);
+    margin-left: 12px;
+    transition: filter 0.3s ease;
+  }
+
+  .our-projects-btn-min:hover img {
+    filter: invert(100%);
+  }
+
+  /*---------------------------------------------------------------- Section reviews */
+  .reviews {
+    margin: 100px 16px 100px;
+  }
+  .reviews-box {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    align-items: baseline;
+  }
+  .reviews-title {
+    font-size: 24px;
+    margin-left: 22px;
+    margin-right: 0px;
+  }
+  .reviews-text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  /*---------------------------------------------------------------- Section request */
+  .request {
+    margin: 100px 0 0 0;
+    padding-bottom: 100px;
+  }
+}
+
+/*---------------------------------------------------------------- Section company */
+
+/*---------------------------------------------------------------- Section team */
+
+/*---------------------------------------------------------------- Section our-service */
+
+/*---------------------------------------------------------------- Section our-projects */
+
+/*---------------------------------------------------------------- Section reviews */
+
+/*---------------------------------------------------------------- Section request */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 }

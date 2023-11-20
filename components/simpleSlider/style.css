@@ -11,32 +11,30 @@
   width: 512px;
   height: 125px;
 }
-
+.slick-dots {
+  position: static;
+  text-align: start;
+  margin-left: 4px;
+}
+.slick-dots li button::before {
+  content: "";
+  background: #666;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+.slick-dots li.slick-active button::before {
+  background: #e42652;
+  width: 32px;
+}
 .dot-container-simple {
   display: flex;
   justify-content: center;
   margin-top: 32px;
-}
-
-.dot-simple {
-  width: 10px;
-
-  height: 10px;
-  border-radius: 10px;
-  background: var(--black-2, #252525);
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-.slick-dots li.slick-active button::before {
-  color: var(--Primary, #e42652);
-}
-/* .slick-dots li button::before {
-  margin-top: 20px;
-} */
-.dot-simple.active {
-  width: 32px;
-  background: var(--Primary, #e42652);
 }
 .slider-container-simple-text h2 {
   color: var(--White, #fff);
@@ -57,35 +55,54 @@
   height: 72px;
 }
 
-/* Стили для кнопок */
-.custom-prev-btn-simple,
-.custom-next-btn-simple {
-  position: absolute;
-  top: 15px;
-  font-size: 24px;
-  color: #ffffff;
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
-}
 
-.custom-prev-btn-simple {
-  right: 22%;
-  transform: translateX(-50%);
-}
+@media only screen and (max-width: 767px) {
+  .slider-container-simple {
+    width: 512px;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider-container-simple .slick-slide {
+    height: 120px;
+  }
 
-.custom-next-btn-simple {
-  right: 17%;
-  transform: translateX(50%);
-}
+  .slide-simple {
+    width: 512px;
+    height: 120px;
+  }
+  .slick-dots {
+    position: static;
+    text-align: start;
+    margin-left: 4px;
+  }
+  .slick-dots li button::before {
+    content: "";
+    background: #666;
+    border-radius: 15px;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+  }
+  .slick-dots li.slick-active button::before {
+    background: #e42652;
+    width: 32px;
+  }
+  .dot-container-simple {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+  }
+  .slider-container-simple-text h2 {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+  .slider-container-simple-text p {
+    font-size: 16px;
+    width: 343px;
+    height: 72px;
+  }
 
-.custom-prev-btn-simple:hover .custom-btn-svg,
-.custom-next-btn-simple:hover .custom-btn-svg {
-  color: #000000;
-  filter: invert(100%);
-  fill: rgb(255, 255, 255);
 }

@@ -8,7 +8,7 @@ const SimpleSlider = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const [activeDot, setActiveDot] = useState(0);
     const [activeDotTimer, setActiveDotTimer] = useState(null);
-    const dotTimerDuration = 3000; // Время в миллисекундах, в течение которого точка остается активной
+    const dotTimerDuration = 3000;
   
     const settings = {
       dots: true,
@@ -17,7 +17,7 @@ const SimpleSlider = () => {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000, // Интервал для смены слайдов
+      autoplaySpeed: 2000,
       beforeChange: (current, next) => {
         setActiveSlide(next);
         resetDotTimer();

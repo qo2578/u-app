@@ -3,7 +3,7 @@ import "./style.css";
 import Card from "../../components/card/Card";
 import { Request } from "../../components/request/Request";
 
-const page = () => {
+const PortfolioPage = () => {
   return (
     <div className="portfolio">
       <h2 className="portfolio-title">Проекты</h2>
@@ -17,4 +17,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default PortfolioPage;

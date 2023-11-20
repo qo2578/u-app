@@ -19,6 +19,11 @@
   gap: 118px;
   padding: 40px 0 60px;
 }
+.design-box-card .box-text {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
 .design-box-card h3 {
   color: #fff;
   font-size: 20px;
@@ -26,6 +31,7 @@
   font-weight: 400;
   line-height: 130%; /* 26px */
   width: 25px;
+  margin-right: 24px;
 }
 .design-box-card h4 {
   color: #fff;
@@ -121,4 +127,103 @@
 /*---------------------------------------------------------------- Section reviews */
 .design-request {
   padding-bottom: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+  .design {
+    background: var(--black-1, #121212);
+    padding-left: 0;
+  }
+  .design-title {
+    margin-left: 33px;
+    padding-top: 86px;
+    font-size: 36px;
+  }
+  .design-box {
+    padding: 40px 0 100px;
+    margin: 0 auto;
+    max-width: 767px;
+  }
+  .design-box-card .box-text {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    /* height: 26px;
+    display: flex;
+    flex-direction: row; */
+  }
+  .design-box-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 343px;
+    padding: 20px 0 30px;
+  }
+  .design-box-card h3 {
+    font-size: 16px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  .design-box-card h4 {
+    font-size: 20px;
+    max-width: 266px;
+  }
+  .design-box-card p {
+    font-size: 16px;
+    width: 343px;
+  }
+  .design-box-line {
+    width: 343px;
+    margin: 0 auto;
+  }
+
+  /*---------------------------------------------------------------- Section tools */
+  .tools {
+    margin-left: 33px;
+    padding-bottom: 100px;
+  }
+  .tools-title {
+    font-size: 24px;
+    width: 317px;
+    padding-bottom: 30px;
+  }
+  .tools-svg {
+    margin-right: 30px;
+  }
+  .tools img{
+    width: 40px;
+    height: 40px;
+  }
+
+  /*---------------------------------------------------------------- Section our-projects */
+  .experience {
+    padding-bottom: 50px;
+  }
+  .experience-box {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  .experience-text {
+    font-size: 24px;
+    margin-right: 0px;
+    max-width: 100%; 
+    text-align: center;
+  }
+  .experience-btn {
+    display: none;
+  }
+
+  /*---------------------------------------------------------------- Section reviews */
+
+  .design-reviews {
+    margin: 0 0px 16px 0;
+  }
+
+  /*---------------------------------------------------------------- Section reviews */
+  .design-request {
+    padding-bottom: 100px;
+  }
 }

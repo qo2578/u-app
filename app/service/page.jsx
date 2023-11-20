@@ -5,7 +5,7 @@ import Image from "next/image";
 import "./style.css";
 import { Request } from "./../../components/request/Request";
 
-const page = () => {
+const ServicePage = () => {
   const [currentPage, setCurrentPage] = useState(null);
 
   const handleLinkClick = (page) => {
@@ -14,17 +14,19 @@ const page = () => {
   return (
     <div className="service">
       <h3 className="service-title">
-        Предоставляем весь перечень услуг, <br /> необходимых для достижения{" "}
-        <br /> максимальной конверсии
+        Предоставляем весь перечень услуг, необходимых для достижения
+        максимальной конверсии
       </h3>
       <div className="service-box">
         <div className="service-box-card">
-          <h4 className="service-box-title">Дизайн</h4>
+<div className="box-text">
+<h4 className="service-box-title">Дизайн</h4>
           <p>
             Создаем визуально привлекательные и функциональные веб-дизайны,
             направленные на достижение максимальной пользовательской
             удовлетворенности.
           </p>
+</div>
           <Link
             href="/design"
             className="service-link"
@@ -43,11 +45,13 @@ const page = () => {
         </div>
         <div className="service-box-line"></div>
         <div className="service-box-card">
+          <div className="box-text">
           <h4 className="service-box-title">Разработка</h4>
           <p>
             Разработка Превращаем идеи в функциональные и уникальные веб-сайты,
             помогая вам взаимодействовать с вашей аудиторией в цифровой среде.
           </p>
+          </div>
           <Link
             href="/development"
             className="service-link"
@@ -66,11 +70,13 @@ const page = () => {
         </div>
         <div className="service-box-line"></div>
         <div className="service-box-card">
+          <div className="box-text">
           <h4 className="service-box-title">Поддержка</h4>
           <p>
             Следим за актуальностью, безопасностью и эффективностью вашего
             веб-сайта, обеспечивая его бесперебойную работу.
           </p>
+          </div>
           <Link
             href="/support"
             className="service-link"
@@ -89,11 +95,13 @@ const page = () => {
         </div>
         <div className="service-box-line"></div>
         <div className="service-box-card">
+          <div className="box-text">
           <h4 className="service-box-title">SEO - оптимизация</h4>
           <p>
             Улучшаем видимость вашего веб-сайта в поисковых система, способствуя
             увеличению онлайн-трафика и росту вашего бизнеса.
           </p>
+          </div>
           <Link
             href="/seo"
             className="service-link"
@@ -119,4 +127,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ServicePage;

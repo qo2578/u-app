@@ -55,6 +55,7 @@ const TheySaySlider = () => {
                 width={60}
                 height={60}
                 alt="group3"
+                className="they-say-card-box-img"
               />
               <div className="they-say-box-text">
                 <p className="they-say-name">{review.name}</p>
