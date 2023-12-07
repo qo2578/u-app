@@ -38,13 +38,13 @@ const SimpleSlider = () => {
   
     useEffect(() => {
       resetDotTimer();
-  
+    
       return () => {
         if (activeDotTimer) {
           clearInterval(activeDotTimer);
         }
       };
-    }, [activeSlide]);
+    }, [activeSlide, activeDotTimer, resetDotTimer]);
   
 
   return (
