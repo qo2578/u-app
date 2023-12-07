@@ -159,7 +159,6 @@ const ContactsPage = React.memo(() => {
                         height={24}
                         alt="telegram"
                       ></Image>
-                      {/* Telegram */}
                     </a>
                     <a
                       href="https://www.instagram.com/" //Нужно добавить корректную ссылку
@@ -174,7 +173,6 @@ const ContactsPage = React.memo(() => {
                         height={24}
                         alt="instagram"
                       />
-                      {/* Instagram */}
                     </a>
                     <a
                       href="https://www.youtube.com/" //Нужно добавить корректную ссылку
@@ -189,7 +187,6 @@ const ContactsPage = React.memo(() => {
                         height={24}
                         alt="youtube"
                       />
-                      {/* YouTube */}
                     </a>
                     <a
                       href="" //Нужно добавить корректную ссылку
@@ -204,7 +201,6 @@ const ContactsPage = React.memo(() => {
                         height={24}
                         alt="whatsapp"
                       ></Image>
-                      {/* WhatsApp */}
                     </a>
                   </div>
                 </div>
