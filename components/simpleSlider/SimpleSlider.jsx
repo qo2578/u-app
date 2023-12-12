@@ -25,26 +25,26 @@ const SimpleSlider = () => {
   };
 
   const resetDotTimer = useCallback(() => {
-    if (activeDotTimer) {
-      clearInterval(activeDotTimer);
-    }
-
     const timer = setInterval(() => {
       setActiveDot((prevDot) => (prevDot === 2 ? 0 : prevDot + 1));
     }, dotTimerDuration);
 
     setActiveDotTimer(timer);
-  }, [activeDotTimer, setActiveDot]);
+  }, [setActiveDot]);
+
+  const clearTimer = useCallback(() => {
+    if (activeDotTimer) {
+      clearInterval(activeDotTimer);
+    }
+  }, [activeDotTimer]);
 
   useEffect(() => {
     resetDotTimer();
 
     return () => {
-      if (activeDotTimer) {
-        clearInterval(activeDotTimer);
-      }
+      clearTimer();
     };
-  }, [activeSlide, activeDotTimer, resetDotTimer]);
+  }, [resetDotTimer, clearTimer]);
 
   return (
     <div className="slider-container-simple">
