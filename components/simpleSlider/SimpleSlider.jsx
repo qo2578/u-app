@@ -5,47 +5,46 @@ import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 
 const SimpleSlider = () => {
-    const [activeSlide, setActiveSlide] = useState(0);
-    const [activeDot, setActiveDot] = useState(0);
-    const [activeDotTimer, setActiveDotTimer] = useState(null);
-    const dotTimerDuration = 3000;
-  
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 400,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      beforeChange: (current, next) => {
-        setActiveSlide(next);
-        resetDotTimer();
-      },
-    };
-  
-    const resetDotTimer = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeDot, setActiveDot] = useState(0);
+  const [activeDotTimer, setActiveDotTimer] = useState(null);
+  const dotTimerDuration = 3000;
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    beforeChange: (current, next) => {
+      setActiveSlide(next);
+      resetDotTimer();
+    },
+  };
+
+  const resetDotTimer = useCallback(() => {
+    if (activeDotTimer) {
+      clearInterval(activeDotTimer);
+    }
+
+    const timer = setInterval(() => {
+      setActiveDot((prevDot) => (prevDot === 2 ? 0 : prevDot + 1));
+    }, dotTimerDuration);
+
+    setActiveDotTimer(timer);
+  }, [activeDotTimer, setActiveDot]);
+
+  useEffect(() => {
+    resetDotTimer();
+
+    return () => {
       if (activeDotTimer) {
         clearInterval(activeDotTimer);
       }
-  
-      const timer = setInterval(() => {
-        setActiveDot((prevDot) => (prevDot === 2 ? 0 : prevDot + 1));
-      }, dotTimerDuration);
-  
-      setActiveDotTimer(timer);
     };
-  
-    useEffect(() => {
-      resetDotTimer();
-    
-      return () => {
-        if (activeDotTimer) {
-          clearInterval(activeDotTimer);
-        }
-      };
-    }, [activeSlide, activeDotTimer, resetDotTimer]);
-  
+  }, [activeSlide, activeDotTimer, resetDotTimer]);
 
   return (
     <div className="slider-container-simple">
