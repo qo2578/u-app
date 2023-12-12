@@ -245,4 +245,5 @@ const ContactsPage = () => {
   );
 };
 
+ContactsPage.displayName = 'ContactsPage';
 export default ContactsPage;
