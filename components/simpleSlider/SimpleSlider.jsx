@@ -4,11 +4,30 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 
+const dotTimerDuration = 3000;
+
+
 const SimpleSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [activeDot, setActiveDot] = useState(0);
-  const [activeDotTimer, setActiveDotTimer] = useState(null);
-  const dotTimerDuration = 3000;
+
+  const resetDotTimer = useCallback(() => {
+    const timer = setInterval(() => {
+      setActiveDot((prevDot) => (prevDot === 2 ? 0 : prevDot + 1));
+    }, dotTimerDuration);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  useEffect(() => {
+    const timerCleanup = resetDotTimer();
+
+    return () => {
+      timerCleanup();
+    };
+  }, [resetDotTimer]);
 
   const settings = {
     dots: true,
@@ -24,27 +43,6 @@ const SimpleSlider = () => {
     },
   };
 
-  const resetDotTimer = useCallback(() => {
-    const timer = setInterval(() => {
-      setActiveDot((prevDot) => (prevDot === 2 ? 0 : prevDot + 1));
-    }, dotTimerDuration);
-
-    setActiveDotTimer(timer);
-  }, [setActiveDot]);
-
-  const clearTimer = useCallback(() => {
-    if (activeDotTimer) {
-      clearInterval(activeDotTimer);
-    }
-  }, [activeDotTimer]);
-
-  useEffect(() => {
-    resetDotTimer();
-
-    return () => {
-      clearTimer();
-    };
-  }, [resetDotTimer, clearTimer]);
 
   return (
     <div className="slider-container-simple">
