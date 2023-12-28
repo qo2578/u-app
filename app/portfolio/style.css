@@ -1,5 +1,6 @@
 .portfolio {
   background: var(--black-1, #121212);
+  overflow: hidden;
 }
 .portfolio-title {
   padding-top: 160px;
@@ -14,11 +15,8 @@
   justify-content: center;
   display: flex;
 }
-.portfolio-card {
-  padding-left: 180px;
-}
 .portfolio-request {
-  padding: 200px 0 200px 180px;
+  padding: 200px 0 200px 0;
 }
 
 @media only screen and (max-width: 767px) {

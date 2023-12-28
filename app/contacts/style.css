@@ -1,10 +1,12 @@
 .contacts {
   background: url("/contacts/contacts-bg.png") center/cover no-repeat;
   height: 900px;
+  overflow: hidden;
 }
 .contacts-block {
-  padding: 160px 0 0 180px;
+  padding: 160px 0 0 0px;
   display: flex;
+  justify-content: space-evenly;
 }
 .contacts-card {
   display: inline-flex;
@@ -124,7 +126,7 @@ input:focus {
   padding-bottom: 32px;
 }
 .contacts-box {
-  padding: 40px 0 0 200px;
+  padding: 40px 0 0 0px;
 }
 .contacts-top-group {
   display: flex;
