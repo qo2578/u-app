@@ -2,11 +2,11 @@
 
 .about-us {
   background: var(--black-1, #121212);
-  padding-left: 180px;
 }
 .about {
   padding-top: 160px;
   display: flex;
+  justify-content: space-evenly;
 }
 .about-box-title {
   color: var(--White, #fff);
@@ -40,6 +40,9 @@
 
 .us {
   padding: 120px 0 200px;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .us-box {
   display: flex;
@@ -55,7 +58,7 @@
   border-radius: 10px;
   border: 1px solid rgba(224, 224, 224, 0);
   background: rgba(255, 255, 255, 0.05);
-  max-width: 254px;
+  width: 254px;
 }
 .us-number {
   color: var(--White, #fff);
@@ -73,13 +76,18 @@
 }
 
 /*---------------------------------------------------------------- Section principles */
+.principles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .principles-title {
   color: var(--White, #fff);
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
-  padding-left: 200px;
+  padding-left: 0px;
 }
 .principles-box {
   padding: 20px 0 130px;
@@ -140,16 +148,20 @@
   font-weight: 600;
   line-height: 130%; /* 46.8px */
   width: 678px;
+  padding-left: 60px;
 }
 /*---------------------------------------------------------------- Section offer */
-
+.offer{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .offer-title {
   color: var(--White, #fff);
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
-  padding-left: 350px;
 }
 .offer-box {
   padding: 47px 0 60px;
@@ -184,6 +196,12 @@
   font-weight: 600;
   line-height: 130%; /* 46.8px */
   width: 678px;
+  padding-left: 60px;
+}
+.story-boxes{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .story-box {
   padding-top: 30px;
@@ -272,6 +290,7 @@
 }
 .simple-box-slider {
   display: flex;
+  justify-content: center;
 }
 .they-ask-title {
   color: var(--White, #fff);
@@ -479,6 +498,7 @@
   }
   .story-boxes {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 20px;
@@ -575,4 +595,7 @@
     padding-left: 0px;
     padding-top: 14px;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
 }

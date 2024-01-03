@@ -10,6 +10,7 @@
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .header a {
@@ -18,10 +19,6 @@
 .header-logo {
   width: auto;
   height: auto;
-  margin-left: 180px;
-}
-.nav {
-  margin: 0 171px 0 271.54px;
 }
 .header-btn {
   display: inline-flex;
@@ -31,8 +28,8 @@
   gap: 10px;
   border-radius: 8px;
   border: 1px solid var(--White, #fff);
-  margin-right: 180px;
   transition: background 0.3s ease, color 0.3s ease;
+  min-width: 178px;
 }
 .header-btn:hover {
   color: black;
@@ -91,16 +88,19 @@ nav a {
   .burger-menu {
     position: fixed;
     top: 0;
-    right: 0;
     background: var(--black-1, #121212);
     display: inline-flex;
-    height: 930px;
+    height: 100vh;
     width: 293px;
     padding: 10px 10px 30px 10px;
     flex-direction: column;
     align-items: flex-end;
     gap: 24px;
     flex-shrink: 0;
+    right: -100%; /* Начальная позиция за пределами видимости */
+    transition: right 0.5s ease; /* Анимация для свойства right */
+    overflow: hidden;
+    transition: height 0.5s ease, opacity 0.5s ease;
   }
   .burger-menu-open .header-logo {
     position: absolute;
@@ -114,6 +114,7 @@ nav a {
     display: inline-flex;
     justify-content: flex-start;
     text-align: left;
+    right: 0; /* Открывается при нажатии кнопки */
   }
   .burger-menu-box {
     display: flex;
@@ -126,10 +127,11 @@ nav a {
   .burger-menu-block {
     display: flex;
     flex-direction: column;
-
     position: absolute;
     bottom: 50px;
+    left: 45px;
   }
+  
   .burger-menu-block .burger-menu-text- p {
     margin-bottom: 4px;
   }
@@ -152,5 +154,43 @@ nav a {
     gap: 10px;
     cursor: pointer;
     border-radius: 10px;
+    transition: 0.5s ease;
   }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .burger-menu-opening {
+    animation: slideInRight 0.5s ease forwards;
+  }
+
+  @keyframes slideInRight {
+    from {
+      right: -100%; /* Начальная позиция за пределами видимости */
+    }
+    to {
+      right: 0; /* Конечная позиция, когда бургер-меню открыто */
+    }
+  }
+
+  .burger-menu-closing {
+    animation: slideOutRight 0.5s ease forwards;
+    height: 0;
+    opacity: 0;
+  }
+  @keyframes slideOutRight {
+    from {
+      right: 0; /* Текущая позиция, когда бургер-меню открыто */
+    }
+    to {
+      right: -100%; /* Конечная позиция за пределами видимости */
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 }

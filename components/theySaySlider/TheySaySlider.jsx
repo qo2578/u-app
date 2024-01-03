@@ -62,7 +62,7 @@ const TheySaySlider = () => {
                 <p className="they-say-text">{review.text2}</p>
               </div>
               <button
-                className="custom-prev-btn"
+                className="custom-prev-btn-they-say"
                 onClick={() => {
                   if (sliderRef && sliderRef.current) {
                     sliderRef.current.slickPrev();
@@ -78,7 +78,7 @@ const TheySaySlider = () => {
                 />
               </button>
               <button
-                className="custom-next-btn"
+                className="custom-next-btn-they-say"
                 onClick={() => {
                   if (sliderRef && sliderRef.current) {
                     sliderRef.current.slickNext();

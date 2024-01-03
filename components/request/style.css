@@ -4,11 +4,13 @@
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 62.4px */
-  margin-right: 530px;
+  margin-right: 0px;
 }
 .request-container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  align-content: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -22,5 +24,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .request-title {
+    font-size: 32px;
+    margin-right: 230px;
+  }
+  .request-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -36,12 +36,13 @@
   position: relative;
 }
 
-.they-say-card-box img {
+.they-say-card-box .they-say-card-box-img {
   margin: 0 0 2px 30px;
 }
 
 .they-say-box-text {
   padding: 10px 0 0 12px;
+  width: 205px;
 }
 
 .they-say-name {
@@ -94,8 +95,8 @@
   height: 391px;
   margin: 0 13px;
 }
-.they-say-container .custom-prev-btn,
-.they-say-container .custom-next-btn {
+/* .they-say-container .custom-prev-btn-they-say,
+.they-say-container .custom-next-btn-they-say {
   position: absolute;
   top: 15px;
   font-size: 24px;
@@ -107,33 +108,41 @@
   height: 20px;
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
-}
-.they-say-container .custom-prev-btn {
-  right: calc(11% + 50px);
-  transform: translateX(-50%);
-}
-.they-say-container .custom-next-btn {
-  right: calc(11% + 10px);
-  transform: translateX(50%);
-}
+} */
+
 
 /* Стили для кнопок */
 .custom-prev-btn-they-say {
-  right: 22%;
-  transform: translateX(-50%);
+  transform: translateX(150%);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  transition: background 0.5s ease;
 }
 
 .custom-next-btn-they-say {
-  right: 17%;
-  transform: translateX(50%);
+  transform: translateX(160%);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  transition: background 0.5s ease;
+}
+.custom-next-btn-they-say:hover, .custom-prev-btn-they-say:hover{
+  background: rgb(255, 255, 255);
+}
+.custom-btn-svg{
+  margin-left: 9px;
+}
+.custom-prev-btn-they-say .custom-btn-svg,
+.custom-next-btn-they-say .custom-btn-svg {
+  fill: rgb(255, 255, 255);
+
 }
 
-.custom-prev-btn-they-say:hover .custom-btn-svg,
-.custom-next-btn-they-say:hover .custom-btn-svg {
-  color: #000000;
-  filter: invert(100%);
-  fill: rgb(255, 255, 255);
-}
 
 @media only screen and (max-width: 767px) {
   .they-say-container {
