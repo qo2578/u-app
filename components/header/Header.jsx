@@ -45,7 +45,10 @@ const Header = () => {
         </Link>
         <Link href="/contacts">Контакты</Link>
       </div>
-      <div className="burger-menu-btn" onClick={toggleBurgerMenu}>
+      <Link href="/contacts" className="header-btn">
+        Связаться с нами
+      </Link>
+      <div  className={`burger-menu-btn ${burgerMenuOpen ? "open" : ""}`} onClick={toggleBurgerMenu}>
         <Image
           src="/header/nav-icon-open.svg"
           width={32}
@@ -54,52 +57,53 @@ const Header = () => {
           className="burger-menu-icon"
         ></Image>
       </div>
-      <div
-        className={`burger-menu ${burgerMenuOpen ? "visible" : "hidden"} ${
-          burgerMenuOpen ? "burger-menu-closing" : ""
+      <div    className={`burger-menu ${burgerMenuOpen ? "visible" : ""} ${
+          burgerMenuOpen ? "burger-menu-opening" : "burger-menu-closing"
         }`}
       >
-       <div   className={`burger-menu-b ${burgerMenuOpen ? "burger-menu-closing" : ""}`}>
-       <Image
-          src="/header/nav-icon-close.svg"
-          width={32}
-          height={32}
-          alt="nav-icon-close"
-          className="burger-menu-btn"
-          onClick={closeBurgerMenu}
-        ></Image>
-
-        <div className="burger-menu-box">
-          <Link href="/" as="" onClick={closeBurgerMenu}>
-            Главная
-          </Link>
-          <Link href="/service" as="service" onClick={closeBurgerMenu}>
-            Услуги
-          </Link>
-          <Link href="/portfolio" as="portfolio" onClick={closeBurgerMenu}>
-            Портфолио
-          </Link>
-          <Link href="/about-us" as="about-us" onClick={closeBurgerMenu}>
-            О нас
-          </Link>
-          <Link href="/contacts" onClick={closeBurgerMenu}>
-            Контакты
-          </Link>
-        </div>
-        <div className="burger-menu-block">
-          <Link
-            href="/contacts"
-            className="header-btn"
+        <div
+          className="burger-menu-b"
+        >
+          <Image
+            src="/header/nav-icon-close.svg"
+            width={32}
+            height={32}
+            alt="nav-icon-close"
+            className="burger-menu-btn"
             onClick={closeBurgerMenu}
-          >
-            Заполнить заявку
-          </Link>
-          <div className="burger-menu-text-">
-            <p> u.skillz.edu@gmail.com</p>
-            +996 554 201 506
+          ></Image>
+
+          <div className="burger-menu-box">
+            <Link href="/" as="" onClick={closeBurgerMenu}>
+              Главная
+            </Link>
+            <Link href="/service" as="service" onClick={closeBurgerMenu}>
+              Услуги
+            </Link>
+            <Link href="/portfolio" as="portfolio" onClick={closeBurgerMenu}>
+              Портфолио
+            </Link>
+            <Link href="/about-us" as="about-us" onClick={closeBurgerMenu}>
+              О нас
+            </Link>
+            <Link href="/contacts" onClick={closeBurgerMenu}>
+              Контакты
+            </Link>
+          </div>
+          <div className="burger-menu-block">
+            <Link
+              href="/contacts"
+              className="header-btn"
+              onClick={closeBurgerMenu}
+            >
+              Заполнить заявку
+            </Link>
+            <div className="burger-menu-text-">
+              <p> u.skillz.edu@gmail.com</p>
+              +996 554 201 506
+            </div>
           </div>
         </div>
-       </div>
       </div>
     </header>
   );
