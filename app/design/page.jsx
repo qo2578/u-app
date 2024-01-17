@@ -57,7 +57,9 @@ const DesignPage = () => {
                   <h3>{step.number}</h3>
                   <h4 className="design-box-title">{step.title}</h4>
                 </div>
+                <div className="design-box-descrip">
                 <p>{step.description}</p>
+                </div>
               </div>
               {index < DesignSteps.length - 1 && (
                 <div className="design-box-line"></div>

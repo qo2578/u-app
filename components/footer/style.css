@@ -1,6 +1,6 @@
 .footer {
   border-top: 1px solid var(--black-2, #252525);
-  background: var(--black-1, #121212);
+  background: var(--Black-3, #1A1A1A);
 }
 .footer-row {
   display: flex;
@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 .footer-box {
-  padding: 60px 180px;
+  padding: 4vw 7vw;
 }
 .bottom-box {
   display: flex;
@@ -23,58 +23,54 @@
   align-items: center;
 }
 .footer-title {
-  margin-bottom: 20px;
+  margin-bottom: 1vw;
   color: #808080;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1.4vw;
   font-weight: 400;
   line-height: 130%; /* 23.4px */
 }
 .footer-col-4 img {
-  margin-right: 10px;
+  margin-right: 0.7vw;
+  height: auto;
+  width: 1.5vw;
+}
+.bottom-box .header-logo {
+  width: 6vw;
+  height: auto;
 }
 .footer-link,
 .social-link,
-.contacts-link {
-  color: var(--White, #fff);
-  font-size: 18px;
-  font-style: normal;
+.footer-contacts-link {
+  font-size: 1.4vw;
   font-weight: 400;
-  line-height: 130%; /* 23.4px */
+  line-height: 130%;
 }
 .footer-link {
-  margin-bottom: 20px;
+  margin-bottom: 1.2vw;
 }
 .social-link {
-  margin-bottom: 15px;
+  margin-bottom: 1vw;
   display: flex;
   align-items: center;
 }
-.contacts-link {
-  margin-bottom: 14px;
+.footer-contacts-link {
+  margin-bottom: 1vw;
   display: flex;
   align-items: center;
 }
 .bottom-box p {
   color: #808080;
-  font-feature-settings: "clig" off, "liga" off;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1.3vw;
   font-weight: 400;
-  line-height: normal;
 }
 .bottom-box-text {
   margin: 0 77px 0 32px;
 }
 
 @media only screen and (max-width: 767px) {
-  .footer {
-    border-top: 1px solid var(--black-2, #252525);
-    background: var(--black-1, #121212);
-  }
   .footer-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
   }
   .footer-col-4 {
@@ -99,10 +95,15 @@
   }
   .footer-col-4 img {
     margin-right: 10px;
+    width: 13px;
+  }
+  .bottom-box .header-logo {
+    width: 65px;
+    height: auto;
   }
   .footer-link,
   .social-link,
-  .contacts-link {
+  .footer-contacts-link {
     font-size: 14px;
   }
   .footer-link {
@@ -113,7 +114,7 @@
     display: flex;
     align-items: center;
   }
-  .contacts-link {
+  .footer-contacts-link {
     margin-bottom: 16px;
     display: flex;
     align-items: center;

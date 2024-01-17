@@ -53,38 +53,38 @@ const Reviews = () => {
                 width={80}
                 height={80}
                 alt="group3"
+                className="reviews-card-box-prof"
               />
               <p className="reviews-card-name">{review.name}</p>
               <p className="reviews-card-text">{review.text2}</p>
+              <button
+                className="custom-prev-btn"
+                onClick={() => sliderRef.current.slickPrev()}
+              >
+                <Image
+                  src="/home/ep_arrow-up.svg"
+                  width={20}
+                  height={20}
+                  alt="ep_arrow-up"
+                  className="custom-btn-svg"
+                />
+              </button>
+              <button
+                className="custom-next-btn"
+                onClick={() => sliderRef.current.slickNext()}
+              >
+                <Image
+                  src="/home/ep_arrow-up2.svg"
+                  width={20}
+                  height={20}
+                  alt="ep_arrow-up"
+                  className="custom-btn-svg"
+                />
+              </button>
             </div>
           </div>
         ))}
       </Slider>
-
-      <button
-        className="custom-prev-btn"
-        onClick={() => sliderRef.current.slickPrev()}
-      >
-        <Image
-          src="/home/ep_arrow-up.svg"
-          width={20}
-          height={20}
-          alt="ep_arrow-up"
-          className="custom-btn-svg"
-        />
-      </button>
-      <button
-        className="custom-next-btn"
-        onClick={() => sliderRef.current.slickNext()}
-      >
-        <Image
-          src="/home/ep_arrow-up2.svg"
-          width={20}
-          height={20}
-          alt="ep_arrow-up"
-          className="custom-btn-svg"
-        />
-      </button>
     </div>
   );
 };

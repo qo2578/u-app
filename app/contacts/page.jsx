@@ -127,6 +127,7 @@ const ContactsPage = () => {
                       width={24}
                       height={24}
                       alt="email"
+                      className="contacts-link-img"
                     ></Image>
                     u.skillz.edu@gmail.com
                   </a>
@@ -142,6 +143,7 @@ const ContactsPage = () => {
                       width={24}
                       height={24}
                       alt="call"
+                      className="contacts-link-img"
                     ></Image>
                     +996 554 201 506
                   </a>
@@ -158,6 +160,7 @@ const ContactsPage = () => {
                         width={24}
                         height={24}
                         alt="telegram"
+                        className="contacts-link-img"
                       ></Image>
                     </a>
                     <a
@@ -172,6 +175,7 @@ const ContactsPage = () => {
                         width={24}
                         height={24}
                         alt="instagram"
+                        className="contacts-link-img"
                       />
                     </a>
                     <a
@@ -186,6 +190,7 @@ const ContactsPage = () => {
                         width={24}
                         height={24}
                         alt="youtube"
+                        className="contacts-link-img"
                       />
                     </a>
                     <a
@@ -200,6 +205,7 @@ const ContactsPage = () => {
                         width={24}
                         height={24}
                         alt="whatsapp"
+                        className="contacts-link-img"
                       ></Image>
                     </a>
                   </div>
@@ -214,6 +220,7 @@ const ContactsPage = () => {
                       width={24}
                       height={24}
                       alt="whatsapp"
+                      className="contacts-link-img"
                     ></Image>
                     ул. Безымянная 4/5
                   </div>
@@ -223,6 +230,7 @@ const ContactsPage = () => {
                       width={24}
                       height={24}
                       alt="whatsapp"
+                      className="contacts-link-img"
                     ></Image>
                     ул. Манаса 91/1
                   </div>
@@ -232,6 +240,7 @@ const ContactsPage = () => {
                       width={24}
                       height={24}
                       alt="whatsapp"
+                      className="contacts-link-img"
                     ></Image>
                     09:00 - 20:00
                   </div>

@@ -1,6 +1,7 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useCallback, useRef } from "react";
 import "./style.css";
+import "../design/style.css";
 import Image from "next/image";
 import Link from "next/link";
 import TeamSlider from "../../components/teamSlider/TeamSlider";
@@ -76,29 +77,29 @@ const AboutUsPage = () => {
           <div className="principles-card">
             <div className="box-text">
               <h3>01</h3>
-              <h4>Качество во всем</h4>
+              <h4 className="design-box-title">Качество во всем</h4>
             </div>
             <p>
               Высочайшее качество в каждом аспекте нашей работы: начиная с
               дизайна и программирования, заканчивая тестированием и поддержкой.{" "}
             </p>
           </div>
-          <div className="principles-line"></div>
+          <div className="design-box-line"></div>
           <div className="principles-card">
             <div className="box-text">
               <h3>02</h3>
-              <h4>Инновации и креативность</h4>
+              <h4 className="design-box-title">Инновации и креативность</h4>
             </div>
             <p>
               Мы исследуем новые идеи и решения, чтобы убедиться, что каждое
               веб-приложение, созданное нами, уникально и актуально.{" "}
             </p>
           </div>
-          <div className="principles-line"></div>
+          <div className="design-box-line"></div>
           <div className="principles-card">
             <div className="box-text">
               <h3>03</h3>
-              <h4>Долгосрочное партнерство</h4>
+              <h4 className="design-box-title">Долгосрочное партнерство</h4>
             </div>
             <p>
               Мы слушаем потребности клиентов, консультируем их, и всегда готовы

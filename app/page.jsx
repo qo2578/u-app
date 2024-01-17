@@ -90,28 +90,6 @@ const HomePage = () => {
               </Link>
             </div>
             <Image src="/home/team.svg" width={452} height={326} alt="team" />
-            <div className="team-box-row-min">
-              <div className="row">
-                <div class="col-6">
-                  <p className="row-number">7 лет</p>
-                  <p className="row-text">Опыта на рынке</p>
-                </div>
-                <div class="col-6">
-                  <p className="row-number">50+</p>
-                  <p className="row-text">Успешных проектов</p>
-                </div>
-              </div>
-              <div className="row">
-                <div class="col-6">
-                  <p className="row-number">50+</p>
-                  <p className="row-text">Счастливых клиентов</p>
-                </div>
-                <div class="col-6">
-                  <p className="row-number">10</p>
-                  <p className="row-text">Специалистов</p>
-                </div>
-              </div>
-            </div>
           </div>
           <div className="team-box-right">
             <h3>
@@ -123,22 +101,22 @@ const HomePage = () => {
               Подробнее о нас
             </Link>
             <div className="team-box-row">
-              <div className="row">
-                <div class="col-6">
+              <div className="team-block-row">
+                <div className="team-box-col">
                   <p className="row-number">7 лет</p>
                   <p className="row-text">Опыта на рынке</p>
                 </div>
-                <div class="col-6">
+                <div className="team-box-col">
                   <p className="row-number">50+</p>
                   <p className="row-text">Успешных проектов</p>
                 </div>
               </div>
-              <div className="row">
-                <div class="col-6">
+              <div className="team-block-row">
+                <div className="team-box-col">
                   <p className="row-number">10</p>
                   <p className="row-text">Опытных специалистов</p>
                 </div>
-                <div class="col-6">
+                <div className="team-box-col">
                   <p className="row-number">50+</p>
                   <p className="row-text">Счастливых клиентов</p>
                 </div>
@@ -149,13 +127,13 @@ const HomePage = () => {
       </section>
       <section className="our-service">
         <div className="container">
-          <h2>Наши услуги</h2>
+          <h2 className="company-title">Наши услуги</h2>
           <h3>
             Мы предлагаем Вам широкий спектр профессиональных услуг, которые
             помогут воплотить ваши идеи в реальность и достичь новых высот.
           </h3>
           <div className="row">
-            <div className="col-4">
+            <Link href="/design" className="col-4">
               <div className="img-box">
                 <Image
                   src="/home/our-service1.svg"
@@ -178,8 +156,8 @@ const HomePage = () => {
                   className="card-svg"
                 />
               </div>
-            </div>
-            <div className="col-4">
+            </Link>
+            <Link href="/development" className="col-4">
               <div className="img-box">
                 <Image
                   src="/home/our-service2.svg"
@@ -202,8 +180,8 @@ const HomePage = () => {
                   className="card-svg"
                 />
               </div>
-            </div>
-            <div className="col-4">
+            </Link>
+            <Link href="/seo" className="col-4">
               <div className="img-box">
                 <Image
                   src="/home/our-service3.svg"
@@ -226,7 +204,7 @@ const HomePage = () => {
                   className="card-svg"
                 />
               </div>
-            </div>
+            </Link>
           </div>
           <Link href="/service" className="our-service-btn" as="service">
             Все услуги

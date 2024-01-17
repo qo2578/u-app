@@ -19,102 +19,78 @@ const ServicePage = () => {
       </h3>
       <div className="service-box">
         <div className="service-box-card">
-<div className="box-text">
-<h4 className="service-box-title">Дизайн</h4>
-          <p>
-            Создаем визуально привлекательные и функциональные веб-дизайны,
-            направленные на достижение максимальной пользовательской
-            удовлетворенности.
-          </p>
-</div>
           <Link
             href="/design"
             className="service-link"
             onClick={() => handleLinkClick("design")}
           >
-            <div className="service-svg-box">
-              <Image
-                src="/card/arrow-up-light.svg"
-                width={30}
-                height={30}
-                alt="arrow-up-light"
-                className="service-svg"
-              />
+            <div className="box-text">
+              <h4 className="service-box-title">Дизайн</h4>
+              <p>
+                Создаем визуально привлекательные и функциональные веб-дизайны,
+                направленные на достижение максимальной пользовательской
+                удовлетворенности.
+              </p>
+              <div className="service-svg-box">
+                <Image
+                  src="/card/arrow-up-light.svg"
+                  width={30}
+                  height={30}
+                  alt="arrow-up-light"
+                  className="service-svg"
+                />
+              </div>
             </div>
           </Link>
         </div>
         <div className="service-box-line"></div>
         <div className="service-box-card">
-          <div className="box-text">
-          <h4 className="service-box-title">Разработка</h4>
-          <p>
-            Разработка Превращаем идеи в функциональные и уникальные веб-сайты,
-            помогая вам взаимодействовать с вашей аудиторией в цифровой среде.
-          </p>
-          </div>
           <Link
             href="/development"
             className="service-link"
             onClick={() => handleLinkClick("development")}
           >
-            <div className="service-svg-box">
-              <Image
-                src="/card/arrow-up-light.svg"
-                width={30}
-                height={30}
-                alt="arrow-up-light"
-                className="service-svg"
-              />
+            <div className="box-text">
+              <h4 className="service-box-title">Разработка</h4>
+              <p>
+                Разработка Превращаем идеи в функциональные и уникальные
+                веб-сайты, помогая вам взаимодействовать с вашей аудиторией в
+                цифровой среде.
+              </p>
+              <div className="service-svg-box">
+                <Image
+                  src="/card/arrow-up-light.svg"
+                  width={30}
+                  height={30}
+                  alt="arrow-up-light"
+                  className="service-svg"
+                />
+              </div>
             </div>
           </Link>
         </div>
         <div className="service-box-line"></div>
         <div className="service-box-card">
-          <div className="box-text">
-          <h4 className="service-box-title">Поддержка</h4>
-          <p>
-            Следим за актуальностью, безопасностью и эффективностью вашего
-            веб-сайта, обеспечивая его бесперебойную работу.
-          </p>
-          </div>
-          <Link
-            href="/support"
-            className="service-link"
-            onClick={() => handleLinkClick("support")}
-          >
-            <div className="service-svg-box">
-              <Image
-                src="/card/arrow-up-light.svg"
-                width={30}
-                height={30}
-                alt="arrow-up-light"
-                className="service-svg"
-              />
-            </div>
-          </Link>
-        </div>
-        <div className="service-box-line"></div>
-        <div className="service-box-card">
-          <div className="box-text">
-          <h4 className="service-box-title">SEO - оптимизация</h4>
-          <p>
-            Улучшаем видимость вашего веб-сайта в поисковых система, способствуя
-            увеличению онлайн-трафика и росту вашего бизнеса.
-          </p>
-          </div>
           <Link
             href="/seo"
             className="service-link"
             onClick={() => handleLinkClick("seo")}
           >
-            <div className="service-svg-box">
-              <Image
-                src="/card/arrow-up-light.svg"
-                width={30}
-                height={30}
-                alt="arrow-up-light"
-                className="service-svg"
-              />
+            <div className="box-text">
+              <h4 className="service-box-title">SEO - оптимизация</h4>
+              <p>
+                Улучшаем видимость вашего веб-сайта в поисковых система,
+                способствуя увеличению онлайн-трафика и росту вашего бизнеса.
+              </p>
+              <div className="service-svg-box">
+                <Image
+                  src="/card/arrow-up-light.svg"
+                  width={30}
+                  height={30}
+                  alt="arrow-up-light"
+                  className="service-svg"
+                />
+              </div>
             </div>
           </Link>
         </div>

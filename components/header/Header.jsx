@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header className={`header ${burgerMenuOpen ? "burger-menu-open" : ""}`}>
       {" "}
-      <Link href="/" as="/">
+      <Link href="/" as="/" >
         <Image
           src="/Logo.svg"
           width={68.457}
