@@ -1,9 +1,10 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import "./style.css";
 
 const Footer = () => {
+
   return (
     <footer className="footer">
       <div className="footer-box">
@@ -68,7 +69,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               as="document"
-              className="contacts-link"
+              className="footer-contacts-link"
             >
               <Image
                 src="/footer/call.svg"
@@ -83,7 +84,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               as="document"
-              className="contacts-link"
+              className="footer-contacts-link"
             >
               <Image
                 src="/footer/telegram.svg"
@@ -98,7 +99,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               as="document"
-              className="contacts-link"
+              className="footer-contacts-link"
             >
               <Image
                 src="/footer/whatsapp.svg"
@@ -113,7 +114,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               as="document"
-              className="contacts-link"
+              className="footer-contacts-link"
             >
               <Image
                 src="/footer/email.svg"
@@ -131,7 +132,7 @@ const Footer = () => {
             width={68.457}
             height={52}
             alt="logo"
-            style={{ width: "auto", height: "auto" }}
+            className="header-logo"
           ></Image>
           <p className="bottom-box-text">
             © 2023 | ОсОО «U!SkillZ» | Все права защищены. Копирование

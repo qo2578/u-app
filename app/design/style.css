@@ -1,23 +1,29 @@
 .design {
   background: var(--black-1, #121212);
-  padding-left: 180px;
+  overflow: hidden;
 }
 .design-title {
-  padding-top: 160px;
-  color: var(--White, #fff);
-  font-size: 72px;
-  font-style: normal;
+  padding: 16vw 0 0 5vw;
+  font-size: 5vw;
   font-weight: 700;
   line-height: 130%; /* 93.6px */
 }
 .design-box {
   padding: 84px 0 200px;
 }
+.design-box-descrip {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.design-box-descrip p {
+  width: 100%;
+}
 .design-box-card {
   position: relative;
   display: flex;
-  gap: 118px;
-  padding: 40px 0 60px;
+  padding: 3.4vw 0 5vw;
+  justify-content: space-around;
 }
 .design-box-card .box-text {
   display: flex;
@@ -25,92 +31,90 @@
   align-items: baseline;
 }
 .design-box-card h3 {
-  color: #fff;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 130%; /* 26px */
-  width: 25px;
-  margin-right: 24px;
+  width: 7vw;
 }
-.design-box-card h4 {
-  color: #fff;
-  font-size: 24px;
-  font-style: normal;
+.design-box-title {
+  font-size: 1.9vw;
   font-weight: 500;
   line-height: 130%; /* 31.2px */
-  width: 200px;
+  width: 22vw;
 }
 .design-box-card p {
-  color: #fff;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 130%; /* 26px */
-  width: 645px;
 }
 .design-box-line {
-  width: 1110px;
-  height: 1px;
+  height: 0.05vw;
+  width: calc(100vw - 150px);
+  margin: 0 auto;
   background: var(--gray-1, #808080);
 }
 
 /*---------------------------------------------------------------- Section tools */
 .tools {
-  padding-bottom: 200px;
+  padding-bottom: 10vw;
+  padding-left: 5vw;
 }
 .tools-title {
-  color: var(--White, #fff);
-  font-size: 36px;
-  font-style: normal;
+  font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
-  padding-bottom: 60px;
+  padding-bottom: 1.5em;
 }
 .tools-svg {
-  margin-right: 60px;
+  margin-right: 3vw;
+  width: 4vw;
+  height: auto;
 }
 
 /*---------------------------------------------------------------- Section our-projects */
 .experience {
-  padding-bottom: 200px;
+  padding-bottom: 15vw;
+}
+.experience .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .experience-box {
-  display: inline-flex;
-  align-items: center;
+  width: 100%;
+  display: flex;
   margin-bottom: 60px;
+  justify-content: space-between;
 }
 .experience-text {
-  color: var(--White, #fff);
-  font-size: 36px;
-  font-style: normal;
+  font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
-  margin-right: 630px;
+  margin-left: 5vw;
 }
 .experience-btn {
   align-items: center;
-  color: var(--White, #fff);
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.5vw;
   font-weight: 500;
   padding: 18px 32px;
   align-self: flex-start;
   line-height: 130%; /* 26px */
   border-radius: 10px;
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  margin-right: 3.7vw;
   transition: background 0.3s ease, color 0.3s ease;
 }
 .experience-btn:hover {
   color: black;
-  background: var(--Primary, #ffffff);
   border-radius: 10px;
 }
 .experience-btn img {
   vertical-align: middle;
   filter: invert(0%);
   margin-left: 12px;
+  width: 2vw;
+  height: auto;
   transition: filter 0.3s ease;
 }
 
@@ -121,12 +125,12 @@
 /*---------------------------------------------------------------- Section reviews */
 
 .design-reviews {
-  margin: 0 200px 180px 0;
+  margin: 0 20vw 18vw 0;
 }
 
 /*---------------------------------------------------------------- Section reviews */
 .design-request {
-  padding-bottom: 200px;
+  padding-bottom: 20vw;
 }
 
 @media only screen and (max-width: 767px) {
@@ -135,8 +139,7 @@
     padding-left: 0;
   }
   .design-title {
-    margin-left: 33px;
-    padding-top: 86px;
+    padding: 90px 0 0 20px;
     font-size: 36px;
   }
   .design-box {
@@ -148,17 +151,16 @@
     height: auto;
     flex-direction: row;
     align-items: center;
-    /* height: 26px;
-    display: flex;
-    flex-direction: row; */
   }
   .design-box-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 0 auto;
-    max-width: 343px;
-    padding: 20px 0 30px;
+    min-width: 343px;
+    padding: 20px 3vw 30px;
+  }
+  .design-box-descrip {
+    width: 100%;
   }
   .design-box-card h3 {
     font-size: 16px;
@@ -167,21 +169,20 @@
   }
   .design-box-card h4 {
     font-size: 20px;
-    max-width: 266px;
+    min-width: 266px;
   }
   .design-box-card p {
     font-size: 16px;
-    width: 343px;
+    min-width: 343px;
+    width: 100%;
   }
   .design-box-line {
     width: 343px;
-    margin: 0 auto;
   }
 
   /*---------------------------------------------------------------- Section tools */
   .tools {
-    margin-left: 33px;
-    padding-bottom: 100px;
+    padding-bottom: 10vw;
   }
   .tools-title {
     font-size: 24px;
@@ -191,7 +192,7 @@
   .tools-svg {
     margin-right: 30px;
   }
-  .tools img{
+  .tools img {
     width: 40px;
     height: 40px;
   }
@@ -200,17 +201,18 @@
   .experience {
     padding-bottom: 50px;
   }
-  .experience-box {
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-  }
+
   .experience-text {
     font-size: 24px;
     margin-right: 0px;
-    max-width: 100%; 
+    max-width: 100%;
     text-align: center;
+  }
+  .experience-box {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
   }
   .experience-btn {
     display: none;
@@ -224,6 +226,28 @@
 
   /*---------------------------------------------------------------- Section reviews */
   .design-request {
-    padding-bottom: 100px;
+    padding-bottom: 10vw;
+  }
+}
+@media only screen and (max-width: 997px) {
+  .design-box-line {
+    width: calc(100vw - 30px);
+    min-width: 340px;
+  }
+
+  .experience-text {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 998px) and (max-width: 1024px) {
+  .experience-box {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+  .experience-text {
+    margin-right: 0;
+    padding-left: 0;
   }
 }

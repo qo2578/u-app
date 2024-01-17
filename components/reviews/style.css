@@ -1,12 +1,12 @@
 .reviews-container {
-  padding: 20px;
+  padding: 40px;
   position: relative;
 }
-
 .reviews-card {
-  display: flex;
-  width: 1080px;
-  height: 554px;
+  display: flex !important;
+  width: 90% !important;
+  height: 42vw;
+  margin: 0 auto 0;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
@@ -15,51 +15,66 @@
   padding: 10px;
   background: var(--black-2, #252525);
 }
-
-.reviews-card h3 {
-  color: var(--White, #fff);
-  text-align: center;
+.reviews-card .custom-prev-btn img,
+.reviews-card .custom-next-btn img {
+  width: 1.5vw;
+  height: auto;
+}
+.reviews-card .custom-prev-btn,
+.reviews-card .custom-next-btn {
+  position: absolute;
+  bottom: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 24px;
-  font-style: normal;
+  color: #ffffff;
+  background-color: var(--Primary, #e42652);
+  border: 1px solid #e42652;
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+.reviews-card h3 {
+  color: #f1efef;
+  text-align: center;
+  font-size: 1.8vw;
   font-weight: 500;
   line-height: 130%; /* 31.2px */
-  padding: 100px 100px 0;
-  width: 1050px;
+  padding: 7.3vw 8.5vw 0;
 }
 
 .reviews-card-box {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
-  bottom: 100px;
-  padding: 0 400px 0;
+  bottom: 7vw;
+  padding: 0 30vw 0;
 }
 
-.reviews-card-box img {
+.reviews-card-box-prof {
   border-radius: 50%;
-  margin-left: 80px;
+  width: 6vw;
+  height: auto;
 }
 
 .reviews-card-name {
-  color: var(--White, #fff);
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1.3vw;
   font-weight: 600;
   line-height: 130%; /* 23.4px */
   margin-top: 16px;
-  padding-left: 38px;
 }
 
 .reviews-card-text {
-  color: var(--White, #fff);
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-size: 14px;
-  font-style: normal;
+  color: #b7b7b7;
+  font-size: 1.1vw;
   font-weight: 400;
   line-height: 130%; /* 18.2px */
-  padding-left: 40px;
 }
 
 /* Стили для слайдера */
@@ -85,40 +100,24 @@
 }
 
 /* Кастомные кнопки для перемотки слайдов */
-.custom-prev-btn {
+.reviews-card .custom-prev-btn {
   left: 25%;
   transform: translateX(-50%);
 }
-.custom-next-btn {
+.reviews-card .custom-next-btn {
   right: 25%;
   transform: translateX(50%);
 }
-.custom-btn-svg {
-  margin-top: 5px;
-}
-.custom-prev-btn:hover .custom-btn-svg,
-.custom-next-btn:hover .custom-btn-svg {
+
+.reviews-card .custom-prev-btn:hover .custom-btn-svg,
+.reviews-card .custom-next-btn:hover .custom-btn-svg {
   color: #000000;
   filter: invert(100%);
   fill: rgb(255, 255, 255);
 }
-.custom-prev-btn,
-.custom-next-btn {
-  position: absolute;
-  bottom: 180px;
-  font-size: 24px;
-  color: #ffffff;
-  background-color: var(--Primary, #e42652);
-  border: 1px solid #e42652;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
-}
 
-.custom-prev-btn:hover,
-.custom-next-btn:hover {
+.reviews-card .custom-prev-btn:hover,
+.reviews-card .custom-next-btn:hover {
   color: #000000;
   border: 1px solid #ffffff;
   background-color: #ffffff;
@@ -128,47 +127,41 @@
   .reviews-container {
     padding: 30px;
   }
-
   .reviews-card {
-    display: flex;
-    width: 343px;
+    min-width: 343px;
     height: 411px;
-    gap: 10px;
     padding: 10px;
   }
-
   .reviews-card h3 {
     font-size: 16px;
     display: flex;
     align-items: center;
-    padding: 25px 0 0 15px;
-    width: 283px;
+    padding: 25px 15px 0;
+    min-width: 283px;
     height: 210px;
   }
-
   .reviews-card-box {
-    bottom: 30px;
-    padding: 0 30px 0;
+    bottom: 40px;
+    padding: 0 40px 0;
   }
-
-  .reviews-card-box img {
-    margin-left: 90px;
+  .reviews-card-box-prof {
     width: 60px;
     height: 60px;
   }
-
   .reviews-card-name {
     font-size: 16px;
     margin-top: 10px;
   }
-
+  .reviews-card .custom-prev-btn img,
+  .reviews-card .custom-next-btn img {
+    width: 2.5vw;
+    height: auto;
+  }
   .reviews-card-text {
     font-size: 12px;
-    padding-left: 40px;
   }
 
   /* Стили для слайдера */
-
   .slick-prev,
   .slick-next {
     font-size: 14px;
@@ -190,23 +183,22 @@
   }
 
   /* Кастомные кнопки для перемотки слайдов */
-  .custom-prev-btn {
-    left: 25%;
+  .reviews-card .custom-prev-btn {
+    left: 5%;
     transform: translateX(-50%);
   }
-  .custom-next-btn {
-    right: 25%;
+  .reviews-card .custom-next-btn {
+    right: 5%;
     transform: translateX(50%);
   }
-  .custom-btn-svg {
-    margin-top: 5px;
-  }
 
-  .custom-prev-btn,
-  .custom-next-btn {
-    bottom: 100px;
+  .reviews-card .custom-prev-btn,
+  .reviews-card .custom-next-btn {
+    bottom: 40px;
     font-size: 14px;
     width: 32px;
     height: 32px;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 }

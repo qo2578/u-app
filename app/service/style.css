@@ -3,18 +3,17 @@
   overflow: hidden;
 }
 .service-title {
-  padding: 160px 30px 60px;
-  color: var(--White, #fff);
-  font-size: 36px;
-  font-style: normal;
+  padding: 200px 0 6vw 4vw;
+  font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
-  width: 650px;
+  width: 70%;
+  min-width: 650px;
 }
 .service-box-card .box-text {
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  justify-content: space-evenly;
 }
 .service-box {
   display: flex;
@@ -25,19 +24,19 @@
 .service-svg-box {
   border: 1px solid white;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  width: 3vw;
+  height: 3vw;
+  align-items: center;
+  justify-content: center;
 }
 .service-request {
-  padding: 140px 0 200px;
+  padding: 13vw 0 15vw;
 }
 .service-box-card {
   position: relative;
-  display: flex;
   width: 100%;
-  padding: 40px 0 60px;
-  align-items: center;
-  justify-content: space-around;
+  margin: 4vw auto 5vw;
 }
 .service-box-card:hover .service-svg-box {
   background: #ffffff;
@@ -45,8 +44,9 @@
   fill: black;
 }
 .service-box-card .service-svg {
-  margin: 15px 0 0 15px;
   transition: transform 0.3s ease;
+  width: 1.7vw;
+  height: auto;
 }
 .service-box-card:hover .service-svg {
   transform: rotate(-45deg);
@@ -54,30 +54,29 @@
   filter: invert(100%);
 }
 .service-box-card p {
-  color: var(--White, #fff);
-  font-size: 20px;
-  font-style: normal;
+  color: #b7b7b7;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 130%; /* 26px */
-  width: 567px;
+  min-width: 567px;
+  width: 50%;
 }
 .service-box-title {
   color: var(--Primary, #e42652);
-  font-size: 24px;
-  font-style: normal;
+  font-size: 1.9vw;
   font-weight: 500;
   line-height: 130%; /* 31.2px */
   position: relative;
   display: inline-block;
   height: 30px;
-  width: 218px;
+  width: 18vw;
 }
 .service-box-title::before {
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: -3px;
+  bottom: -19px;
   left: 0;
   background-color: var(--Primary, #e42652);
   transition: width 0.3s ease;
@@ -86,8 +85,7 @@
   width: 70px;
 }
 .service-box-line {
-  width: calc(100vw - 50px);
-  max-width: 1220px;
+  width: calc(100vw - 150px);
   margin: 0 auto;
   height: 1px;
   background: var(--gray-1, #808080);
@@ -97,18 +95,19 @@
   .service-title {
     padding: 86px 0 16px;
     font-size: 24px;
-    max-width: 343px;
-    width: 100%;
+    min-width: 343px;
+    width: 80%;
     display: flex;
     padding-left: 3%;
-    flex-wrap: wrap;
   }
   .service-box-card .box-text {
-    display: flex;
     flex-direction: column;
-    gap: 0px;
+    padding-left: 3vw;
   }
   .service-svg-box {
+    position: absolute;
+    top: 20px;
+    right: 30px;
     width: 35px;
     height: 35px;
   }
@@ -121,12 +120,9 @@
   }
   .service-box-card {
     position: relative;
-    display: flex;
-    gap: 1px;
-    padding: 20px 0 30px;
   }
   .service-box-card .service-svg {
-    margin: 6.5px 0 0 7px;
+    width: 20px;
     transform: rotate(-45deg);
     transition: transform 0.3s ease;
   }
@@ -136,34 +132,25 @@
     filter: invert(100%);
   }
   .service-box-card p {
-    width: 100%;
     font-size: 16px;
-    max-width: 343px;
+    min-width: 343px;
+    width: 90%;
     padding-bottom: 0px;
     padding-top: 20px;
   }
   .service-box-title {
     font-size: 20px;
-    padding-bottom: 0px;
     width: 71px;
   }
   .service-box-title::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
     bottom: -3px;
-    left: 0;
-    background-color: var(--Primary, #e42652);
-    transition: width 0.3s ease;
   }
   .service-box-card:hover .service-box-title::before {
     width: 70px;
   }
   .service-box-line {
-    width: calc(100vw - 90px);
-    max-width: 670px;
-    min-width: 370px;
+    width: calc(100vw - 30px);
+    min-width: 340px;
   }
 }
 @media only screen and (min-width: 997px) and (max-width: 1024px) {

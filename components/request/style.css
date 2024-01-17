@@ -1,29 +1,22 @@
 .request-title {
-  color: #fff;
-  font-size: 48px;
-  font-style: normal;
+  font-size: 3.5vw;
   font-weight: 500;
-  line-height: 130%; /* 62.4px */
-  margin-right: 0px;
+  line-height: 130%;
 }
 .request-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  align-content: center;
 }
 
 @media only screen and (max-width: 767px) {
   .request-title {
     text-align: center;
     font-size: 32px;
-    margin-right: 0;
     padding-bottom: 24px;
   }
   .request-container {
-    display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -33,8 +26,6 @@
     margin-right: 230px;
   }
   .request-container {
-    display: flex;
-    align-items: center;
     justify-content: center;
   }
 }

@@ -9,7 +9,7 @@ export const Request = () => {
         <h2 className="request-title">
           Расскажите <br /> о вашем проекте{" "}
         </h2>
-        <Link className="home-btn" href="/contacts">
+        <Link className="team-btn" href="/contacts">
           Заполнить заявку
         </Link>
       </div>

@@ -2,18 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  gap: 30px;
+  gap: 4vw 1.9vw;
 }
-
+.cards-container a{
+  width: 44%;
+}
 .card:hover .card-img {
   transform: scale(1.06);
   border-radius: 10px;
 }
-
 .card {
-  width: 525px;
-  height: 535px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -21,49 +19,42 @@
 }
 .card-img-box {
   border-radius: 10px;
-  width: 525px;
-  height: 424px;
   position: relative;
   overflow: hidden;
 }
 .card-img {
   max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
-
 .card h4 {
   color: #808080;
-  font-feature-settings: "clig" off, "liga" off;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1.3vw;
   font-weight: 400;
-  line-height: normal;
   margin: 24px 0 8px 0;
 }
-
 .card-box {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-
 .card-box p {
-  color: var(--White, #fff);
-  font-feature-settings: "clig" off, "liga" off;
-  font-size: 24px;
-  font-style: normal;
+  font-size: 1.8vw;
   font-weight: 400;
-  line-height: normal;
-  width: 447px;
+  width: 40vw;
   margin-right: 30px;
 }
 .card-svg-box {
-  border: 1px solid white;
+  border: 1px solid #808080;
+  display: flex;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 3vw;
+  height: 3vw;
+  align-items: center;
+  justify-content: center;
 }
 .card:hover .card-svg-box {
   background: #ffffff;
@@ -71,10 +62,10 @@
   fill: black;
 }
 .card-box .card-svg {
-  margin: 4px 0 0 4px;
+  width: 1.7vw;
+  height: auto;
   transition: transform 0.3s ease;
 }
-
 .card:hover .card-svg {
   transform: rotate(-45deg);
   fill: black;
@@ -82,20 +73,15 @@
 }
 
 @media only screen and (max-width: 767px) {
-
   .card {
-    width: 343px;
-    height: 345px;
-    margin-bottom: 10px;
     margin: 0 auto; 
   }
+  .cards-container a {
+    width: 74%;
+}
   .cards-container{
     display: flex;
     justify-content: center;
-  }
-  .card-img-box {
-    width: 343px;
-    height: 270px;
   }
   .card h4 {
     font-size: 14px;
@@ -120,7 +106,6 @@
   .card-box .card-svg {
     width: 25px;
     transform: rotate(-45deg);
-    margin: 1px 0 0 4px;
     transition: transform 0.3s ease;
   }
 
@@ -139,14 +124,12 @@
     justify-content: center;
   }
   .card {
-    width: 343px;
-    height: 345px;
+    min-width: 343px;
     margin-bottom: 10px;
     margin: 0 auto; 
   }
   .card-img-box {
-    width: 343px;
-    height: 270px;
+    min-width: 343px;
   }
   .card h4 {
     font-size: 14px;
@@ -154,7 +137,7 @@
   }
   .card-box p {
     font-size: 16px;
-    width: 271px;
+    min-width: 271px;
     margin-right: 32px;
   }
   .card-svg-box {
@@ -171,7 +154,6 @@
   .card-box .card-svg {
     width: 25px;
     transform: rotate(-45deg);
-    margin: 1px 0 0 4px;
     transition: transform 0.3s ease;
   }
 
@@ -186,6 +168,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
+      padding: 0 10px;
       justify-content: center;
     }   
 

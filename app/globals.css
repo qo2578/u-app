@@ -17,7 +17,16 @@ body {
   padding: 0;
   height: 100%;
 }
-
+section {
+  max-width: 1200px;
+  min-width: 100%;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  min-width: 100%;
+  margin: 0 auto;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -30,31 +39,30 @@ a {
 /*---------------------------------------------------------------- Section home */
 
 .home-title {
-  color: var(--White, #fff);
-  font-size: 72px;
-  font-style: normal;
+  font-size: 5vw;
   font-weight: 700;
-  line-height: normal;
-  width: 843px;
-  padding: 200px 0 40px 180px;
+  min-width: 843px;
+  width: 70%;
+  padding: 20vw 0 40px 6vw;
 }
 .home-title span {
   color: var(--Primary, #e42652);
 }
 .home-text {
-  color: var(--White, #fff);
-  font-size: 20px;
-  font-style: normal;
+  color: #b7b7b7;
+  font-size: 1.5vw;
   font-weight: 400;
-  line-height: 130%; /* 26px */
-  width: 660px;
-  padding: 0 0 40px 180px;
+  line-height: 130%;
+  min-width: 660px;
+  width: 55%;
+  padding: 0 0 1em 6vw;
 }
 .home-box {
   display: flex;
+  font-size: 1vw;
   align-items: center;
   gap: 10px;
-  padding-left: 180px;
+  padding-left: 6vw;
 }
 .home-box-right {
   margin-left: 32px;
@@ -62,12 +70,21 @@ a {
   gap: 8px;
   align-items: center;
 }
+.home-box-right img {
+  width: 6vw;
+  height: auto;
+}
+.home-box-right p {
+  font-size: 1.1vw;
+  height: auto;
+}
 .home-btn {
   display: inline-flex;
-  padding: 18px 32px;
+  padding: 1em 2em;
+  font-size: 1.3vw;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 0.5em;
   background: var(--Primary, #e42652);
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -78,50 +95,61 @@ a {
 
 /*---------------------------------------------------------------- Section company */
 .company {
-  padding: 170px 0 0 0;
+  padding: 11vw 0 0 0;
+}
+.company .container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 .company-title {
-  color: var(--White, #fff);
-  font-size: 36px;
-  font-style: normal;
+  font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
   text-align: center;
-  margin: 0 auto 30px;
+  margin: 0 auto 2vw;
 }
 .company-box {
   display: flex;
   gap: 16px;
-  padding-left: 180px;
+  justify-content: center;
+}
+.company-box img {
+  width: 17%;
+  height: auto;
 }
 
 /*---------------------------------------------------------------- Section team */
 .team {
-  padding: 200px 0 0 180px;
+  padding: 15vw 0 0 0;
+  display: flex;
+  justify-content: center;
 }
 .team .container {
   display: flex;
+  justify-content: center;
 }
 .team-box-right {
-  margin-left: 100px;
+  margin-left: 10vw;
+}
+.team-box-left img {
+  width: 40vw;
+  height: auto;
 }
 .team h2 {
-  color: var(--White, #fff);
-  font-size: 36px;
-  font-style: normal;
+  font-size: 2.5vw;
   font-weight: 600;
-  line-height: 130%; /* 46.8px */
-  padding-bottom: 100px;
-  width: 423px;
+  line-height: 130%;
+  padding-bottom: 8vw;
+  width: 13em;
 }
 .team h3 {
-  color: var(--White, #d7d7d7);
-  font-size: 20px;
-  font-style: normal;
+  color: #b7b7b7;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 130%; /* 26px */
-  padding-bottom: 32px;
-  width: 539px;
+  padding-bottom: 3vw;
+  max-width: 39vw;
 }
 .team-box-right-text {
   display: none;
@@ -131,11 +159,12 @@ a {
 }
 .team-btn {
   display: inline-flex;
-  padding: 18px 32px;
+  padding: 1em 2em;
   justify-content: center;
+  font-size: 1.3vw;
   align-items: center;
   gap: 10px;
-  border-radius: 10px;
+  border-radius: 0.5em;
   background: var(--Primary, #e42652);
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -144,86 +173,85 @@ a {
   background: var(--Primary, #ffffff);
 }
 .team-box-row {
-  gap: 100px;
-  margin-top: 100px;
-}
-.team-box-row .row {
   display: flex;
-  gap: 100px;
-  margin-bottom: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 11vw;
 }
-.team-box-row .col-6 {
-  width: 217px;
+.team-block-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
 }
-
+.team-box-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2vw;
+}
 .row-number {
-  color: var(--White, #fff);
-  font-size: 42px;
-  font-style: normal;
+  font-size: 2.8vw;
   font-weight: 600;
   line-height: 130%; /* 54.6px */
 }
 .row-text {
-  color: var(--White, #fff);
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.5vw;
+  color: #b7b7b7;
   font-weight: 400;
   line-height: 130%; /* 26px */
 }
 
 /*---------------------------------------------------------------- Section our-service */
 .our-service {
-  padding-top: 150px;
+  padding-top: 15vw;
 }
-.our-service h2 {
-  color: var(--White, #fff);
-  font-size: 36px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 130%; /* 46.8px */
-  padding-bottom: 16px;
+.our-service .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .our-service h3 {
-  color: var(--White, #fff);
+  color: #b7b7b7;
   text-align: center;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 130%; /* 26px */
-  width: 800px;
+  width: 40em;
   margin: 0 auto 0;
   padding-bottom: 60px;
 }
 .our-service-title {
-  color: var(--White, #fff);
-  font-size: 24px;
-  font-style: normal;
+  font-size: 1.55vw;
   font-weight: 500;
-  line-height: 130%; /* 31.2px */
-  padding: 30px 0 12px;
-  /* margin-top: 30px;
-  margin-bottom: 12px; */
+  line-height: 130%;
+  padding: 1.5vw 0 1vw;
 }
 .our-service-text {
-  color: var(--White, #fff);
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1.1vw;
   font-weight: 400;
-  line-height: 130%; /* 23.4px */
+  line-height: 130%;
+  min-width: 17vw;
+}
+.our-service-img {
+  height: auto;
+  width: 1.7vw;
 }
 .our-service .row {
-  display: inline-flex;
+  display: flex;
   gap: 30px;
-  padding-left: 180px;
+  padding-left: 0;
+  padding-bottom: 4vw;
+  justify-content: center;
 }
 .img-box {
-  width: 60px;
-  height: 60px;
+  width: 4vw;
+  display: flex;
+  height: 4vw;
   background: var(--Primary, #e42652);
   border-radius: 50%;
-  padding-top: 15.5px;
-  padding-left: 15px;
+  align-items: center;
+  justify-content: center;
 }
 .col-4 .card-svg-box {
   display: none;
@@ -231,18 +259,15 @@ a {
 .col-4:hover .img-box {
   background: #ffffff;
 }
-
 .col-4:hover .our-service-img {
   filter: invert(100%);
 }
 .our-service .col-4 {
   display: flex;
-  width: 340px;
-  height: 317px;
-  padding: 28px 20px;
+  padding: 2vw 1.5vw 6vw;
   flex-direction: column;
-  border-radius: 10px;
-  border: 1px solid rgba(224, 224, 224, 0);
+  border-radius: 0.6vw;
+  border: 3px solid rgb(224 224 224 / 12%);
   background: rgba(255, 255, 255, 0.05);
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -251,20 +276,20 @@ a {
   background: var(--Primary, #e42652);
 }
 .our-service-btn {
+  padding: 1em 4em;
+  font-size: 1.3vw;
+  border-radius: 0.5em;
   color: #fff;
-  font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 26px */
   display: inline-flex;
-  padding: 18px 62px;
+  min-width: 225px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 10px;
   border: 1px solid var(--White, #fff);
   text-align: center;
-  margin: 60px 0 0 630px;
+  margin: 0px 0 0 0;
   transition: background 0.3s ease, color 0.3s ease;
 }
 .our-service-btn:hover {
@@ -274,43 +299,37 @@ a {
 
 /*---------------------------------------------------------------- Section our-projects */
 .our-projects {
-  padding: 200px 0 0 0px;
+  padding: 15vw 0 0 0;
 }
 .our-projects-box {
-  display: inline-flex;
-  margin-bottom: 60px;
-  padding-left: 180px;
+  display: flex;
+  margin-bottom: 3vw;
+  justify-content: space-evenly;
 }
 .our-projects-text {
   margin-right: 330px;
 }
 .our-projects h2 {
-  color: var(--White, #fff);
-  font-size: 36px;
-  font-style: normal;
+  font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
   margin-bottom: 16px;
 }
 .our-projects h3 {
-  color: var(--White, #fff);
-  font-size: 20px;
-  font-style: normal;
+  color: #b7b7b7;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 130%; /* 26px */
-  width: 515px;
+  width: 80%;
 }
 .our-projects-btn {
+  padding: 1em 2em;
   align-items: center;
-  color: var(--White, #fff);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  padding: 18px 32px;
+  font-size: 1.3vw;
   align-self: flex-start;
-  line-height: 130%; /* 26px */
+  line-height: 130%;
   border-radius: 10px;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -327,6 +346,8 @@ a {
   filter: invert(0%);
   margin-left: 12px;
   transition: filter 0.3s ease;
+  width: 2vw;
+  height: auto;
 }
 
 .our-projects-btn:hover img {
@@ -335,35 +356,33 @@ a {
 
 /*---------------------------------------------------------------- Section reviews */
 .reviews {
-  margin: 210px 180px 180px;
+  padding: 15vw 0 0;
 }
 .reviews-box {
   display: flex;
   align-items: center;
   text-align: center;
   padding-bottom: 60px;
+  padding-left: 6vw;
 }
 .reviews-title {
-  color: var(--White, #fff);
-  font-size: 36px;
-  font-style: normal;
+  font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
   margin-right: 42px;
 }
 .reviews-text {
+  color: #b7b7b7;
   margin-top: 6px;
-  color: var(--White, #fff);
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 130%; /* 26px */
 }
 
 /*---------------------------------------------------------------- Section request */
 .request {
-  margin: 200px 0 0 0px;
-  padding-bottom: 200px;
+  margin: 15vw 0 0 0;
+  padding-bottom: 15vw;
 }
 
 @media only screen and (max-width: 767px) {
@@ -374,13 +393,13 @@ a {
 
   .home-title {
     font-size: 36px;
-    width: 348px;
+    min-width: 348px;
     padding: 86px 0 24px 16px;
   }
   .home-text {
     font-size: 16px;
     padding: 0 0 24px 16px;
-    width: 343px;
+    min-width: 343px;
   }
   .home-box {
     display: block;
@@ -391,11 +410,18 @@ a {
     margin-left: 0;
   }
   .home-btn {
+    font-size: 16px;
     padding: 12px 32px;
+  }
+  .home-box-right img {
+    min-width: 75px;
+    height: auto;
   }
   .home-box-right p {
     font-size: 14px;
   }
+  .team-box-left img {
+    padding-left: 20px;}
   /*---------------------------------------------------------------- Section company */
   .company {
     padding: 85px 0 0 0;
@@ -410,15 +436,11 @@ a {
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding-left: 0px;
-    margin-left: -10px;
     width: 100%;
     white-space: nowrap;
-    justify-content: center;
   }
   .company-box img {
-    width: 108px;
-    height: 40px;
+    min-width: 108px;
   }
   .company-box::-webkit-scrollbar {
     display: none;
@@ -442,6 +464,11 @@ a {
     padding-bottom: 0;
     margin: 0 auto 40px;
   }
+  .our-service .col-4 {
+    border-radius: 10px;
+    min-width: 340px;
+    padding: 28px 1.5vw 28px;
+}
   .our-service-title {
     font-size: 24px;
     margin-bottom: 12px;
@@ -459,13 +486,14 @@ a {
     padding-left: 0;
   }
   .img-box {
-    padding-top: 0px;
-    padding-left: 0px;
-    margin-left: 120px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    margin: 15px auto 20px;
+    width: 60px;
+    height: 60px;
   }
+  .our-service-img {
+    height: auto;
+    width: 26px;
+}
   .col-4 .card-svg-box {
     display: flex;
     margin: 30px auto 0;
@@ -474,15 +502,14 @@ a {
   }
   .card-svg-box .card-svg {
     margin: 3px;
+    width: 20px;
   }
   .col-4:hover .img-box {
     background: #ffffff;
   }
-
   .col-4:hover .our-service-img {
     filter: invert(100%);
   }
-
   .our-service-btn {
     display: flex;
     font-size: 16px;
@@ -498,15 +525,12 @@ a {
   .our-projects-box {
     display: inline-flex;
     margin-bottom: 40px;
+    padding-left: 0px;
   }
   .our-projects .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .our-projects-text {
-    margin-right: 0px;
-    margin-left: 3px;
   }
   .our-projects h2 {
     font-size: 24px;
@@ -514,14 +538,12 @@ a {
   }
   .our-projects h3 {
     font-size: 16px;
-    width: 345px;
   }
   .our-projects-btn {
     display: none;
   }
   .our-projects-btn-min {
     align-items: center;
-    color: var(--White, #fff);
     font-size: 16px;
     font-weight: 500;
     padding: 12px 25px;
@@ -553,7 +575,7 @@ a {
 
   /*---------------------------------------------------------------- Section reviews */
   .reviews {
-    margin: 100px 16px 100px;
+    padding: 100px 0 100px;
   }
   .reviews-box {
     display: flex;
@@ -582,7 +604,6 @@ a {
     padding: 100px 0 0 0px;
   }
   .team .container {
-    display: flex;
     flex-direction: column;
   }
   .row-number {
@@ -596,12 +617,12 @@ a {
   .team h2 {
     font-size: 24px;
     padding-bottom: 12px;
-    width: 343px;
+    min-width: 343px;
     padding-left: 16px;
   }
   .team h3 {
     font-size: 16px;
-    width: 343px;
+    min-width: 343px;
     padding-bottom: 24px;
     padding-left: 16px;
   }
@@ -614,11 +635,10 @@ a {
     display: block;
   }
   .team-box-left img {
-    width: 100%;
+    width: 98%;
     margin-top: 30px;
   }
   .team-btn {
-    display: inline-flex;
     font-size: 16px;
     padding: 12px 32px;
     height: 45px;
@@ -633,53 +653,36 @@ a {
   .team-box-right a {
     display: none;
   }
-  .team-box-row .row {
-    display: flex;
-    gap: 50px;
-    margin-bottom: 40px;
-  }
   .team-box-row {
-    gap: 0px;
-    margin-top: 50px;
+    gap: 10vw;
   }
-  .team-box-row-min {
-    padding-top: 30px;
+  .team-block-row {
+    gap: 5vw;
   }
-  .team-box-row-min .row {
-    display: flex;
-    gap: 18px;
-    margin-bottom: 32px;
-  }
-  .team-box-row-min .col-6 {
-    width: 162.5px;
-  }
-  .team-box-row-min .row-number {
-    text-align: center;
-    font-size: 30px;
-  }
-  .team-box-row-min .row-text {
-    text-align: center;
-    font-size: 16px;
+  .team-box-col {
+    align-items: center;
   }
   .team-box-right {
     display: flex;
     margin-left: 0px;
     justify-content: center;
   }
+  .our-projects-text {
+    margin-right: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
-
-/*---------------------------------------------------------------- Section company */
-
-/*---------------------------------------------------------------- Section team */
-
-/*---------------------------------------------------------------- Section our-service */
-
-/*---------------------------------------------------------------- Section our-projects */
-
-/*---------------------------------------------------------------- Section reviews */
-
-/*---------------------------------------------------------------- Section request */
-
+@media only screen and (min-width: 768px) and (max-width: 931px) {
+  .team-box-right-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .home-page {
     background: url("/home/home-bg-min.png") center/cover no-repeat;
@@ -688,14 +691,15 @@ a {
   /*---------------------------------------------------------------- Section home */
 
   .home-title {
-    font-size: 40px;
-    width: 490px;
+    font-size: 6vw;
+    min-width: 490px;
+    width: 70%;
     padding: 92px 0 24px 30px;
   }
   .home-text {
     font-size: 16px;
     padding: 0 0 24px 30px;
-    width: 443px;
+    min-width: 443px;
   }
   .home-box {
     padding-left: 30px;
@@ -706,6 +710,7 @@ a {
   }
   .home-btn {
     padding: 12px 32px;
+    font-size: 16px;
   }
   .home-box-right p {
     font-size: 14px;
@@ -720,14 +725,26 @@ a {
     margin: 0 auto 24px;
   }
   .company-box {
+    gap: 0px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-left: 0px;
+    width: 100%;
+    white-space: nowrap;
     display: flex;
-    gap: 16px;
-    padding-left: 1px;
     justify-content: center;
   }
   .company-box img {
     width: 108px;
     height: 40px;
+  }
+  .company-box::-webkit-scrollbar {
+    display: none;
+  }
+  .company-box {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
   /*---------------------------------------------------------------- Section team */
@@ -737,21 +754,15 @@ a {
   .team .container {
     display: flex;
   }
-  .team-box-right-text {
-    display: none;
-  }
   .team h2 {
     font-size: 24px;
     padding-bottom: 12px;
-    width: 343px;
+    width: 70%;
   }
   .team h3 {
     font-size: 16px;
     width: 343px;
     padding-bottom: 24px;
-  }
-  .team-box-left img {
-    width: 380px;
   }
   .team-btn {
     display: inline-flex;
@@ -763,20 +774,9 @@ a {
     color: black;
     background: var(--Primary, #ffffff);
   }
-
   .team-box-row {
-    gap: 0;
+    gap: 20vw;
     margin-top: 50px;
-  }
-  .team-box-row .row {
-    display: flex;
-    gap: 50px;
-    margin-bottom: 40px;
-  }
-  .team-box-row .col-6 {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
   }
   .row-number {
     font-size: 30px;
@@ -784,16 +784,10 @@ a {
   .row-text {
     font-size: 16px;
   }
-  */
-
 
   /*---------------------------------------------------------------- Section our-service */
   .our-service {
     padding-top: 68px;
-  }
-  .our-service h2 {
-    font-size: 24px;
-    padding-bottom: 12px;
   }
   .our-service h3 {
     font-size: 16px;
@@ -817,13 +811,15 @@ a {
     gap: 16px;
     padding-left: 0;
   }
+  .our-service .col-4 {
+    border-radius: 10px;
+    min-width: 340px;
+    padding: 28px 1.5vw 28px;
+}
   .img-box {
-    padding-top: 0px;
-    padding-left: 0px;
-    margin-left: 120px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    margin: 15px auto 20px;
+    width: 7vw;
+    height: 7vw;
   }
   .col-4 .card-svg-box {
     display: flex;
@@ -833,17 +829,19 @@ a {
   }
   .card-svg-box .card-svg {
     margin: 3px;
+    width: 20px;
   }
+  .our-service-img {
+    height: auto;
+    width: 3.5vw;
+}
   .col-4:hover .img-box {
     background: #ffffff;
   }
-
   .col-4:hover .our-service-img {
     filter: invert(100%);
   }
-
   .our-service-btn {
-    display: flex;
     font-size: 16px;
     width: 207px;
     padding: 12px 62px;
@@ -859,8 +857,8 @@ a {
     margin-bottom: 40px;
   }
   .our-projects-text {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
     padding-left: 30px;
     display: flex;
     flex-direction: column;
@@ -872,7 +870,6 @@ a {
   }
   .our-projects h3 {
     font-size: 16px;
-    text-align: center;
   }
   .our-projects-btn {
     display: none;
@@ -909,7 +906,6 @@ a {
     margin-left: 12px;
     transition: filter 0.3s ease;
   }
-
   .our-projects-btn-min:hover img {
     filter: invert(100%);
   }
@@ -919,7 +915,6 @@ a {
     margin: 100px 16px 100px;
   }
   .reviews-box {
-    display: flex;
     flex-direction: column;
     padding-bottom: 40px;
     align-items: baseline;
@@ -927,7 +922,7 @@ a {
   .reviews-title {
     font-size: 24px;
     margin-left: 22px;
-    margin-right: 0px;
+    margin-right: 0;
   }
   .reviews-text {
     margin-top: 10px;
@@ -942,34 +937,21 @@ a {
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
   .our-projects {
-    padding: 200px 0 0 0px;
+    padding: 200px 0 0;
   }
   .our-service .row {
-    gap: 30px;
-    display: flex;
-    padding: 0 0 0 1px;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    padding: 0;
   }
   .our-projects-text {
-    margin-right: 0px;
+    margin-right: 0;
     padding-left: 30px;
   }
   .our-projects-box {
     margin-bottom: 60px;
-    display: flex;
     justify-content: space-between;
   }
   .our-service-btn {
-    margin: 60px 0 0 0px;
+    margin: 60px 0 0;
     width: 227px;
-  }
-  .our-service .container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
   }
 }
