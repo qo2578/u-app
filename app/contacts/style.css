@@ -1,5 +1,6 @@
 .contacts {
-  background: url("/contacts/contacts-bg.png") center/cover no-repeat;
+  background: url("/contacts/contacts-bg.png") center/cover no-repeat,
+    linear-gradient(#121212, #121212);
   overflow: hidden;
 }
 .contacts-block {
@@ -126,7 +127,7 @@ input:focus {
   width: 1.8vw;
   margin-right: 0.8vw;
 }
-.contacts-top-box{
+.contacts-top-box {
   display: flex;
   flex-direction: column;
 }
@@ -134,9 +135,9 @@ input:focus {
   color: #b7b7b7;
   font-size: 1.4vw;
   font-weight: 400;
-  line-height: 130%; 
-      padding-bottom: 1.5vw;
-      display: flex;
+  line-height: 130%;
+  padding-bottom: 1.5vw;
+  display: flex;
 }
 
 @media only screen and (max-width: 977px) {
