@@ -1,13 +1,12 @@
-/*---------------------------------------------------------------- Section about-us */
 .about-us {
   background: var(--black-1, #121212);
   overflow: hidden;
 }
-.about {
-  padding-top: 200px;
+.about .container {
+  padding-top: 10vw;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .about-box {
   width: 50vw;
@@ -34,10 +33,9 @@
   padding-bottom: 24px;
 }
 .about-img {
-  height: auto;
+  height: 27vw;
   width: 27vw;
 }
-
 /*---------------------------------------------------------------- Section us */
 
 .us {
@@ -77,10 +75,9 @@
 }
 
 /*---------------------------------------------------------------- Section principles */
-.principles {
+.principles .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .principles-title {
   font-size: 2.5vw;
@@ -94,13 +91,13 @@
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  gap: 2vw;
+  gap: 5vw;
 }
 .principles-card {
   position: relative;
   display: flex;
   padding: 3.4vw 0 5vw;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .principles-card h3 {
   font-size: 1.5vw;
@@ -115,36 +112,40 @@
   align-items: center;
   justify-content: center;
 }
-
+.principles-card h4 {
+  font-size: 1.9vw;
+  font-weight: 500;
+  line-height: 130%;
+  width: 21vw;
+}
 .principles-card p {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 130%; /* 26px */
-  width: 50%;
+  width: 58%;
 }
 
 /*---------------------------------------------------------------- Section about-team */
 .about-team {
-  padding-bottom: 20vw;
+  padding-bottom: 10vw;
 }
-.about-team .slide{
-  min-width: 20vw;
+.about-team .slide {
+  width: 20vw !important;
+  height: 20vw;
 }
-.about-team .slider{
-padding-left: 3vw;}
 .about-team h3 {
   font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
   width: 46vw;
-  padding-left: 75px;
 }
 
 /*---------------------------------------------------------------- Section offer */
-.offer {
+.offer .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 15vw;
 }
 .offer-title {
   font-size: 2.5vw;
@@ -157,7 +158,6 @@ padding-left: 3vw;}
   gap: 4vw;
   text-align: center;
 }
-
 .offer-block img {
   width: 6vw;
   height: auto;
@@ -168,6 +168,7 @@ padding-left: 3vw;}
   font-weight: 400;
   line-height: 130%; /* 31.2px */
   width: 16vw;
+  padding-top: 1vw;
 }
 
 /*---------------------------------------------------------------- Section story */
@@ -175,12 +176,11 @@ padding-left: 3vw;}
   padding: 14vw 0 20vw;
 }
 .story h3 {
-  padding-bottom: 70px;
+  padding-bottom: 3vw;
   font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
   width: 50%;
-  padding-left: 60px;
 }
 .story-boxes {
   display: flex;
@@ -188,20 +188,20 @@ padding-left: 3vw;}
   flex-direction: column;
 }
 .story-box {
-  padding-top: 30px;
+  padding-top: 2vw;
   display: flex;
-  gap: 30px;
+  gap: 2vw;
   text-align: center;
 }
 .story-block {
   min-width: 340px;
-  width: 30vw;
-  height: 27vw;
-  border-radius: 10px;
-  border: 1px solid rgba(224, 224, 224, 0);
+  width: 100%;
+  height: 25vw;
+  border-radius: 1vw;
+  border: 0.09vw solid rgba(224, 224, 224, 0.2);
   background: rgba(255, 255, 255, 0.05);
   display: flex;
-  padding: 4.5vw 1vw;
+  padding: 4.5vw 1vw 2vw;
   flex-direction: column;
   align-items: center;
 }
@@ -224,7 +224,6 @@ padding-left: 3vw;}
   text-align: center;
   font-size: 1.5vw;
   font-weight: 400;
-  padding: 0 2vw;
   width: 100%;
 }
 
@@ -243,10 +242,10 @@ padding-left: 3vw;}
   font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
-  padding-bottom: 60px;
+  padding-bottom: 3vw;
 }
 .they-say-they-ask-title h3 {
-  padding: 0 29vw 0 5vw;
+  padding: 0 24.5vw 0 0;
 }
 .they-ask-link {
   display: flex;
@@ -270,7 +269,7 @@ padding-left: 3vw;}
 }
 .simple-box-slider {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .they-ask-title {
   font-size: 2vw;
@@ -291,15 +290,16 @@ padding-left: 3vw;}
     background: var(--black-1, #121212);
     padding-left: 0px;
   }
-  .about {
+  .about .container {
     padding-top: 86px;
+    flex-direction: column;
   }
   .about-box-title {
     font-size: 24px;
     padding-bottom: 40px;
   }
   .about-img {
-    width: 82%;
+    width: 100%;
   }
   .about-box-text-min {
     display: flex;
@@ -309,11 +309,11 @@ padding-left: 3vw;}
     width: 100%;
   }
   .about-box {
-    width: 81%;
+    width: 100%;
   }
   .about-box-text-min p {
     font-size: 16px;
-    width: 80%;
+    width: 100%;
     padding-bottom: 16px;
   }
   .about-box-text {
@@ -338,7 +338,8 @@ padding-left: 3vw;}
   }
   .us-block {
     padding: 24px 0px;
-    width: 279px;
+    width: 260px;
+    border-radius: 10px;
   }
   .us-number {
     font-size: 24px;
@@ -348,14 +349,6 @@ padding-left: 3vw;}
   }
 
   /*---------------------------------------------------------------- Section principles */
-  .principles {
-    margin: 0 auto;
-    max-width: 767px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   .principles-title {
     display: flex;
     font-size: 24px;
@@ -369,9 +362,7 @@ padding-left: 3vw;}
     flex-direction: column;
   }
   .principles-card .box-text {
-    height: auto;
     align-items: center;
-    margin: 0 auto;
     width: 90%;
     padding-bottom: 16px;
   }
@@ -384,12 +375,10 @@ padding-left: 3vw;}
   .principles-card h4 {
     font-size: 20px;
     width: 261px;
-    margin-left: 32px;
   }
   .principles-card p {
     font-size: 16px;
     width: 90%;
-    margin: 0 auto;
   }
 
   /*---------------------------------------------------------------- Section about-team */
@@ -399,7 +388,6 @@ padding-left: 3vw;}
   .about-team h3 {
     font-size: 24px;
     width: 80%;
-    padding-left: 25px;
   }
 
   /*---------------------------------------------------------------- Section offer */
@@ -433,7 +421,7 @@ padding-left: 3vw;}
     font-size: 16px;
     width: 156.5px;
   }
-  .offer-img {
+  .offer-block img {
     width: 60px;
     height: 60px;
   }
@@ -509,9 +497,7 @@ padding-left: 3vw;}
   .story h3 {
     padding-bottom: 0px;
     font-size: 24px;
-    width: 343px;
     width: 100%;
-    padding-left: 33px;
   }
   .story-box {
     gap: 20px;
@@ -531,16 +517,15 @@ padding-left: 3vw;}
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
-    padding-left: 20px;
     gap: 20px;
     scroll-behavior: smooth;
   }
   .story-block {
     flex: 0 0 auto;
     width: 245px;
-    height: 240px;
     min-width: 275px;
-    padding: 4vw 0 1.6vw;
+    padding: 6vw 0 1.6vw;
+    height: 241px;
   }
   .story-line {
     width: 80px;

@@ -31,14 +31,13 @@
 .slick-slider {
   touch-action: pan-y;
 }
-
 .slick-prev,
 .slick-next {
   display: none !important;
 }
 .slider {
   max-height: 277px;
-  padding-top: 70px;
+  padding-top: 7vw;
 }
 .slick-slide:focus,
 .slick-slide:active {

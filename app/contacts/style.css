@@ -3,26 +3,26 @@
   overflow: hidden;
 }
 .contacts-block {
-  padding: 15vw 0 15vw;
+  padding: 8vw 0 10vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-height: 90vh;
   align-items: center;
 }
 .contacts-card {
   display: inline-flex;
-  padding: 4vw;
+  padding: 4vw 3vw;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 1vw;
-  border: 1px solid #ababab79;
+  border: 0.05vw solid #ababab79;
   background: rgba(255, 255, 255, 0.05);
   min-width: 560px;
   width: 60%;
-  min-height: 576px;
+  min-height: 530px;
 }
 .contacts-title {
-  font-size: 2.5vw;
+  font-size: 2.8vw;
   font-weight: 700;
   line-height: 130%; /* 46.8px */
   padding-bottom: 1.2vw;
@@ -36,7 +36,7 @@
 }
 .contacts-min-text {
   color: var(--gray-1, #808080);
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-weight: 400;
   line-height: 130%; /* 16.9px */
   padding-top: 1vw;
@@ -47,12 +47,11 @@
   color: var(--Primary, #e42652);
 }
 .contacts-form {
-  font-size: 1.375rem;
+  font-size: 1.5vw;
   display: flex;
   font-weight: 500;
-  min-width: 33.75rem;
+  min-width: 380px;
   width: 100%;
-  margin-bottom: 3.75rem;
   flex-direction: column;
   align-items: center;
 }
@@ -60,18 +59,17 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
   background: transparent;
   width: 100%;
   min-width: 480px;
-  height: 80px;  border: none;
-  margin-top: 2vw;
-  border-bottom: 1px solid #808080;
+  height: 3vw;
+  margin-top: 1.3vw;
+  border: none;
+  border-bottom: 0.05vw solid #808080;
   font-size: 1.4vw;
   font-weight: 400;
   line-height: 130%; /* 26px */
 }
-
 .contacts-input::placeholder {
   color: #808080;
   font-size: 1.4vw;
@@ -85,13 +83,13 @@ input:focus {
 .contacts-btn {
   display: flex;
   min-width: 480px;
-  height: 4vw;
+  height: 5vw;
   width: 100%;
   padding: 0.8em 1.8em;
   justify-content: center;
   align-items: center;
-  margin-top: 3vw;
-  border-radius: 10px;
+  margin-top: 4vw;
+  border-radius: 0.5vw;
   background: var(--Primary, #e42652);
   border: none;
   font-size: 1.5vw;

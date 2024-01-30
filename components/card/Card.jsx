@@ -2,8 +2,17 @@ import React from "react";
 import "./style.css";
 import Link from "next/link";
 import Image from "next/image";
+import PreloadImages from "../PreloadImages";
 
 const Card = () => {
+  const imagePaths = [
+    "/card/card1.svg",
+    "/card/card2.svg",
+    "/card/card3.svg",
+    "/card/card4.svg",
+    "/card/arrow-up-light.svg",
+    // Добавьте пути к другим изображениям
+  ];
   const cardsData = [
     {
       id: 1,
@@ -38,6 +47,7 @@ const Card = () => {
 
   return (
     <div className="cards-container">
+      <PreloadImages imagePaths={imagePaths} />
       {cardsData.map((card) => (
         <Link key={card.id} href={card.link} as={card.link}>
           <div className="card">

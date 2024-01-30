@@ -5,10 +5,8 @@
 }
 .they-say-card {
   display: flex !important;
-  /* width: 90% !important; */
   height: 35vw;
   flex-direction: column;
-  /* height: 391px; */
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
@@ -21,8 +19,6 @@
   font-size: 1.7vw;
   font-weight: 400;
   line-height: 130%;
-  /* width: 428px; */
-  /* height: 208px; */
 }
 .they-say-card-box {
   display: flex;
@@ -66,13 +62,8 @@
   display: flex;
   margin: 0 -10px;
 }
-/* .they-say-container .slick-list {
-  max-height: 391px;
-} */
 .slick-slide {
-  /* width: 508px; */
-  /* height: 391px; */
-  margin: 0 13px;
+  margin: 0 1vw;
 }
 
 /* Стили для кнопок */
@@ -94,19 +85,20 @@
   border: none;
   transition: background 0.5s ease;
 }
-.custom-next-btn-they-say:hover, .custom-prev-btn-they-say:hover{
+.custom-next-btn-they-say:hover,
+.custom-prev-btn-they-say:hover {
   background: rgb(255, 255, 255);
   width: 3vw;
   height: 3vw;
 }
-.custom-btn-svg{
+.custom-btn-svg {
   margin-left: 9px;
 }
 .custom-prev-btn-they-say .custom-btn-svg,
 .custom-next-btn-they-say .custom-btn-svg {
   fill: rgb(255, 255, 255);
-width: 1.5vw;
-height: auto;
+  width: 1.5vw;
+  height: auto;
 }
 
 @media only screen and (max-width: 767px) {
@@ -117,7 +109,6 @@ height: auto;
   }
   .they-say-card {
     display: flex;
-       /* width: 30vw; */
     min-height: 332px;
     height: 30px;
     gap: 5px;
@@ -151,11 +142,12 @@ height: auto;
   .they-say-text {
     font-size: 12px;
   }
-  .custom-prev-btn-they-say .custom-btn-svg, .custom-next-btn-they-say .custom-btn-svg {
+  .custom-prev-btn-they-say .custom-btn-svg,
+  .custom-next-btn-they-say .custom-btn-svg {
     fill: rgb(255, 255, 255);
     width: 20px;
     height: auto;
-}
+  }
   /* Стили для слайдера */
 
   .slick-prev:hover,

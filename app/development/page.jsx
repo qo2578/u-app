@@ -1,5 +1,6 @@
 import React from "react";
 import "../design/style.css";
+import "../service/style.css";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./../../components/card/Card";
@@ -56,9 +57,9 @@ const DevelopmentPage = () => {
   ];
   return (
     <div className="design">
-      <h2 className="design-title">Разработка</h2>
       <section className="design-box">
         <div className="container">
+          <h2 className="design-title">Разработка</h2>
           {DesignSteps.map((step, index) => (
             <React.Fragment key={index}>
               <div className="design-box-card">
@@ -74,7 +75,7 @@ const DevelopmentPage = () => {
                 </div>
               </div>
               {index < DesignSteps.length - 1 && (
-                <div className="design-box-line"></div>
+                <div className="service-box-line"></div>
               )}
             </React.Fragment>
           ))}
@@ -106,11 +107,17 @@ const DevelopmentPage = () => {
           />
         </div>
       </section>
-      <section className="experience">
+      <section className="our-projects">
         <div className="container">
-          <div className="experience-box">
-            <h2 className="experience-text">Наш опыт</h2>
-            <Link href="/portfolio" className="experience-btn" as="portfolio">
+          <div className="our-projects-box">
+            <div className="our-projects-text">
+              <h2>Наши проекты </h2>
+              <h3>
+                Ознакомьтесь с некоторыми из наших работ, в которых мы добились
+                отличных результатов.
+              </h3>
+            </div>
+            <Link href="/portfolio" className="our-projects-btn" as="portfolio">
               Больше проектов
               <Image
                 src="/home/arrow-up-light.svg"
@@ -136,12 +143,12 @@ const DevelopmentPage = () => {
           </Link>
         </div>
       </section>
-      <section className="design-reviews">
+      <section className="reviews">
         <div className="container">
           <Reviews />
         </div>
       </section>
-      <section className="design-request">
+      <section className="request">
         <div className="container">
           <Request />
         </div>
