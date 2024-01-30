@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 .footer-box {
-  padding: 4vw 7vw;
+  padding: 4vw 0;
 }
 .bottom-box {
   display: flex;
@@ -67,18 +67,15 @@
   margin: 0 77px 0 32px;
 }
 
-@media only screen and (max-width: 767px) {
-  .footer-row {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-  }
-  .footer-col-4 {
-    display: flex;
-    flex-direction: column;
-  }
+@media only screen and (max-width: 600px) {
   .footer-box-none {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-row {
+    flex-direction: row;
   }
   .footer-box {
     padding: 24px 0px;

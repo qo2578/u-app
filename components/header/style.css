@@ -12,7 +12,6 @@
   justify-content: space-around;
 }
 .header a {
-  margin-right: 1em;
   font-size: 1.1vw;
 }
 .header-btn {
@@ -23,26 +22,24 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border: 1px solid var(--White, #fff);
+  border: 0.09vw solid var(--White, #fff);
   transition: background 0.3s ease, color 0.3s ease;
 }
 .header-logo {
   width: 6vw;
-  height: auto;
-  margin: 15px 0;
+  height: 6vw;
 }
 .header-btn:hover {
   color: black;
   background: var(--Primary, #ffffff);
 }
-nav a {
-  margin-right: 10px;
-  color: #000;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.header .nav {
+  display: flex;
+  gap: 1vw;
 }
-.nav a.active {
-  color: #ff0000;
+a.active,
+a.active:visited {
+  color: #C2C2C2;
 }
 .burger-menu {
   display: none;
@@ -62,7 +59,7 @@ nav a {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0.5em 1em;
+    padding: 10px 10px;
     justify-content: space-between;
     align-items: flex-start;
     flex-shrink: 0;
@@ -73,10 +70,9 @@ nav a {
     height: auto;
     margin: 0;
   }
-  .nav {
+  .header .nav {
     display: none;
   }
-
   .header-btn {
     display: none;
   }
@@ -98,6 +94,7 @@ nav a {
     right: -100%;
     transition: right 0.5s ease;
     overflow: hidden;
+    opacity: 0;
     transition: height 0.5s ease, opacity 0.5s ease;
   }
   .burger-menu-open .header-logo {
@@ -113,6 +110,7 @@ nav a {
     justify-content: flex-start;
     text-align: left;
     right: 0;
+    opacity: 1;
   }
   .burger-menu-box {
     display: flex;
@@ -129,7 +127,6 @@ nav a {
     bottom: 50px;
     left: 45px;
   }
-
   .burger-menu-block .burger-menu-text- p {
     margin-bottom: 4px;
   }
@@ -142,7 +139,6 @@ nav a {
     width: 100%;
     font-size: 16px;
   }
-
   .burger-menu a {
     font-size: 20px;
   }
@@ -167,7 +163,6 @@ nav a {
   .burger-menu-opening {
     animation: slideInRight 0.5s ease forwards;
   }
-
   @keyframes slideInRight {
     from {
       right: -100%;

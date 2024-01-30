@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 .service-title {
-  padding: 200px 0 6vw 4vw;
+  padding: 10vw 0 6vw 0;
   font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
@@ -13,7 +13,7 @@
 .service-box-card .box-text {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .service-box {
   display: flex;
@@ -22,11 +22,11 @@
   align-items: center;
 }
 .service-svg-box {
-  border: 1px solid white;
+  border: 0.07vw solid white;
   border-radius: 50%;
   display: flex;
-  width: 3vw;
-  height: 3vw;
+  width: 4vw;
+  height: 4vw;
   align-items: center;
   justify-content: center;
 }
@@ -45,7 +45,7 @@
 }
 .service-box-card .service-svg {
   transition: transform 0.3s ease;
-  width: 1.7vw;
+  width: 2vw;
   height: auto;
 }
 .service-box-card:hover .service-svg {
@@ -65,29 +65,33 @@
   color: var(--Primary, #e42652);
   font-size: 1.9vw;
   font-weight: 500;
-  line-height: 130%; /* 31.2px */
+  line-height: 130%;
   position: relative;
   display: inline-block;
   height: 30px;
-  width: 18vw;
+}
+.box-text .box-text-span {
+  width: 17vw;
 }
 .service-box-title::before {
   content: "";
   position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -19px;
+  width: 100%;
+  height: 0.1vw;
+  bottom: -0.4vw;
   left: 0;
   background-color: var(--Primary, #e42652);
-  transition: width 0.3s ease;
+  transform-origin: bottom left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 .service-box-card:hover .service-box-title::before {
-  width: 70px;
+  transform: scaleX(1);
 }
 .service-box-line {
-  width: calc(100vw - 150px);
+  width: calc(91vw - 65px);
+  height: 0.05vw;
   margin: 0 auto;
-  height: 1px;
   background: var(--gray-1, #808080);
 }
 
@@ -98,16 +102,13 @@
     min-width: 343px;
     width: 80%;
     display: flex;
-    padding-left: 3%;
   }
   .service-box-card .box-text {
     flex-direction: column;
-    padding-left: 3vw;
   }
   .service-svg-box {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    right: 0;
     width: 35px;
     height: 35px;
   }
@@ -140,7 +141,6 @@
   }
   .service-box-title {
     font-size: 20px;
-    width: 71px;
   }
   .service-box-title::before {
     bottom: -3px;
@@ -149,10 +149,17 @@
     width: 70px;
   }
   .service-box-line {
-    width: calc(100vw - 30px);
+    width: calc(90vw - 30px);
     min-width: 340px;
   }
+  .service-box-title::before {
+    bottom: 3px;
+  }
+  .box-text .box-text-span {
+    width: 177px;
+  }
 }
+
 @media only screen and (min-width: 997px) and (max-width: 1024px) {
   .service-box-line {
     width: 95%;

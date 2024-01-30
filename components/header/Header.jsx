@@ -3,8 +3,21 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import "./style.css";
+import PreloadImages from "../PreloadImages";
 
 const Header = () => {
+  const imagePaths = [
+    "/Logo.svg",
+    "/header/nav-icon-open.svg",
+    "/header/nav-icon-close.svg",
+    // Добавьте пути к другим изображениям
+  ];
+  const [activeLink, setActiveLink] = useState(null);
+
+  const handleLinkClick = (linkName) => {
+    setActiveLink(linkName);
+  };
+
   const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
 
   const toggleBurgerMenu = () => {
@@ -19,8 +32,8 @@ const Header = () => {
 
   return (
     <header className={`header ${burgerMenuOpen ? "burger-menu-open" : ""}`}>
-      {" "}
-      <Link href="/" as="/" >
+      <PreloadImages imagePaths={imagePaths} />
+      <Link href="/" as="/">
         <Image
           src="/Logo.svg"
           width={68.457}
@@ -31,24 +44,32 @@ const Header = () => {
       </Link>
       {/* Навигация для больших экранов */}
       <div className="nav">
-        <Link href="/" as="">
+        <Link href="/" as=""         className={activeLink === '/' ? 'active' : ''}
+        onClick={() => handleLinkClick('/')}>
           Главная
         </Link>
-        <Link href="/service" as="service">
+        <Link href="/service" as="service"   className={activeLink === '/service' ? 'active' : ''}
+        onClick={() => handleLinkClick('/service')}>
           Услуги
         </Link>
-        <Link href="/portfolio" as="portfolio">
+        <Link href="/portfolio" as="portfolio"  className={activeLink === '/portfolio' ? 'active' : ''}
+        onClick={() => handleLinkClick('/portfolio')}>
           Портфолио
         </Link>
-        <Link href="/about-us" as="about-us">
+        <Link href="/about-us" as="about-us"  className={activeLink === '/about-us' ? 'active' : ''}
+        onClick={() => handleLinkClick('/about-us')}>
           О нас
         </Link>
-        <Link href="/contacts">Контакты</Link>
+        <Link href="/contacts" as="contacts"  className={activeLink === '/contacts' ? 'active' : ''}
+        onClick={() => handleLinkClick('/contacts')}>Контакты</Link>
       </div>
       <Link href="/contacts" className="header-btn">
         Связаться с нами
       </Link>
-      <div  className={`burger-menu-btn ${burgerMenuOpen ? "open" : ""}`} onClick={toggleBurgerMenu}>
+      <div
+        className={`burger-menu-btn ${burgerMenuOpen ? "open" : ""}`}
+        onClick={toggleBurgerMenu}
+      >
         <Image
           src="/header/nav-icon-open.svg"
           width={32}
@@ -57,13 +78,12 @@ const Header = () => {
           className="burger-menu-icon"
         ></Image>
       </div>
-      <div    className={`burger-menu ${burgerMenuOpen ? "visible" : ""} ${
+      <div
+        className={`burger-menu ${burgerMenuOpen ? "visible" : ""} ${
           burgerMenuOpen ? "burger-menu-opening" : "burger-menu-closing"
         }`}
       >
-        <div
-          className="burger-menu-b"
-        >
+        <div className="burger-menu-b">
           <Image
             src="/header/nav-icon-close.svg"
             width={32}

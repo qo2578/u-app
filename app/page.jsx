@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./globals.css";
 import Link from "next/link";
@@ -5,10 +6,27 @@ import Image from "next/image";
 import Card from "./../components/card/Card";
 import Reviews from "../components/reviews/Reviews";
 import { Request } from "../components/request/Request";
+import PreloadImages from "../components/PreloadImages";
 
 const HomePage = () => {
+  const imagePaths = [
+    '/home/group3.svg',
+    '/home/company1.svg',
+    '/home/company2.svg',
+    '/home/company3.svg',
+    '/home/company4.svg',
+    '/home/company5.svg',
+    '/home/team.svg',
+    '/home/our-service1.svg',
+    '/card/arrow-up-light.svg',
+    '/home/our-service2.svg',
+    '/home/our-service3.svg',
+    '/home/arrow-up-light.svg',
+    // Добавьте пути к другим изображениям
+  ];
   return (
     <div className="home-page">
+       <PreloadImages imagePaths={imagePaths} />
       <section className="home">
         <div className="container">
           <h1 className="home-title">
@@ -191,7 +209,7 @@ const HomePage = () => {
                   className="our-service-img"
                 />
               </div>
-              <p className="our-service-title">Поддержка</p>
+              <p className="our-service-title">SEO</p>
               <p className="our-service-text">
                 Дизайн-поддержка и развитие <br /> проектов после запуска
               </p>
@@ -259,7 +277,9 @@ const HomePage = () => {
         </div>
       </section>
       <section className="request">
-        <Request />
+        <div className="container">
+          <Request />
+        </div>
       </section>
     </div>
   );

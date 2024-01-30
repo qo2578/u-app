@@ -41,7 +41,7 @@ margin: 0 1vw;
 .slider-container-simple-text h2 {
   font-size: 2vw;
   font-weight: 500;
-  padding-bottom: 24px;
+  padding-bottom: 1.3vw;
 }
 .slider-container-simple-text p {
   color: var(--gray-1, #808080);
@@ -49,7 +49,6 @@ margin: 0 1vw;
   font-weight: 400;
   height: 72px;
 }
-
 
 @media only screen and (max-width: 767px) {
   .slider-container-simple {

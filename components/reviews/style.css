@@ -1,18 +1,12 @@
 .reviews-container {
-  padding: 40px;
   position: relative;
 }
 .reviews-card {
   display: flex !important;
-  width: 90% !important;
   height: 42vw;
-  margin: 0 auto 0;
   justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
+  padding: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  padding: 10px;
   background: var(--black-2, #252525);
 }
 .reviews-card .custom-prev-btn img,
@@ -45,7 +39,6 @@
   line-height: 130%; /* 31.2px */
   padding: 7.3vw 8.5vw 0;
 }
-
 .reviews-card-box {
   display: flex;
   align-items: center;
@@ -54,13 +47,11 @@
   bottom: 7vw;
   padding: 0 30vw 0;
 }
-
 .reviews-card-box-prof {
   border-radius: 50%;
   width: 6vw;
   height: auto;
 }
-
 .reviews-card-name {
   text-align: center;
   font-size: 1.3vw;
@@ -68,7 +59,6 @@
   line-height: 130%; /* 23.4px */
   margin-top: 16px;
 }
-
 .reviews-card-text {
   text-align: center;
   color: #b7b7b7;
@@ -78,23 +68,19 @@
 }
 
 /* Стили для слайдера */
-
 .slick-prev,
 .slick-next {
   font-size: 24px;
   color: #333;
 }
-
 .slick-prev:hover,
 .slick-next:hover {
   color: #ffffff;
 }
-
 .slick-dots li button:before {
   font-size: 14px;
   color: #666;
 }
-
 .slick-dots li.slick-active button:before {
   color: #ffffff;
 }
@@ -108,14 +94,12 @@
   right: 25%;
   transform: translateX(50%);
 }
-
 .reviews-card .custom-prev-btn:hover .custom-btn-svg,
 .reviews-card .custom-next-btn:hover .custom-btn-svg {
   color: #000000;
   filter: invert(100%);
   fill: rgb(255, 255, 255);
 }
-
 .reviews-card .custom-prev-btn:hover,
 .reviews-card .custom-next-btn:hover {
   color: #000000;
@@ -124,9 +108,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .reviews-container {
-    padding: 30px;
-  }
   .reviews-card {
     min-width: 343px;
     height: 411px;
@@ -200,5 +181,4 @@
     height: 32px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-}
+

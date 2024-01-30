@@ -10,6 +10,7 @@ html {
   color: var(--White);
   font-family: "SF Pro Display", sans-serif !important;
   user-select: none;
+  font-display: swap;
 }
 html,
 body {
@@ -23,8 +24,7 @@ section {
   margin: 0 auto;
 }
 .container {
-  max-width: 1200px;
-  min-width: 100%;
+  max-width: 85vw;
   margin: 0 auto;
 }
 a {
@@ -33,7 +33,8 @@ a {
 }
 
 .home-page {
-  background: url("/home/home-bg.png") center/cover no-repeat;
+  background: url("/home/home-bg.png") center/cover no-repeat ,
+  linear-gradient(#121212, #121212);
   overflow: hidden;
 }
 /*---------------------------------------------------------------- Section home */
@@ -43,7 +44,7 @@ a {
   font-weight: 700;
   min-width: 843px;
   width: 70%;
-  padding: 20vw 0 40px 6vw;
+  padding: 10vw 0 40px 0;
 }
 .home-title span {
   color: var(--Primary, #e42652);
@@ -55,14 +56,13 @@ a {
   line-height: 130%;
   min-width: 660px;
   width: 55%;
-  padding: 0 0 1em 6vw;
+  padding: 0 0 1em 0;
 }
 .home-box {
   display: flex;
   font-size: 1vw;
   align-items: center;
   gap: 10px;
-  padding-left: 6vw;
 }
 .home-box-right {
   margin-left: 32px;
@@ -72,7 +72,7 @@ a {
 }
 .home-box-right img {
   width: 6vw;
-  height: auto;
+  height: 6vw;
 }
 .home-box-right p {
   font-size: 1.1vw;
@@ -120,12 +120,8 @@ a {
 }
 
 /*---------------------------------------------------------------- Section team */
-.team {
-  padding: 15vw 0 0 0;
-  display: flex;
-  justify-content: center;
-}
 .team .container {
+  padding: 15vw 0 0 0;
   display: flex;
   justify-content: center;
 }
@@ -219,7 +215,7 @@ a {
   line-height: 130%; /* 26px */
   width: 40em;
   margin: 0 auto 0;
-  padding-bottom: 60px;
+  padding-bottom: 3vw;
 }
 .our-service-title {
   font-size: 1.55vw;
@@ -239,7 +235,7 @@ a {
 }
 .our-service .row {
   display: flex;
-  gap: 30px;
+  gap: 2vw;
   padding-left: 0;
   padding-bottom: 4vw;
   justify-content: center;
@@ -288,8 +284,6 @@ a {
   align-items: center;
   gap: 10px;
   border: 1px solid var(--White, #fff);
-  text-align: center;
-  margin: 0px 0 0 0;
   transition: background 0.3s ease, color 0.3s ease;
 }
 .our-service-btn:hover {
@@ -299,21 +293,19 @@ a {
 
 /*---------------------------------------------------------------- Section our-projects */
 .our-projects {
-  padding: 15vw 0 0 0;
+  padding-top: 15vw;
 }
 .our-projects-box {
   display: flex;
   margin-bottom: 3vw;
-  justify-content: space-evenly;
-}
-.our-projects-text {
-  margin-right: 330px;
+  justify-content: space-between;
+  align-items: center;
 }
 .our-projects h2 {
   font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
-  margin-bottom: 16px;
+  margin-bottom: 1vw;
 }
 .our-projects h3 {
   color: #b7b7b7;
@@ -323,12 +315,12 @@ a {
   width: 80%;
 }
 .our-projects-btn {
-  padding: 1em 2em;
   align-items: center;
+  border-radius: 0.5vw;
+  padding: 1em 2em;
+  height: 100%;
   font-size: 1.3vw;
-  align-self: flex-start;
   line-height: 130%;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   transition: background 0.3s ease, color 0.3s ease;
@@ -338,38 +330,36 @@ a {
 }
 .our-projects-btn:hover {
   color: black;
+  border-radius: 0.5vw;
   background: var(--Primary, #ffffff);
-  border-radius: 10px;
 }
 .our-projects-btn img {
   vertical-align: middle;
   filter: invert(0%);
-  margin-left: 12px;
+  margin-left: 0.5vw;
   transition: filter 0.3s ease;
   width: 2vw;
   height: auto;
 }
-
 .our-projects-btn:hover img {
   filter: invert(100%);
 }
 
 /*---------------------------------------------------------------- Section reviews */
 .reviews {
-  padding: 15vw 0 0;
+  padding-top: 15vw;
 }
 .reviews-box {
   display: flex;
   align-items: center;
   text-align: center;
-  padding-bottom: 60px;
-  padding-left: 6vw;
+  padding-bottom: 4vw;
 }
 .reviews-title {
   font-size: 2.5vw;
   font-weight: 600;
   line-height: 130%; /* 46.8px */
-  margin-right: 42px;
+  margin-right: 3vw;
 }
 .reviews-text {
   color: #b7b7b7;
@@ -387,23 +377,23 @@ a {
 
 @media only screen and (max-width: 767px) {
   .home-page {
-    background: url("/home/home-bg-min.png") center/cover no-repeat;
+    background: url("/home/home-bg-min.png") center/cover no-repeat,
+    linear-gradient(#121212, #121212);
   }
   /*---------------------------------------------------------------- Section home */
 
   .home-title {
     font-size: 36px;
     min-width: 348px;
-    padding: 86px 0 24px 16px;
+    padding: 86px 0 24px 0;
   }
   .home-text {
     font-size: 16px;
-    padding: 0 0 24px 16px;
+    padding: 0 0 24px 0;
     min-width: 343px;
   }
   .home-box {
     display: block;
-    padding-left: 16px;
   }
   .home-box-right {
     margin-top: 16px;
@@ -420,8 +410,7 @@ a {
   .home-box-right p {
     font-size: 14px;
   }
-  .team-box-left img {
-    padding-left: 20px;}
+
   /*---------------------------------------------------------------- Section company */
   .company {
     padding: 85px 0 0 0;
@@ -460,7 +449,7 @@ a {
   }
   .our-service h3 {
     font-size: 16px;
-    width: 343px;
+    width: 100%;
     padding-bottom: 0;
     margin: 0 auto 40px;
   }
@@ -468,7 +457,7 @@ a {
     border-radius: 10px;
     min-width: 340px;
     padding: 28px 1.5vw 28px;
-}
+  }
   .our-service-title {
     font-size: 24px;
     margin-bottom: 12px;
@@ -493,7 +482,7 @@ a {
   .our-service-img {
     height: auto;
     width: 26px;
-}
+  }
   .col-4 .card-svg-box {
     display: flex;
     margin: 30px auto 0;
@@ -575,7 +564,7 @@ a {
 
   /*---------------------------------------------------------------- Section reviews */
   .reviews {
-    padding: 100px 0 100px;
+    padding: 100px 0 0;
   }
   .reviews-box {
     display: flex;
@@ -585,7 +574,6 @@ a {
   }
   .reviews-title {
     font-size: 24px;
-    margin-left: 22px;
     margin-right: 0px;
   }
   .reviews-text {
@@ -600,9 +588,7 @@ a {
 }
 @media only screen and (max-width: 931px) {
   /*---------------------------------------------------------------- Section team */
-  .team {
-    padding: 100px 0 0 0px;
-  }
+
   .team .container {
     flex-direction: column;
   }
@@ -614,24 +600,21 @@ a {
     font-size: 16px;
     text-align: center;
   }
-  .team h2 {
-    font-size: 24px;
-    padding-bottom: 12px;
-    min-width: 343px;
-    padding-left: 16px;
-  }
   .team h3 {
     font-size: 16px;
+    max-width: max-content;
+  }
+  .team h2 {
+    padding-bottom: 20px;
     min-width: 343px;
-    padding-bottom: 24px;
-    padding-left: 16px;
+    font-size: 24px;
   }
   .team-box-right-text {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .team-box-left {
+  .team-box-right-text h3 .team-box-left {
     display: block;
   }
   .team-box-left img {
@@ -640,14 +623,8 @@ a {
   }
   .team-btn {
     font-size: 16px;
-    padding: 12px 32px;
-    height: 45px;
     width: 193px;
-    margin-left: 16px;
-  }
-  .team-btn:hover {
-    color: black;
-    background: var(--Primary, #ffffff);
+    padding: 12px 32px;
   }
   .team-box-right h3,
   .team-box-right a {
@@ -667,14 +644,6 @@ a {
     margin-left: 0px;
     justify-content: center;
   }
-  .our-projects-text {
-    margin-right: 0px;
-    margin-left: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
 }
 @media only screen and (min-width: 768px) and (max-width: 931px) {
   .team-box-right-text {
@@ -691,21 +660,14 @@ a {
   /*---------------------------------------------------------------- Section home */
 
   .home-title {
-    font-size: 6vw;
     min-width: 490px;
-    width: 70%;
-    padding: 92px 0 24px 30px;
+    padding: 92px 0 24px 0;
   }
   .home-text {
     font-size: 16px;
-    padding: 0 0 24px 30px;
     min-width: 443px;
   }
-  .home-box {
-    padding-left: 30px;
-  }
   .home-box-right {
-    margin-top: 1px;
     margin-left: 0;
   }
   .home-btn {
@@ -749,7 +711,7 @@ a {
 
   /*---------------------------------------------------------------- Section team */
   .team {
-    padding: 100px 0 0 30px;
+    padding: 100px 0 0 0;
   }
   .team .container {
     display: flex;
@@ -815,7 +777,7 @@ a {
     border-radius: 10px;
     min-width: 340px;
     padding: 28px 1.5vw 28px;
-}
+  }
   .img-box {
     margin: 15px auto 20px;
     width: 7vw;
@@ -834,7 +796,7 @@ a {
   .our-service-img {
     height: auto;
     width: 3.5vw;
-}
+  }
   .col-4:hover .img-box {
     background: #ffffff;
   }
@@ -857,12 +819,7 @@ a {
     margin-bottom: 40px;
   }
   .our-projects-text {
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .our-projects h2 {
     font-size: 24px;
@@ -942,10 +899,6 @@ a {
   .our-service .row {
     padding: 0;
   }
-  .our-projects-text {
-    margin-right: 0;
-    padding-left: 30px;
-  }
   .our-projects-box {
     margin-bottom: 60px;
     justify-content: space-between;
@@ -953,5 +906,12 @@ a {
   .our-service-btn {
     margin: 60px 0 0;
     width: 227px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  section {
+    max-width: 2000px;
+    padding: 0 200px;
   }
 }
