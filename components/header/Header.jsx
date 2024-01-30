@@ -44,24 +44,46 @@ const Header = () => {
       </Link>
       {/* Навигация для больших экранов */}
       <div className="nav">
-        <Link href="/" as=""         className={activeLink === '/' ? 'active' : ''}
-        onClick={() => handleLinkClick('/')}>
+        <Link
+          href="/"
+          as=""
+          className={activeLink === "/" ? "active" : ""}
+          onClick={() => handleLinkClick("/")}
+        >
           Главная
         </Link>
-        <Link href="/service" as="service"   className={activeLink === '/service' ? 'active' : ''}
-        onClick={() => handleLinkClick('/service')}>
+        <Link
+          href="/service"
+          as="service"
+          className={activeLink === "/service" ? "active" : ""}
+          onClick={() => handleLinkClick("/service")}
+        >
           Услуги
         </Link>
-        <Link href="/portfolio" as="portfolio"  className={activeLink === '/portfolio' ? 'active' : ''}
-        onClick={() => handleLinkClick('/portfolio')}>
+        <Link
+          href="/portfolio"
+          as="portfolio"
+          className={activeLink === "/portfolio" ? "active" : ""}
+          onClick={() => handleLinkClick("/portfolio")}
+        >
           Портфолио
         </Link>
-        <Link href="/about-us" as="about-us"  className={activeLink === '/about-us' ? 'active' : ''}
-        onClick={() => handleLinkClick('/about-us')}>
+        <Link
+          href="/about-us"
+          as="about-us"
+          className={activeLink === "/about-us" ? "active" : ""}
+          onClick={() => handleLinkClick("/about-us")}
+        >
           О нас
         </Link>
-        <Link href="/contacts" as="contacts"  className={activeLink === '/contacts' ? 'active' : ''}
-        onClick={() => handleLinkClick('/contacts')}>Контакты</Link>
+        <Link
+          href="/contacts"
+          as="contacts"
+          className={activeLink === "/contacts" ? "active" : ""}
+          onClick={() => handleLinkClick("/contacts")}
+        >
+          Контакты
+        </Link>
       </div>
       <Link href="/contacts" className="header-btn">
         Связаться с нами
@@ -94,19 +116,58 @@ const Header = () => {
           ></Image>
 
           <div className="burger-menu-box">
-            <Link href="/" as="" onClick={closeBurgerMenu}>
+            <Link
+              href="/"
+              as=""
+              onClick={(event) => {
+                closeBurgerMenu();
+                handleLinkClick("/");
+              }}
+              className={activeLink === "/" ? "active" : ""}
+            >
               Главная
             </Link>
-            <Link href="/service" as="service" onClick={closeBurgerMenu}>
+            <Link
+              href="/service"
+              as="service"
+              onClick={(event) => {
+                closeBurgerMenu();
+                handleLinkClick("/service");
+              }}
+              className={activeLink === "/service" ? "active" : ""}
+            >
               Услуги
             </Link>
-            <Link href="/portfolio" as="portfolio" onClick={closeBurgerMenu}>
+            <Link
+              href="/portfolio"
+              as="portfolio"
+              onClick={(event) => {
+                closeBurgerMenu();
+                handleLinkClick("/portfolio");
+              }}
+              className={activeLink === "/portfolio" ? "active" : ""}
+            >
               Портфолио
             </Link>
-            <Link href="/about-us" as="about-us" onClick={closeBurgerMenu}>
+            <Link
+              href="/about-us"
+              as="about-us"
+              onClick={(event) => {
+                closeBurgerMenu();
+                handleLinkClick("/about-us");
+              }}
+              className={activeLink === "/about-us" ? "active" : ""}
+            >
               О нас
             </Link>
-            <Link href="/contacts" onClick={closeBurgerMenu}>
+            <Link
+              href="/contacts"
+              onClick={(event) => {
+                closeBurgerMenu();
+                handleLinkClick("/contacts");
+              }}
+              className={activeLink === "/contacts" ? "active" : ""}
+            >
               Контакты
             </Link>
           </div>

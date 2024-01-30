@@ -155,6 +155,8 @@ input:focus {
     padding: 30px 20px;
     min-width: 343px;
     width: 80%;
+    border-radius: 10px;
+    border: 1px solid #ababab79;
     min-height: 460px;
   }
   .contacts-title {
@@ -192,6 +194,7 @@ input:focus {
     padding: 18px 32px;
     margin-top: 40px;
     font-size: 16px;
+    border-radius: 10px;
   }
   .contacts-box h3 {
     font-size: 24px;

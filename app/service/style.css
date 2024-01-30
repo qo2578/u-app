@@ -151,6 +151,7 @@
   .service-box-line {
     width: calc(90vw - 30px);
     min-width: 340px;
+    height: 1px;
   }
   .service-box-title::before {
     bottom: 3px;

@@ -76,13 +76,6 @@
   .card {
     margin: 0 auto;
   }
-  .cards-container a {
-    width: 100%;
-  }
-  .cards-container {
-    display: flex;
-    justify-content: center;
-  }
   .card h4 {
     font-size: 14px;
     margin: 14px 0 5px 0;
@@ -116,12 +109,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-  }
   .card {
     min-width: 343px;
     margin-bottom: 10px;
@@ -161,3 +148,24 @@
     filter: invert(100%);
   }
 }
+
+@media only screen and (min-width: 828px) and (max-width: 1024px) {
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+@media only screen and (max-width: 828px) {
+  .cards-container a {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 403px) {
+  .cards-container a {
+    width: 85vw;
+  }
+}
+
+
