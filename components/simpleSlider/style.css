@@ -13,10 +13,14 @@
 .slick-dots {
   position: static;
   text-align: start;
-  margin-left: 4px;
+  margin-left: 0.5vw;
+  padding-top: 2vw;
 }
 .slider-container-simple .slick-dots li {
-margin: 0 1vw;
+  margin: 0 1vw;
+}
+.slider-container-simple .slick-slide {
+  margin: 0 4vw 0 1.3vw;
 }
 .slick-dots li button::before {
   content: "";
@@ -59,10 +63,12 @@ margin: 0 1vw;
   .slider-container-simple .slick-slide {
     height: 120px;
   }
-
   .slide-simple {
     width: 512px;
     height: 120px;
+  }
+  .slider-container-simple .slick-slide {
+    margin: 0 4vw 0 2.3vw;
   }
   .slick-dots {
     position: static;
@@ -98,5 +104,4 @@ margin: 0 1vw;
     width: 343px;
     height: 72px;
   }
-
 }

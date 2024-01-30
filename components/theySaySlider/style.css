@@ -63,7 +63,7 @@
   margin: 0 -10px;
 }
 .slick-slide {
-  margin: 0 1vw;
+  margin: 0 2vw;
 }
 
 /* Стили для кнопок */
@@ -132,7 +132,7 @@
     height: 40px;
   }
   .they-say-box-text {
-    width: 25vw;
+    width: 82%;
     padding: 0;
     padding-left: 10px;
   }
@@ -173,23 +173,22 @@
     height: 332px;
     margin: 0 13px;
   }
-  .they-say-container .custom-prev-btn,
-  .they-say-container .custom-next-btn {
+  .they-say-container .custom-prev-btn-they-say,
+  .they-say-container .custom-next-btn-they-say {
     position: absolute;
-    top: 29px;
+    top: 10px;
     font-size: 24px;
     width: 20px;
     height: 20px;
     cursor: pointer;
     transition: color 0.3s, background-color 0.3s;
   }
-  .they-say-container .custom-prev-btn {
-    right: calc(11% + 25px);
+  .they-say-container .custom-prev-btn-they-say {
+    left: 240px;
     transform: translateX(-50%);
   }
-  .they-say-container .custom-next-btn {
-    right: calc(11% + 15px);
-    transform: translateX(50%);
+  .they-say-container .custom-next-btn-they-say {
+    left: 257px;
     transform: translateX(50%);
   }
 

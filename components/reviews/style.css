@@ -109,7 +109,6 @@
 
 @media only screen and (max-width: 767px) {
   .reviews-card {
-    min-width: 343px;
     height: 411px;
     padding: 10px;
   }

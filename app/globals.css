@@ -811,9 +811,7 @@ a {
   }
 
   /*---------------------------------------------------------------- Section our-projects */
-  .our-projects {
-    padding: 200px 0 0 0;
-  }
+
   .our-projects-box {
     display: inline-flex;
     margin-bottom: 40px;
@@ -846,7 +844,6 @@ a {
     width: 220px;
   }
   .our-projects .container {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }

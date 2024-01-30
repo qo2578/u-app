@@ -270,7 +270,7 @@ const AboutUsPage = () => {
               <h3>У нас спрашивают</h3>
               <SimpleSlider />
               <h2 className="they-ask-title">
-                Будем рады ответить на любые ваши вопросы <br /> по телефону:
+                Будем рады ответить на любые ваши вопросы по телефону:
                 +996 554 201 506
               </h2>
               <div className="they-ask-link">
