@@ -126,6 +126,7 @@ const ContactsPage = () => {
                       src="/footer/email.svg"
                       width={24}
                       height={24}
+                      loading="lazy"
                       alt="email"
                       className="contacts-link-img"
                     ></Image>
@@ -142,6 +143,7 @@ const ContactsPage = () => {
                       src="/footer/call.svg"
                       width={24}
                       height={24}
+                      loading="lazy"
                       alt="call"
                       className="contacts-link-img"
                     ></Image>
@@ -159,6 +161,7 @@ const ContactsPage = () => {
                         src="/footer/telegram.svg"
                         width={24}
                         height={24}
+                        loading="lazy"
                         alt="telegram"
                         className="contacts-link-img"
                       ></Image>
@@ -174,6 +177,7 @@ const ContactsPage = () => {
                         src="/footer/instagram.svg"
                         width={24}
                         height={24}
+                        loading="lazy"
                         alt="instagram"
                         className="contacts-link-img"
                       />
@@ -189,6 +193,7 @@ const ContactsPage = () => {
                         src="/footer/youtube.svg"
                         width={24}
                         height={24}
+                        loading="lazy"
                         alt="youtube"
                         className="contacts-link-img"
                       />
@@ -204,6 +209,7 @@ const ContactsPage = () => {
                         src="/footer/whatsapp.svg"
                         width={24}
                         height={24}
+                        loading="lazy"
                         alt="whatsapp"
                         className="contacts-link-img"
                       ></Image>
@@ -219,6 +225,7 @@ const ContactsPage = () => {
                       src="/footer/dom.svg"
                       width={24}
                       height={24}
+                      loading="lazy"
                       alt="whatsapp"
                       className="contacts-link-img"
                     ></Image>
@@ -229,6 +236,7 @@ const ContactsPage = () => {
                       src="/footer/dom.svg"
                       width={24}
                       height={24}
+                      loading="lazy"
                       alt="whatsapp"
                       className="contacts-link-img"
                     ></Image>
@@ -239,6 +247,7 @@ const ContactsPage = () => {
                       src="/footer/clock.svg"
                       width={24}
                       height={24}
+                      loading="lazy"
                       alt="whatsapp"
                       className="contacts-link-img"
                     ></Image>

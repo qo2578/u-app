@@ -46,6 +46,7 @@ const HomePage = () => {
                 src="/home/group3.svg"
                 width={99}
                 height={50}
+                loading="lazy"
                 alt="group3"
               />
               <p>
@@ -64,30 +65,35 @@ const HomePage = () => {
               src="/home/company1.svg"
               width={203}
               height={64}
+              loading="lazy"
               alt="company"
             />
             <Image
               src="/home/company2.svg"
               width={203}
               height={64}
+              loading="lazy"
               alt="company"
             />
             <Image
               src="/home/company3.svg"
               width={203}
               height={64}
+              loading="lazy"
               alt="company"
             />
             <Image
               src="/home/company4.svg"
               width={203}
               height={64}
+              loading="lazy"
               alt="company"
             />
             <Image
               src="/home/company5.svg"
               width={203}
               height={64}
+              loading="lazy"
               alt="company"
             />
           </div>
@@ -107,7 +113,7 @@ const HomePage = () => {
                 Подробнее о нас
               </Link>
             </div>
-            <Image src="/home/team.svg" width={452} height={326} alt="team" />
+            <Image src="/home/team.svg" width={452} height={326} loading="lazy" alt="team" />
           </div>
           <div className="team-box-right">
             <h3>
@@ -157,6 +163,7 @@ const HomePage = () => {
                   src="/home/our-service1.svg"
                   width={30}
                   height={30}
+                  loading="lazy"
                   alt="our-service"
                   className="our-service-img"
                 />
@@ -170,6 +177,7 @@ const HomePage = () => {
                   src="/card/arrow-up-light.svg"
                   width={30}
                   height={30}
+                  loading="lazy"
                   alt="arrow-up-light"
                   className="card-svg"
                 />
@@ -181,6 +189,7 @@ const HomePage = () => {
                   src="/home/our-service2.svg"
                   width={27}
                   height={27}
+                  loading="lazy"
                   alt="our-service"
                   className="our-service-img"
                 />
@@ -194,6 +203,7 @@ const HomePage = () => {
                   src="/card/arrow-up-light.svg"
                   width={30}
                   height={30}
+                  loading="lazy"
                   alt="arrow-up-light"
                   className="card-svg"
                 />
@@ -205,6 +215,7 @@ const HomePage = () => {
                   src="/home/our-service3.svg"
                   width={27}
                   height={27}
+                  loading="lazy"
                   alt="our-service"
                   className="our-service-img"
                 />
@@ -218,6 +229,7 @@ const HomePage = () => {
                   src="/card/arrow-up-light.svg"
                   width={30}
                   height={30}
+                  loading="lazy"
                   alt="arrow-up-light"
                   className="card-svg"
                 />
@@ -245,6 +257,7 @@ const HomePage = () => {
                 src="/home/arrow-up-light.svg"
                 width={27}
                 height={27}
+                loading="lazy"
                 alt="arrow-up-light"
               />
             </Link>
@@ -260,6 +273,7 @@ const HomePage = () => {
               src="/home/arrow-up-light.svg"
               width={27}
               height={27}
+              loading="lazy"
               alt="arrow-up-light"
             />
           </Link>

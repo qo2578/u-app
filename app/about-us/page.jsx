@@ -34,6 +34,7 @@ const AboutUsPage = () => {
             src="/about-us/group.svg"
             width={373}
             height={326}
+            loading="lazy"
             alt="group"
             className="about-img"
           />
@@ -132,6 +133,7 @@ const AboutUsPage = () => {
                   src="/about-us/svg-img1.svg"
                   width={100}
                   height={100}
+                  loading="lazy"
                   alt="group"
                   className="offer-img"
                 />
@@ -142,6 +144,7 @@ const AboutUsPage = () => {
                   src="/about-us/svg-img2.svg"
                   width={100}
                   height={100}
+                  loading="lazy"
                   alt="group"
                   className="offer-img"
                 />
@@ -152,6 +155,7 @@ const AboutUsPage = () => {
                   src="/about-us/svg-img3.svg"
                   width={100}
                   height={100}
+                  loading="lazy"
                   alt="group"
                   className="offer-img"
                 />
@@ -164,6 +168,7 @@ const AboutUsPage = () => {
                   src="/about-us/svg-img4.svg"
                   width={100}
                   height={100}
+                  loading="lazy"
                   alt="group"
                   className="offer-img"
                 />
@@ -174,6 +179,7 @@ const AboutUsPage = () => {
                   src="/about-us/svg-img5.svg"
                   width={100}
                   height={100}
+                  loading="lazy"
                   alt="group"
                   className="offer-img"
                 />
@@ -184,6 +190,7 @@ const AboutUsPage = () => {
                   src="/about-us/svg-img6.svg"
                   width={100}
                   height={100}
+                  loading="lazy"
                   alt="group"
                   className="offer-img"
                 />

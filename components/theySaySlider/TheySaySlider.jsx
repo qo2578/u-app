@@ -54,6 +54,7 @@ const TheySaySlider = () => {
                 src={review.imageSrc}
                 width={60}
                 height={60}
+                loading="lazy"
                 alt="group3"
                 className="they-say-card-box-img"
               />
@@ -73,6 +74,7 @@ const TheySaySlider = () => {
                   src="/home/ep_arrow-up.svg"
                   width={20}
                   height={20}
+                  loading="lazy"
                   alt="ep_arrow-up"
                   className="custom-btn-svg"
                 />
@@ -89,6 +91,7 @@ const TheySaySlider = () => {
                   src="/home/ep_arrow-up2.svg"
                   width={20}
                   height={20}
+                  loading="lazy"
                   alt="ep_arrow-up"
                   className="custom-btn-svg"
                 />

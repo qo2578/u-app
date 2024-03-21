@@ -38,6 +38,7 @@ const Header = () => {
           src="/Logo.svg"
           width={68.457}
           height={52}
+          loading="lazy"
           alt="logo"
           className="header-logo"
         ></Image>
@@ -96,6 +97,7 @@ const Header = () => {
           src="/header/nav-icon-open.svg"
           width={32}
           height={32}
+          loading="lazy"
           alt="nav-icon-open"
           className="burger-menu-icon"
         ></Image>
@@ -110,6 +112,7 @@ const Header = () => {
             src="/header/nav-icon-close.svg"
             width={32}
             height={32}
+            loading="lazy"
             alt="nav-icon-close"
             className="burger-menu-btn"
             onClick={closeBurgerMenu}

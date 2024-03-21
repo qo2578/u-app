@@ -56,6 +56,7 @@ const Card = () => {
                 src={card.imageSrc}
                 width={525}
                 height={425}
+                loading="lazy"
                 alt={card.title}
                 className="card-img"
               />
@@ -68,6 +69,7 @@ const Card = () => {
                   src="/card/arrow-up-light.svg"
                   width={30}
                   height={30}
+                  loading="lazy"
                   alt="arrow-up-light"
                   className="card-svg"
                 />
