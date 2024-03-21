@@ -52,6 +52,7 @@ const Reviews = () => {
                 src={review.imageSrc}
                 width={80}
                 height={80}
+                loading="lazy"
                 alt="group3"
                 className="reviews-card-box-prof"
               />
@@ -65,6 +66,7 @@ const Reviews = () => {
                   src="/home/ep_arrow-up.svg"
                   width={20}
                   height={20}
+                  loading="lazy"
                   alt="ep_arrow-up"
                   className="custom-btn-svg"
                 />
@@ -77,6 +79,7 @@ const Reviews = () => {
                   src="/home/ep_arrow-up2.svg"
                   width={20}
                   height={20}
+                  loading="lazy"
                   alt="ep_arrow-up"
                   className="custom-btn-svg"
                 />

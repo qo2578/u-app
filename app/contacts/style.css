@@ -142,7 +142,8 @@ input:focus {
 
 @media only screen and (max-width: 977px) {
   .contacts {
-    background: url("/contacts/contacts-bg-min.png") center/cover no-repeat;
+    background: url("/contacts/contacts-bg-min.png") center/cover no-repeat,
+    linear-gradient(#121212, #121212);
   }
   .contacts-block {
     padding: 86px 0 0 0;

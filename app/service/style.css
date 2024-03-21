@@ -38,7 +38,7 @@
   width: 100%;
   margin: 4vw auto 5vw;
 }
-.service-box-card:hover .service-svg-box {
+.service-box-card:active .service-svg-box {
   background: #ffffff;
   border: 1px solid rgb(255, 255, 255);
   fill: black;
@@ -48,7 +48,7 @@
   width: 2vw;
   height: auto;
 }
-.service-box-card:hover .service-svg {
+.service-box-card:active .service-svg {
   transform: rotate(-45deg);
   fill: black;
   filter: invert(100%);
@@ -85,7 +85,7 @@
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-.service-box-card:hover .service-box-title::before {
+.service-box-card:active .service-box-title::before {
   transform: scaleX(1);
 }
 .service-box-line {
@@ -127,7 +127,7 @@
     transform: rotate(-45deg);
     transition: transform 0.3s ease;
   }
-  .service-box-card:hover .service-svg {
+  .service-box-card:active .service-svg {
     transform: rotate(0deg);
     fill: black;
     filter: invert(100%);
@@ -145,7 +145,7 @@
   .service-box-title::before {
     bottom: -3px;
   }
-  .service-box-card:hover .service-box-title::before {
+  .service-box-card:active .service-box-title::before {
     width: 70px;
   }
   .service-box-line {

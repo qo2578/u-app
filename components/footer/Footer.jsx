@@ -41,6 +41,7 @@ const Footer = () => {
                     src="/footer/instagram.svg"
                     width={24}
                     height={24}
+                    loading="lazy"
                     alt="instagram"
                   />
                   Instagram
@@ -56,6 +57,7 @@ const Footer = () => {
                     src="/footer/youtube.svg"
                     width={24}
                     height={24}
+                    loading="lazy"
                     alt="youtube"
                   />
                   YouTube
@@ -75,6 +77,7 @@ const Footer = () => {
                   src="/footer/call.svg"
                   width={24}
                   height={24}
+                  loading="lazy"
                   alt="call"
                 ></Image>
                 +996 554 201 506
@@ -90,6 +93,7 @@ const Footer = () => {
                   src="/footer/telegram.svg"
                   width={24}
                   height={24}
+                  loading="lazy"
                   alt="telegram"
                 ></Image>
                 Telegram
@@ -105,6 +109,7 @@ const Footer = () => {
                   src="/footer/whatsapp.svg"
                   width={24}
                   height={24}
+                  loading="lazy"
                   alt="whatsapp"
                 ></Image>
                 WhatsApp
@@ -120,6 +125,7 @@ const Footer = () => {
                   src="/footer/email.svg"
                   width={24}
                   height={24}
+                  loading="lazy"
                   alt="email"
                 ></Image>
                 u.skillz.edu@gmail.com
@@ -131,6 +137,7 @@ const Footer = () => {
               src="/Logo.svg"
               width={68.457}
               height={52}
+              loading="lazy"
               alt="logo"
               className="header-logo"
             ></Image>

@@ -40,6 +40,7 @@ const ServicePage = () => {
                     src="/card/arrow-up-light.svg"
                     width={30}
                     height={30}
+                    loading="lazy"
                     alt="arrow-up-light"
                     className="service-svg"
                   />
@@ -69,6 +70,7 @@ const ServicePage = () => {
                     src="/card/arrow-up-light.svg"
                     width={30}
                     height={30}
+                    loading="lazy"
                     alt="arrow-up-light"
                     className="service-svg"
                   />
@@ -97,6 +99,7 @@ const ServicePage = () => {
                     src="/card/arrow-up-light.svg"
                     width={30}
                     height={30}
+                    loading="lazy"
                     alt="arrow-up-light"
                     className="service-svg"
                   />

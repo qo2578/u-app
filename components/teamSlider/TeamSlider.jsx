@@ -63,6 +63,7 @@ const TeamSlider = () => {
           <Image
             src={slide.imgSrc}
             alt={slide.title}
+            loading="lazy"
             width={200}
             height={200}
           />{" "}
