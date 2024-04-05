@@ -111,11 +111,13 @@ a {
 }
 .company-box {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2vw;
   justify-content: center;
 }
 .company-box img {
-  width: 17%;
+  /* width: 15%; */
   height: auto;
 }
 
@@ -421,15 +423,16 @@ a {
     margin: 0 auto 24px;
   }
   .company-box {
-    gap: 0px;
-    flex-wrap: nowrap;
+    gap: 20px;
+    flex-wrap: nowrap; 
     overflow-x: auto;
     scroll-behavior: smooth;
     width: 100%;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
   }
   .company-box img {
-    min-width: 108px;
+    min-width: 90px;
   }
   .company-box::-webkit-scrollbar {
     display: none;
@@ -471,6 +474,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 16px;
     padding-left: 0;
   }
@@ -687,7 +691,7 @@ a {
     margin: 0 auto 24px;
   }
   .company-box {
-    gap: 0px;
+    gap: 15px;
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -698,8 +702,7 @@ a {
     justify-content: center;
   }
   .company-box img {
-    width: 108px;
-    height: 40px;
+   min-width: 90px;
   }
   .company-box::-webkit-scrollbar {
     display: none;
@@ -710,9 +713,7 @@ a {
   }
 
   /*---------------------------------------------------------------- Section team */
-  .team {
-    padding: 100px 0 0 0;
-  }
+
   .team .container {
     display: flex;
   }
@@ -895,6 +896,7 @@ a {
   }
   .our-service .row {
     padding: 0;
+    flex-wrap: wrap;
   }
   .our-projects-box {
     margin-bottom: 60px;
