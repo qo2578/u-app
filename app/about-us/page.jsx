@@ -56,19 +56,19 @@ const AboutUsPage = () => {
         <div className="container">
           <div className="us-box">
             <div className="us-block">
-              <h3 className="us-number">50+</h3>
-              <p className="us-text">Успешных проектов</p>
+              <h3 className="us-number">250+</h3>
+              <p className="us-text">Завершенных проектов</p>
             </div>
             <div className="us-block">
               <h3 className="us-number">7 лет</h3>
               <p className="us-text">Опыта на рынке</p>
             </div>
             <div className="us-block">
-              <h3 className="us-number">10</h3>
+              <h3 className="us-number">25</h3>
               <p className="us-text">Опытных специалистов</p>
             </div>
             <div className="us-block">
-              <h3 className="us-number">50+</h3>
+              <h3 className="us-number">250+</h3>
               <p className="us-text">Довольных клиентов</p>
             </div>
           </div>

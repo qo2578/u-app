@@ -9,38 +9,52 @@ const Card = () => {
     "/card/card1.svg",
     "/card/card2.svg",
     "/card/card3.svg",
-    "/card/card4.svg",
+    "/card/card4.jpg",
     "/card/arrow-up-light.svg",
     // Добавьте пути к другим изображениям
   ];
   const cardsData = [
     {
       id: 1,
-      imageSrc: "/card/card1.svg",
-      title: "Альфа Банк",
-      description: "Инструмент для управления финансами",
-      link: "/link1",
+      imageSrc: "/card/card1.png",
+      title: "JANAT",
+      description: "Корпоротивный сайт для 4-х отелей",
+      link: "https://jannat.kg/",
     },
     {
       id: 2,
-      imageSrc: "/card/card2.svg",
-      title: "Евраз",
-      description: "Приложение для планирования задач",
-      link: "/link2",
+      imageSrc: "/card/card2.png",
+      title: "Абдыш-Ата",
+      description: "Корпоротивный сайт",
+      link: "http://www.abdysh-ata.kg/ru/entry",
     },
     {
       id: 3,
-      imageSrc: "/card/card3.svg",
-      title: "Texta",
-      description: "Мобильное приложение, генерирующее контент для блогов",
-      link: "/link2",
+      imageSrc: "/card/card3.png",
+      title: "Assorti Project",
+      description: "Мобильное приложение(Android/IOS) Интернет магазин(веб-сайт) CRM система",
+      link: "#",
     },
     {
       id: 4,
-      imageSrc: "/card/card4.svg",
-      title: "Генпрокуратура РФ",
-      description: "Веб-сайт для анализа статистики правоохранительных органов",
-      link: "/link2",
+      imageSrc: "/card/card4.jpg",
+      title: "Онлайн курс",
+      description: "Образовательный портал для государственного сектора",
+      link: "#",
+    },
+    {
+      id: 5,
+      imageSrc: "/card/card5.jpg",
+      title: "POSHIV.KG",
+      description: "Интернет магазин для швейной компании",
+      link: "#",
+    },
+    {
+      id: 6,
+      imageSrc: "/card/card6.jpg",
+      title: "Asia Motors",
+      description: "Корпоротивны сайт",
+      link: "http://www.asiamotors.kg/ru/",
     },
     // Добавьте другие данные
   ];
@@ -49,7 +63,7 @@ const Card = () => {
     <div className="cards-container">
       <PreloadImages imagePaths={imagePaths} />
       {cardsData.map((card) => (
-        <Link key={card.id} href={card.link} as={card.link}>
+        <Link key={card.id} href={card.link} as={card.link} target="_blank">
           <div className="card">
             <div className="card-img-box">
               <Image

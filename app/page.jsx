@@ -10,23 +10,23 @@ import PreloadImages from "../components/PreloadImages";
 
 const HomePage = () => {
   const imagePaths = [
-    '/home/group3.svg',
-    '/home/company1.svg',
-    '/home/company2.svg',
-    '/home/company3.svg',
-    '/home/company4.svg',
-    '/home/company5.svg',
-    '/home/team.svg',
-    '/home/our-service1.svg',
-    '/card/arrow-up-light.svg',
-    '/home/our-service2.svg',
-    '/home/our-service3.svg',
-    '/home/arrow-up-light.svg',
+    "/home/group3.svg",
+    "/home/company1.svg",
+    "/home/company2.svg",
+    "/home/company3.svg",
+    "/home/company4.svg",
+    "/home/company5.svg",
+    "/home/team.svg",
+    "/home/our-service1.svg",
+    "/card/arrow-up-light.svg",
+    "/home/our-service2.svg",
+    "/home/our-service3.svg",
+    "/home/arrow-up-light.svg",
     // Добавьте пути к другим изображениям
   ];
   return (
     <div className="home-page">
-       <PreloadImages imagePaths={imagePaths} />
+      <PreloadImages imagePaths={imagePaths} />
       <section className="home">
         <div className="container">
           <h1 className="home-title">
@@ -59,40 +59,131 @@ const HomePage = () => {
       </section>
       <section className="company">
         <div className="container">
-          <h3 className="company-title">Нам доверяют 10+ компаний</h3>
+          <h3 className="company-title">Нам доверяют 50+ компаний</h3>
           <div className="company-box">
             <Image
-              src="/home/company1.svg"
-              width={203}
-              height={64}
+              src="/home/company1.png"
+              width={140}
+              height={60}
               loading="lazy"
               alt="company"
             />
             <Image
               src="/home/company2.svg"
-              width={203}
-              height={64}
+              width={230}
+              height={60}
               loading="lazy"
               alt="company"
             />
             <Image
               src="/home/company3.svg"
-              width={203}
-              height={64}
+              width={200}
+              height={60}
               loading="lazy"
               alt="company"
             />
             <Image
-              src="/home/company4.svg"
-              width={203}
-              height={64}
+              src="/home/company4.png"
+              width={190}
+              height={60}
               loading="lazy"
               alt="company"
             />
             <Image
-              src="/home/company5.svg"
-              width={203}
-              height={64}
+              src="/home/company5.jpg"
+              width={180}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />
+            <Image
+              src="/home/company6.png"
+              width={160}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />
+            <Image
+              src="/home/company7.png"
+              width={200}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />
+            <Image
+              src="/home/company8.svg"
+              width={180}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />
+            <Image
+              src="/home/company9.svg"
+              width={130}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />
+            <Image
+              src="/home/company10.svg"
+              width={190}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />
+            <Image
+              src="/home/company11.png"
+              width={160}
+              height={70}
+              loading="lazy"
+              alt="company"
+            />{" "}
+            <Image
+              src="/home/company12.png"
+              width={160}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />{" "}
+            <Image
+              src="/home/company13.png"
+              width={240}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />{" "}
+            <Image
+              src="/home/company14.png"
+              width={190}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />{" "}
+            <Image
+              src="/home/company15.png"
+              width={80}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />
+            <Image
+              src="/home/company16.png"
+              width={193}
+              height={60}
+              loading="lazy"
+              alt="company"
+            />{" "}
+            <Image
+              src="/home/company17.png"
+              width={190}
+              height={90}
+              loading="lazy"
+              alt="company"
+            />
+            <Image
+              src="/home/company18.png"
+              width={110}
+              height={60}
               loading="lazy"
               alt="company"
             />
@@ -113,7 +204,13 @@ const HomePage = () => {
                 Подробнее о нас
               </Link>
             </div>
-            <Image src="/home/team.svg" width={452} height={326} loading="lazy" alt="team" />
+            <Image
+              src="/home/team.svg"
+              width={452}
+              height={326}
+              loading="lazy"
+              alt="team"
+            />
           </div>
           <div className="team-box-right">
             <h3>
@@ -223,6 +320,59 @@ const HomePage = () => {
               <p className="our-service-title">SEO</p>
               <p className="our-service-text">
                 Дизайн-поддержка и развитие <br /> проектов после запуска
+              </p>
+              <div className="card-svg-box">
+                <Image
+                  src="/card/arrow-up-light.svg"
+                  width={30}
+                  height={30}
+                  loading="lazy"
+                  alt="arrow-up-light"
+                  className="card-svg"
+                />
+              </div>
+            </Link>
+            <Link href="/development" className="col-4">
+              <div className="img-box">
+                <Image
+                  src="/home/our-service3.svg"
+                  width={27}
+                  height={27}
+                  loading="lazy"
+                  alt="our-service"
+                  className="our-service-img"
+                />
+              </div>
+              <p className="our-service-title">Мобильная разработка</p>
+              <p className="our-service-text">
+                Разработка мобильных приложений <br /> для iOS и Android.
+              </p>
+              <div className="card-svg-box">
+                <Image
+                  src="/card/arrow-up-light.svg"
+                  width={30}
+                  height={30}
+                  loading="lazy"
+                  alt="arrow-up-light"
+                  className="card-svg"
+                />
+              </div>
+            </Link>
+            <Link href="/development" className="col-4">
+              <div className="img-box">
+                <Image
+                  src="/home/our-service3.svg"
+                  width={27}
+                  height={27}
+                  loading="lazy"
+                  alt="our-service"
+                  className="our-service-img"
+                />
+              </div>
+              <p className="our-service-title">Онлайн ассистенты на ИИ</p>
+              <p className="our-service-text">
+                Создание интеллектуальных онлайн <br /> ассистентов для оптимизации <br />
+                бизнес-процессов.
               </p>
               <div className="card-svg-box">
                 <Image
